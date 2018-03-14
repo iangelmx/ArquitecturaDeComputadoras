@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-13T17:56:15</DateModified>
+  <DateModified>2018-03-14T12:12:51</DateModified>
   <ModuleName>ALU_1BIT</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/ALU_1BIT/iseconfig/ALU_1BIT.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/ALU_1BIT</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-03-14T12:06:21</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/ayhc9/arqCompVHDL/ALU_1BIT/iseconfig/ALU_1BIT.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ayhc9/arqCompVHDL/ALU_1BIT\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-13T17:56:14</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 

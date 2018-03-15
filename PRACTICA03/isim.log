@@ -1,0 +1,32 @@
+ISim log file
+Running: C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /practica03/a 0010 -radix bin
+# isim force add /practica03/b 0101 -radix bin
+# isim force add /practica03/operacion 00 -radix bin
+# isim force add /practica03/operacion 0000 -radix bin
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# isim force add /practica03/b 1111 -radix bin
+# run 1.00us
+# run 1.00us
+# isim force add /practica03/operacion 0011 -radix bin
+# isim force add /practica03/b 0011 -radix bin
+# run 1.00us
+# isim force add /practica03/operacion 0001 -radix bin
+# run 1.00us
+# isim force add /practica03/a 1001 -radix bin
+# run 1.00us
+# isim force add /practica03/operacion 0010 -radix bin
+# run 1.00us

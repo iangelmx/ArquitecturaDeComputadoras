@@ -1,0 +1,2 @@
+vhdl work "../ALU_1BIT/ALU_1BIT.vhd"
+vhdl work "PRACTICA03.vhd"

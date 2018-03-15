@@ -1,0 +1,29 @@
+Command line:
+   PRACTICA03_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64129
+
+Wed Mar 14 21:19:38 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 1038.38 Meg
+
+ Total Signals          : 75
+ Total Nets             : 62
+ Total Signal Drivers   : 46
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 18
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 422
+Total Line Count : 62
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 881.091 Meg
+
+Wed Mar 14 21:23:25 2018
+

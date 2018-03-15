@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PRACTICA03.prj
 
@@ -105,19 +105,209 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd" into library work
+Parsing entity <ALU_1BIT>.
+Parsing architecture <Behavioral> of entity <alu_1bit>.
 Parsing VHDL file "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" into library work
 Parsing entity <PRACTICA03>.
 Parsing architecture <Behavioral> of entity <practica03>.
-ERROR:HDLCompiler:69 - "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" Line 25: <sel_a> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" Line 26: <sel_b> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" Line 36: <c> is not declared.
-ERROR:HDLCompiler:854 - "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" Line 12: Unit <behavioral> ignored due to previous errors.
-VHDL file C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd ignored due to errors
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <PRACTICA03> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU_1BIT> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PRACTICA03>.
+    Related source file is "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\PRACTICA03\PRACTICA03.vhd".
+    Summary:
+	no macro.
+Unit <PRACTICA03> synthesized.
+
+Synthesizing Unit <ALU_1BIT>.
+    Related source file is "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <resul_aux> created at line 38.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU_1BIT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 4
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 4
+# Xors                                                 : 16
+ 1-bit xor2                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PRACTICA03> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PRACTICA03, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PRACTICA03.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 12
+#      LUT2                        : 3
+#      LUT4                        : 2
+#      LUT5                        : 1
+#      LUT6                        : 6
+# IO Buffers                       : 18
+#      IBUF                        : 12
+#      OBUF                        : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   12  out of  63400     0%  
+    Number used as Logic:                12  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:      12  out of     12   100%  
+   Number with an unused LUT:             0  out of     12     0%  
+   Number of fully used LUT-FF pairs:     0  out of     12     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 2.928ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 101 / 6
+-------------------------------------------------------------------------
+Delay:               2.928ns (Levels of Logic = 6)
+  Source:            operacion<2> (PAD)
+  Destination:       Z (PAD)
+
+  Data Path: operacion<2> to Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.001   0.711  operacion_2_IBUF (operacion_2_IBUF)
+     LUT6:I1->O            3   0.097   0.521  ALU02/cout_aux1 (carries<1>)
+     LUT5:I2->O            1   0.097   0.511  ALU03/cout_aux1 (carries<2>)
+     LUT6:I3->O            2   0.097   0.515  ALU04/Mmux_resul_aux11 (R_3_OBUF)
+     LUT4:I1->O            1   0.097   0.279  Z1 (Z_OBUF)
+     OBUF:I->O                 0.000          Z_OBUF (Z)
+    ----------------------------------------
+    Total                      2.928ns (0.389ns logic, 2.539ns route)
+                                       (13.3% logic, 86.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.80 secs
+ 
 --> 
 
-Total memory usage is 344108 kilobytes
+Total memory usage is 463732 kilobytes
 
-Number of errors   :    4 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -11,22 +11,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /practica03/a 0010 -radix bin
-# isim force add /practica03/b 0101 -radix bin
-# isim force add /practica03/operacion 00 -radix bin
-# isim force add /practica03/operacion 0000 -radix bin
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# isim force add /practica03/b 1111 -radix bin
-# run 1.00us
-# run 1.00us
-# isim force add /practica03/operacion 0011 -radix bin
-# isim force add /practica03/b 0011 -radix bin
-# run 1.00us
-# isim force add /practica03/operacion 0001 -radix bin
-# run 1.00us
-# isim force add /practica03/a 1001 -radix bin
-# run 1.00us
-# isim force add /practica03/operacion 0010 -radix bin
-# run 1.00us

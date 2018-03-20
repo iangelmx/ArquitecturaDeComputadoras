@@ -5,10 +5,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity PRACTICA03 is
     Port ( A,B : in  STD_LOGIC_VECTOR (3 downto 0);
            operacion : in  STD_LOGIC_VECTOR (3 downto 0);
-           Z, Cout : out  STD_LOGIC;
+           Z, Cout, Ovf, N : out  STD_LOGIC;
            R : out  STD_LOGIC_VECTOR (3 downto 0));
 end PRACTICA03;
 
+-- N -> Signo, Cout-> C, Z -> Cero, Ovf -> Overflow
+-- CarryOut y Overflow, valen 0 cuando son operaciones lógicas
 architecture Behavioral of PRACTICA03 is
 
 component ALU_1BIT is
@@ -34,7 +36,8 @@ begin
 	
 	R<=R_aux;
 	Cout<= carries(3);
-	
+	N<=R_aux(3);
+	Ovf<= carries(3) xor carries(2);
 
 end Behavioral;
 

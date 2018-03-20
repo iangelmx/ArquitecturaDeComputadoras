@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-14T21:01:01</DateModified>
+  <DateModified>2018-03-20T16:59:09</DateModified>
   <ModuleName>PRACTICA03</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-14T21:01:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

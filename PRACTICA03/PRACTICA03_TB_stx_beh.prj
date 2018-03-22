@@ -1,0 +1,3 @@
+vhdl isim_temp "../ALU_1BIT/ALU_1BIT.vhd"
+vhdl isim_temp "PRACTICA03.vhd"
+vhdl isim_temp "PRACTICA03_TB.vhd"

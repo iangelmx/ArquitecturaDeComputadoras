@@ -31,13 +31,16 @@ begin
 	ALU02: ALU_1BIT port map(a=>A(1), b=>B(1), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>carries(0), operacion=>oper_aux, cout=>carries(1), resul=>R_aux(1));
 	ALU03: ALU_1BIT port map(a=>A(2), b=>B(2), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>carries(1), operacion=>oper_aux, cout=>carries(2), resul=>R_aux(2));
 	ALU04: ALU_1BIT port map(a=>A(3), b=>B(3), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>carries(2), operacion=>oper_aux, cout=>carries(3), resul=>R_aux(3));
+
+	Z<= '1' when R_aux = "0000" else '0';
 	
-	Z<= (R_aux(0) nor R_aux(1)) nor (R_aux(2) nor R_aux(3));
 	
 	R<=R_aux;
-	Cout<= carries(3);
+	
 	N<=R_aux(3);
-	Ovf<= carries(3) xor carries(2);
+	
+	Cout<= carries(3) when oper_aux = "11" else '0';
+	Ovf<= (carries(3) xor carries(2)) when oper_aux = "11" else '0';
 
 end Behavioral;
 

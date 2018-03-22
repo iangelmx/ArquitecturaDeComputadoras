@@ -15,14 +15,6 @@ signal a_aux, b_aux, ab, aorb, axorb, amasb, cout_aux, resul_aux : STD_LOGIC;
 
 begin
 
---with sel_a select a_aux <= 
---			a when '0',
---			(not a) when '1';
---
---with sel_b select b_aux <= 
---			b when '0',
---			(not a) when '1';
-
 process(operacion, sel_a, sel_b, a, b, cin, a_aux, b_aux, ab, aorb, axorb, amasb)
 begin
 

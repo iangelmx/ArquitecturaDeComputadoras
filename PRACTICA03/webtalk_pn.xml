@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Mar 22 00:43:07 2018">
+<application name="pn" timeStamp="Thu Mar 22 19:02:53 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="B62E95C7916F4AE7A1982CBFDBC4ED99" type="project"/>
-<property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.xise" type="project"/>
+<property name="ProjectIteration" value="2" type="project"/>
+<property name="ProjectFile" value="C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2018-03-14T20:57:04" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -25,8 +25,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2018-03-14T20:57:04" type="design"/>
 <property name="PROP_intWbtProjectID" value="B62E95C7916F4AE7A1982CBFDBC4ED99" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="2" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.PRACTICA03_TB" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Artix7" type="design"/>
@@ -36,6 +38,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
+<property name="FILE_UCF" value="1" type="source"/>
 <property name="FILE_VHDL" value="3" type="source"/>
 </section>
 </application>

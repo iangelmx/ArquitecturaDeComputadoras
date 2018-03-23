@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.35 secs
  
 --> Reading design: PRACTICA03.prj
 
@@ -105,10 +105,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd" into library work
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd" into library work
 Parsing entity <ALU_1BIT>.
 Parsing architecture <Behavioral> of entity <alu_1bit>.
-Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" into library work
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\PRACTICA03\PRACTICA03.vhd" into library work
 Parsing entity <PRACTICA03>.
 Parsing architecture <Behavioral> of entity <practica03>.
 
@@ -125,13 +125,13 @@ Elaborating entity <ALU_1BIT> (architecture <Behavioral>) from library <work>.
 =========================================================================
 
 Synthesizing Unit <PRACTICA03>.
-    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA03\PRACTICA03.vhd".
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\PRACTICA03\PRACTICA03.vhd".
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <PRACTICA03> synthesized.
 
 Synthesizing Unit <ALU_1BIT>.
-    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd".
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd".
     Found 1-bit 4-to-1 multiplexer for signal <resul_aux> created at line 30.
     Summary:
 	inferred   1 Multiplexer(s).
@@ -302,12 +302,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 34.00 secs
-Total CPU time to Xst completion: 34.37 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 63.50 secs
  
 --> 
 
-Total memory usage is 459576 kilobytes
+Total memory usage is 490264 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

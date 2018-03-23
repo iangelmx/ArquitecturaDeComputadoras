@@ -1,0 +1,136 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml PRACTICA03.twx PRACTICA03.ncd -o PRACTICA03.twr
+PRACTICA03.pcf -ucf PRACTICA03.ucf
+
+Design file:              PRACTICA03.ncd
+Physical constraint file: PRACTICA03.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Cout           |    8.868|
+A<0>           |N              |    8.618|
+A<0>           |Ovf            |    8.794|
+A<0>           |R<0>           |    7.654|
+A<0>           |R<1>           |    8.140|
+A<0>           |R<2>           |    8.334|
+A<0>           |R<3>           |    8.087|
+A<0>           |Z              |    8.817|
+A<1>           |Cout           |    8.992|
+A<1>           |N              |    8.742|
+A<1>           |Ovf            |    8.918|
+A<1>           |R<1>           |    7.612|
+A<1>           |R<2>           |    8.458|
+A<1>           |R<3>           |    8.211|
+A<1>           |Z              |    8.941|
+A<2>           |Cout           |    8.420|
+A<2>           |N              |    8.170|
+A<2>           |Ovf            |    8.346|
+A<2>           |R<2>           |    7.709|
+A<2>           |R<3>           |    7.639|
+A<2>           |Z              |    8.369|
+A<3>           |Cout           |    6.855|
+A<3>           |N              |    7.351|
+A<3>           |Ovf            |    7.414|
+A<3>           |R<3>           |    6.820|
+A<3>           |Z              |    7.550|
+B<0>           |Cout           |    8.857|
+B<0>           |N              |    8.607|
+B<0>           |Ovf            |    8.783|
+B<0>           |R<0>           |    7.641|
+B<0>           |R<1>           |    7.782|
+B<0>           |R<2>           |    8.323|
+B<0>           |R<3>           |    8.076|
+B<0>           |Z              |    8.806|
+B<1>           |Cout           |    9.038|
+B<1>           |N              |    8.788|
+B<1>           |Ovf            |    8.964|
+B<1>           |R<1>           |    8.017|
+B<1>           |R<2>           |    8.504|
+B<1>           |R<3>           |    8.257|
+B<1>           |Z              |    8.987|
+B<2>           |Cout           |    8.418|
+B<2>           |N              |    8.168|
+B<2>           |Ovf            |    8.344|
+B<2>           |R<2>           |    8.143|
+B<2>           |R<3>           |    7.637|
+B<2>           |Z              |    8.367|
+B<3>           |Cout           |    9.535|
+B<3>           |N              |    9.981|
+B<3>           |Ovf            |    9.778|
+B<3>           |R<3>           |    9.450|
+B<3>           |Z              |   10.180|
+operacion<0>   |Cout           |    7.036|
+operacion<0>   |N              |    7.689|
+operacion<0>   |Ovf            |    7.668|
+operacion<0>   |R<0>           |    7.804|
+operacion<0>   |R<1>           |    7.727|
+operacion<0>   |R<2>           |    7.772|
+operacion<0>   |R<3>           |    7.158|
+operacion<0>   |Z              |    8.381|
+operacion<1>   |Cout           |    7.559|
+operacion<1>   |N              |    7.792|
+operacion<1>   |Ovf            |    7.850|
+operacion<1>   |R<0>           |    8.397|
+operacion<1>   |R<1>           |    8.225|
+operacion<1>   |R<2>           |    8.304|
+operacion<1>   |R<3>           |    7.261|
+operacion<1>   |Z              |    8.974|
+operacion<2>   |Cout           |   11.025|
+operacion<2>   |N              |   10.775|
+operacion<2>   |Ovf            |   10.951|
+operacion<2>   |R<0>           |    9.715|
+operacion<2>   |R<1>           |   10.084|
+operacion<2>   |R<2>           |   10.491|
+operacion<2>   |R<3>           |   10.244|
+operacion<2>   |Z              |   10.974|
+operacion<3>   |Cout           |    9.525|
+operacion<3>   |N              |    9.275|
+operacion<3>   |Ovf            |    9.451|
+operacion<3>   |R<0>           |    8.142|
+operacion<3>   |R<1>           |    8.716|
+operacion<3>   |R<2>           |    8.991|
+operacion<3>   |R<3>           |    8.744|
+operacion<3>   |Z              |    9.474|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Mar 22 19:04:59 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 709 MB
+
+
+

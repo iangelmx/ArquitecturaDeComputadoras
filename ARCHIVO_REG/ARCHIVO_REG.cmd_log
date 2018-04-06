@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ARCHIVO_REG/ARCHIVO_REG.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ARCHIVO_REG/ARCHIVO_REG.syr" 

@@ -8,3 +8,17 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA0
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA03.ucf -p xc7a100t-csg324-3 PRACTICA03.ngc PRACTICA03.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA03_map.ncd PRACTICA03.ngd PRACTICA03.pcf 
+par -w -intstyle ise -ol high -mt off PRACTICA03_map.ncd PRACTICA03.ncd PRACTICA03.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PRACTICA03.twx PRACTICA03.ncd -o PRACTICA03.twr PRACTICA03.pcf -ucf PRACTICA03.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA03.ucf -p xc7a100t-csg324-3 PRACTICA03.ngc PRACTICA03.ngd  
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA03.ucf -p xc7a100t-csg324-3 PRACTICA03.ngc PRACTICA03.ngd  
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA03.ucf -p xc7a100t-csg324-3 PRACTICA03.ngc PRACTICA03.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA03_map.ncd PRACTICA03.ngd PRACTICA03.pcf 
+par -w -intstyle ise -ol high -mt off PRACTICA03_map.ncd PRACTICA03.ncd PRACTICA03.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PRACTICA03.twx PRACTICA03.ncd -o PRACTICA03.twr PRACTICA03.pcf -ucf PRACTICA03.ucf 
+bitgen -intstyle ise -f PRACTICA03.ut PRACTICA03.ncd 

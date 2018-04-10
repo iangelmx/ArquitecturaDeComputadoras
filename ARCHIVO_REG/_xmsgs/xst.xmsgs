@@ -5,14 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1731" delta="new" >"C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd" Line 33: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;srl&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;srl&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1731" delta="new" >"C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd" Line 36: found &apos;<arg fmt="%d" index="1">0</arg>&apos; definitions of operator <arg fmt="%s" index="2">&quot;sll&quot;</arg>, cannot determine exact overloaded matching definition for <arg fmt="%s" index="2">&quot;sll&quot;</arg>
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="new" >"C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd" Line 16: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 

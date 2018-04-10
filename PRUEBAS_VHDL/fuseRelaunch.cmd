@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRUEBAS_VHDL/TB_CONT_GEN_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRUEBAS_VHDL/TB_CONT_GEN_beh.prj" "work.TB_CONT_GEN" 

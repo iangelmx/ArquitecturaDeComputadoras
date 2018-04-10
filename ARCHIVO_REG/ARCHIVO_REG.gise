@@ -30,10 +30,11 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ARCHIVO_REG.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ARCHIVO_REG.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ARCHIVO_REG.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ARCHIVO_REG_TB_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ARCHIVO_REG_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ARCHIVO_REG_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ARCHIVO_REG_TB_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ARCHIVO_REG_TB_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ARCHIVO_REG_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ARCHIVO_REG_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ARCHIVO_REG_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ARCHIVO_REG_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -49,10 +50,15 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1522975684" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1522975684">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1522975684" xil_pn:in_ck="-8208147309176696889" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1522975684">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ARCHIVO_REG.vhd"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB.vhd"/>
     </transform>
@@ -71,13 +77,22 @@
     <transform xil_pn:end_ts="1522975684" xil_pn:in_ck="-8208147309176696889" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1522975684">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ARCHIVO_REG.vhd"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1522975688" xil_pn:in_ck="-8208147309176696889" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1684374899561369176" xil_pn:start_ts="1522975684">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB_beh.prj"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB_isim_beh.exe"/>
@@ -89,6 +104,8 @@
     <transform xil_pn:end_ts="1522975689" xil_pn:in_ck="5255954470486930157" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1486702202576120219" xil_pn:start_ts="1522975688">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB_isim_beh.wdb"/>
@@ -97,6 +114,7 @@
     </transform>
     <transform xil_pn:end_ts="1522974457" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1522974457">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1522974457" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1760441234465120906" xil_pn:start_ts="1522974457">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -122,16 +140,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522974480" xil_pn:in_ck="1077050255730791737" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2810266253116774137" xil_pn:start_ts="1522974457">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1523320952" xil_pn:in_ck="1077050255730791737" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2810266253116774137" xil_pn:start_ts="1523320939">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ARCHIVO_REG.lso"/>
       <outfile xil_pn:name="ARCHIVO_REG.ngc"/>
       <outfile xil_pn:name="ARCHIVO_REG.ngr"/>
       <outfile xil_pn:name="ARCHIVO_REG.prj"/>
-      <outfile xil_pn:name="ARCHIVO_REG.stx"/>
       <outfile xil_pn:name="ARCHIVO_REG.syr"/>
       <outfile xil_pn:name="ARCHIVO_REG.xst"/>
+      <outfile xil_pn:name="ARCHIVO_REG_TB_beh.prj"/>
+      <outfile xil_pn:name="ARCHIVO_REG_TB_stx_beh.prj"/>
       <outfile xil_pn:name="ARCHIVO_REG_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

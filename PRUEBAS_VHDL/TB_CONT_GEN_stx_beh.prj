@@ -1,0 +1,2 @@
+vhdl isim_temp "../../../../../Desktop/EJEMPLOS VHDL/EJEMPLO2/CONT_GEN.VHD"
+vhdl isim_temp "PRUEBAS_TB.vhd"

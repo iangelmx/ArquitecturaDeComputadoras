@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRUEBAS_VHDL/CONT_GEN.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRUEBAS_VHDL/CONT_GEN.syr" 

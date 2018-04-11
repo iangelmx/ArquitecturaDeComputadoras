@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -121,20 +121,47 @@ Elaborating entity <ARCHIVO_REG> (architecture <Behavioral>) from library <work>
 
 Synthesizing Unit <ARCHIVO_REG>.
     Related source file is "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd".
-    Found 8-bit register for signal <archivo<1>>.
-    Found 8-bit register for signal <archivo<2>>.
-    Found 8-bit register for signal <archivo<3>>.
-    Found 8-bit register for signal <archivo<4>>.
-    Found 8-bit register for signal <archivo<5>>.
-    Found 8-bit register for signal <archivo<6>>.
-    Found 8-bit register for signal <archivo<7>>.
-    Found 8-bit register for signal <archivo<0>>.
-    Found 8-bit register for signal <res>.
-    Found 8-bit shifter logical right for signal <dir_r[2]_shamt[3]_shift_right_1_OUT> created at line 38
-    Found 8-bit 8-to-1 multiplexer for signal <dato_out> created at line 55.
+WARNING:Xst:647 - Input <read_reg2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <archivo<1>>.
+    Found 16-bit register for signal <archivo<2>>.
+    Found 16-bit register for signal <archivo<3>>.
+    Found 16-bit register for signal <archivo<4>>.
+    Found 16-bit register for signal <archivo<5>>.
+    Found 16-bit register for signal <archivo<6>>.
+    Found 16-bit register for signal <archivo<7>>.
+    Found 16-bit register for signal <archivo<8>>.
+    Found 16-bit register for signal <archivo<9>>.
+    Found 16-bit register for signal <archivo<10>>.
+    Found 16-bit register for signal <archivo<11>>.
+    Found 16-bit register for signal <archivo<12>>.
+    Found 16-bit register for signal <archivo<13>>.
+    Found 16-bit register for signal <archivo<14>>.
+    Found 16-bit register for signal <archivo<15>>.
+    Found 16-bit register for signal <archivo<0>>.
+    Found 16-bit register for signal <res>.
+    Found 16-bit shifter logical right for signal <read_reg1[3]_shamt[3]_shift_right_20_OUT> created at line 54
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <archivo>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 16-bit 16-to-1 multiplexer for signal <read_data1> created at line 67.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred  72 D-type flip-flop(s).
-	inferred  18 Multiplexer(s).
+	inferred 272 D-type flip-flop(s).
+	inferred  16 Latch(s).
+	inferred  33 Multiplexer(s).
 	inferred   1 Combinational logic shifter(s).
 Unit <ARCHIVO_REG> synthesized.
 
@@ -142,13 +169,15 @@ Unit <ARCHIVO_REG> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 9
- 8-bit register                                        : 9
-# Multiplexers                                         : 18
- 8-bit 2-to-1 multiplexer                              : 17
- 8-bit 8-to-1 multiplexer                              : 1
+# Registers                                            : 17
+ 16-bit register                                       : 17
+# Latches                                              : 16
+ 1-bit latch                                           : 16
+# Multiplexers                                         : 33
+ 16-bit 16-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 32
 # Logic shifters                                       : 1
- 8-bit shifter logical right                           : 1
+ 16-bit shifter logical right                          : 1
 
 =========================================================================
 
@@ -161,13 +190,13 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 72
- Flip-Flops                                            : 72
-# Multiplexers                                         : 18
- 8-bit 2-to-1 multiplexer                              : 17
- 8-bit 8-to-1 multiplexer                              : 1
+# Registers                                            : 272
+ Flip-Flops                                            : 272
+# Multiplexers                                         : 33
+ 16-bit 16-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 32
 # Logic shifters                                       : 1
- 8-bit shifter logical right                           : 1
+ 16-bit shifter logical right                          : 1
 
 =========================================================================
 
@@ -187,8 +216,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 72
- Flip-Flops                                            : 72
+# Registers                                            : 272
+ Flip-Flops                                            : 272
 
 =========================================================================
 
@@ -211,21 +240,22 @@ Top Level Output File Name         : ARCHIVO_REG.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 114
-#      LUT2                        : 1
-#      LUT3                        : 3
-#      LUT4                        : 9
-#      LUT5                        : 3
-#      LUT6                        : 89
-#      MUXF7                       : 9
-# FlipFlops/Latches                : 72
-#      FDCE                        : 64
-#      FDE                         : 8
+# BELS                             : 192
+#      LUT3                        : 9
+#      LUT4                        : 41
+#      LUT5                        : 7
+#      LUT6                        : 84
+#      MUXF7                       : 35
+#      MUXF8                       : 16
+# FlipFlops/Latches                : 288
+#      FDCE                        : 256
+#      FDE                         : 16
+#      LD                          : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 29
-#      IBUF                        : 21
-#      OBUF                        : 8
+# IO Buffers                       : 64
+#      IBUF                        : 32
+#      OBUF                        : 32
 
 Device utilization summary:
 ---------------------------
@@ -234,20 +264,21 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              72  out of  126800     0%  
- Number of Slice LUTs:                  105  out of  63400     0%  
-    Number used as Logic:               105  out of  63400     0%  
+ Number of Slice Registers:             272  out of  126800     0%  
+ Number of Slice LUTs:                  141  out of  63400     0%  
+    Number used as Logic:               141  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    105
-   Number with an unused Flip Flop:      33  out of    105    31%  
-   Number with an unused LUT:             0  out of    105     0%  
-   Number of fully used LUT-FF pairs:    72  out of    105    68%  
-   Number of unique control sets:         9
+ Number of LUT Flip Flop pairs used:    306
+   Number with an unused Flip Flop:      34  out of    306    11%  
+   Number with an unused LUT:           165  out of    306    53%  
+   Number of fully used LUT-FF pairs:   107  out of    306    34%  
+   Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          31
- Number of bonded IOBs:                  30  out of    210    14%  
+ Number of IOs:                          69
+ Number of bonded IOBs:                  65  out of    210    30%  
+    IOB Flip Flops/Latches:              16
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -273,8 +304,13 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 72    |
+clk                                | BUFGP                  | 272   |
+wr_dir_AND_38_o(wr_dir_AND_38_o1:O)| NONE(*)(read_data2_15) | 16    |
 -----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -284,10 +320,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.413ns (Maximum Frequency: 414.388MHz)
-   Minimum input arrival time before clock: 2.259ns
-   Maximum output required time after clock: 1.605ns
-   Maximum combinational path delay: 1.450ns
+   Minimum period: 3.003ns (Maximum Frequency: 332.989MHz)
+   Minimum input arrival time before clock: 2.892ns
+   Maximum output required time after clock: 1.841ns
+   Maximum combinational path delay: 1.730ns
 
 Timing Details:
 ---------------
@@ -295,92 +331,139 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.413ns (frequency: 414.388MHz)
-  Total number of paths / destination ports: 352 / 72
+  Clock period: 3.003ns (frequency: 332.989MHz)
+  Total number of paths / destination ports: 2432 / 272
 -------------------------------------------------------------------------
-Delay:               2.413ns (Levels of Logic = 4)
-  Source:            archivo_6_5 (FF)
-  Destination:       res_0 (FF)
+Delay:               3.003ns (Levels of Logic = 6)
+  Source:            archivo_6_6 (FF)
+  Destination:       res_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: archivo_6_5 to res_0
+  Data Path: archivo_6_6 to res_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.361   0.556  archivo_6_5 (archivo_6_5)
-     LUT6:I2->O            1   0.097   0.000  Mmux_dato_out_35 (Mmux_dato_out_35)
-     MUXF7:I1->O           6   0.279   0.402  Mmux_dato_out_2_f7_4 (dato_out_5_OBUF)
-     LUT3:I1->O            2   0.097   0.515  Mmux__n0501121 (Mmux__n050112)
-     LUT6:I3->O            1   0.097   0.000  Mmux__n05011 (_n0501<0>)
-     FDE:D                     0.008          res_0
+     FDCE:C->Q             1   0.361   0.556  archivo_6_6 (archivo_6_6)
+     LUT6:I2->O            1   0.097   0.000  Mmux_read_data1_525 (Mmux_read_data1_525)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_read_data1_4_f7_11 (Mmux_read_data1_4_f712)
+     MUXF8:I0->O           8   0.218   0.715  Mmux_read_data1_2_f8_11 (read_data1_6_OBUF)
+     LUT6:I1->O            1   0.097   0.000  Sh17_SW0_G (N17)
+     MUXF7:I1->O           1   0.279   0.295  Sh17_SW0 (N4)
+     LUT5:I4->O            1   0.097   0.000  Sh17 (Sh17)
+     FDE:D                     0.008          res_1
     ----------------------------------------
-    Total                      2.413ns (0.939ns logic, 1.474ns route)
-                                       (38.9% logic, 61.1% route)
+    Total                      3.003ns (1.436ns logic, 1.567ns route)
+                                       (47.8% logic, 52.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 887 / 208
+  Total number of paths / destination ports: 4483 / 800
 -------------------------------------------------------------------------
-Offset:              2.259ns (Levels of Logic = 5)
-  Source:            dir_r<1> (PAD)
-  Destination:       res_0 (FF)
+Offset:              2.892ns (Levels of Logic = 7)
+  Source:            read_reg1<1> (PAD)
+  Destination:       res_1 (FF)
   Destination Clock: clk rising
 
-  Data Path: dir_r<1> to res_0
+  Data Path: read_reg1<1> to res_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   0.001   0.762  dir_r_1_IBUF (dir_r_1_IBUF)
-     LUT6:I0->O            1   0.097   0.000  Mmux_dato_out_35 (Mmux_dato_out_35)
-     MUXF7:I1->O           6   0.279   0.402  Mmux_dato_out_2_f7_4 (dato_out_5_OBUF)
-     LUT3:I1->O            2   0.097   0.515  Mmux__n0501121 (Mmux__n050112)
-     LUT6:I3->O            1   0.097   0.000  Mmux__n05011 (_n0501<0>)
-     FDE:D                     0.008          res_0
+     IBUF:I->O            64   0.001   0.805  read_reg1_1_IBUF (read_reg1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  Mmux_read_data1_525 (Mmux_read_data1_525)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_read_data1_4_f7_11 (Mmux_read_data1_4_f712)
+     MUXF8:I0->O           8   0.218   0.715  Mmux_read_data1_2_f8_11 (read_data1_6_OBUF)
+     LUT6:I1->O            1   0.097   0.000  Sh17_SW0_G (N17)
+     MUXF7:I1->O           1   0.279   0.295  Sh17_SW0 (N4)
+     LUT5:I4->O            1   0.097   0.000  Sh17 (Sh17)
+     FDE:D                     0.008          res_1
     ----------------------------------------
-    Total                      2.259ns (0.579ns logic, 1.680ns route)
-                                       (25.6% logic, 74.4% route)
+    Total                      2.892ns (1.076ns logic, 1.816ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'wr_dir_AND_38_o'
+  Total number of paths / destination ports: 176 / 16
+-------------------------------------------------------------------------
+Offset:              1.400ns (Levels of Logic = 4)
+  Source:            read_reg1<1> (PAD)
+  Destination:       read_data2_15 (LATCH)
+  Destination Clock: wr_dir_AND_38_o falling
+
+  Data Path: read_reg1<1> to read_data2_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.805  read_reg1_1_IBUF (read_reg1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  Mmux_read_data1_51 (Mmux_read_data1_51)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_read_data1_4_f7 (Mmux_read_data1_4_f7)
+     MUXF8:I0->O           3   0.218   0.000  Mmux_read_data1_2_f8 (read_data1_0_OBUF)
+     LD:D                     -0.028          read_data2_0
+    ----------------------------------------
+    Total                      1.400ns (0.595ns logic, 0.805ns route)
+                                       (42.5% logic, 57.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 64 / 8
+  Total number of paths / destination ports: 256 / 16
 -------------------------------------------------------------------------
-Offset:              1.605ns (Levels of Logic = 3)
-  Source:            archivo_6_7 (FF)
-  Destination:       dato_out<7> (PAD)
+Offset:              1.841ns (Levels of Logic = 4)
+  Source:            archivo_6_15 (FF)
+  Destination:       read_data1<15> (PAD)
   Source Clock:      clk rising
 
-  Data Path: archivo_6_7 to dato_out<7>
+  Data Path: archivo_6_15 to read_data1<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.361   0.556  archivo_6_7 (archivo_6_7)
-     LUT6:I2->O            1   0.097   0.000  Mmux_dato_out_37 (Mmux_dato_out_37)
-     MUXF7:I1->O           8   0.279   0.311  Mmux_dato_out_2_f7_6 (dato_out_7_OBUF)
-     OBUF:I->O                 0.000          dato_out_7_OBUF (dato_out<7>)
+     FDCE:C->Q             1   0.361   0.556  archivo_6_15 (archivo_6_15)
+     LUT6:I2->O            1   0.097   0.000  Mmux_read_data1_513 (Mmux_read_data1_513)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_read_data1_4_f7_5 (Mmux_read_data1_4_f76)
+     MUXF8:I0->O          12   0.218   0.330  Mmux_read_data1_2_f8_5 (read_data1_15_OBUF)
+     OBUF:I->O                 0.000          read_data1_15_OBUF (read_data1<15>)
     ----------------------------------------
-    Total                      1.605ns (0.737ns logic, 0.868ns route)
-                                       (45.9% logic, 54.1% route)
+    Total                      1.841ns (0.955ns logic, 0.886ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wr_dir_AND_38_o'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            read_data2_15 (LATCH)
+  Destination:       read_data2<15> (PAD)
+  Source Clock:      wr_dir_AND_38_o falling
+
+  Data Path: read_data2_15 to read_data2<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  read_data2_15 (read_data2_15)
+     OBUF:I->O                 0.000          read_data2_15_OBUF (read_data2<15>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 40 / 8
+  Total number of paths / destination ports: 176 / 16
 -------------------------------------------------------------------------
-Delay:               1.450ns (Levels of Logic = 4)
-  Source:            dir_r<1> (PAD)
-  Destination:       dato_out<7> (PAD)
+Delay:               1.730ns (Levels of Logic = 5)
+  Source:            read_reg1<1> (PAD)
+  Destination:       read_data1<15> (PAD)
 
-  Data Path: dir_r<1> to dato_out<7>
+  Data Path: read_reg1<1> to read_data1<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   0.001   0.762  dir_r_1_IBUF (dir_r_1_IBUF)
-     LUT6:I0->O            1   0.097   0.000  Mmux_dato_out_37 (Mmux_dato_out_37)
-     MUXF7:I1->O           8   0.279   0.311  Mmux_dato_out_2_f7_6 (dato_out_7_OBUF)
-     OBUF:I->O                 0.000          dato_out_7_OBUF (dato_out<7>)
+     IBUF:I->O            64   0.001   0.805  read_reg1_1_IBUF (read_reg1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  Mmux_read_data1_513 (Mmux_read_data1_513)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_read_data1_4_f7_5 (Mmux_read_data1_4_f76)
+     MUXF8:I0->O          12   0.218   0.330  Mmux_read_data1_2_f8_5 (read_data1_15_OBUF)
+     OBUF:I->O                 0.000          read_data1_15_OBUF (read_data1<15>)
     ----------------------------------------
-    Total                      1.450ns (0.377ns logic, 1.073ns route)
-                                       (26.0% logic, 74.0% route)
+    Total                      1.730ns (0.595ns logic, 1.135ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 
@@ -392,20 +475,28 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.413|         |         |         |
+clk            |    3.003|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock wr_dir_AND_38_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.511|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 16.00 secs
-Total CPU time to Xst completion: 16.19 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.68 secs
  
 --> 
 
-Total memory usage is 459928 kilobytes
+Total memory usage is 459936 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

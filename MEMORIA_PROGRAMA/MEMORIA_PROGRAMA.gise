@@ -41,6 +41,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1523489617">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="614422536378614851" xil_pn:start_ts="1523489617">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -66,9 +67,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523489972" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2992767752651704754" xil_pn:start_ts="1523489949">
+    <transform xil_pn:end_ts="1523490246" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2992767752651704754" xil_pn:start_ts="1523490223">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.lso"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.ngc"/>

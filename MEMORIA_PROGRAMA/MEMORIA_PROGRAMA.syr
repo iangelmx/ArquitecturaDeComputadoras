@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: MEMORIA_PROGRAMA.prj
 
@@ -122,7 +122,6 @@ Elaborating entity <MEMORIA_PROGRAMA> (architecture <Behavioral>) from library <
 Synthesizing Unit <MEMORIA_PROGRAMA>.
     Related source file is "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
 WARNING:Xst:2999 - Signal 'archivo', unconnected in block 'MEMORIA_PROGRAMA', is tied to its initial value.
-WARNING:Xst:3015 - Contents of array <archivo> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
     Found 65536x25-bit single-port Read Only RAM <Mram_archivo> for signal <archivo>.
     Summary:
 	inferred   1 RAM(s).
@@ -274,13 +273,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.96 secs
+Total CPU time to Xst completion: 19.99 secs
  
 --> 
 
-Total memory usage is 464884 kilobytes
+Total memory usage is 464908 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

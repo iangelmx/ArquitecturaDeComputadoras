@@ -10,7 +10,7 @@ end MEMORIA_PROGRAMA;
 
 architecture Behavioral of MEMORIA_PROGRAMA is
 
-type banco is array (0 to 65536) of std_logic_vector(24 downto 0);
+type banco is array (0 to 65535) of std_logic_vector(24 downto 0);
 signal res : std_logic_vector(24 downto 0);
 signal archivo:banco;
 begin

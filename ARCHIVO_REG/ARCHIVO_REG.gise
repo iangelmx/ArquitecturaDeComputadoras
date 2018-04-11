@@ -52,13 +52,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522975684" xil_pn:in_ck="-8208147309176696889" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1522975684">
+    <transform xil_pn:end_ts="1523463477" xil_pn:in_ck="-8208147309176696889" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1523463477">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="ARCHIVO_REG.vhd"/>
       <outfile xil_pn:name="ARCHIVO_REG_TB.vhd"/>
     </transform>

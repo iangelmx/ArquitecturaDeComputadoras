@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03_TB_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/PRACTICA03_TB_beh.prj" "work.PRACTICA03_TB" 

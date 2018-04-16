@@ -28,7 +28,7 @@ architecture Behavioral of MEMORIA_PROGRAMA is
   constant SWI	: std_logic_vector(4 downto 0)	:= "00011";
   constant B		: std_logic_vector(4 downto 0)	:= "10011";
 
-type arreglo is arreglo (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downto 0);
+type arreglo is array (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downto 0);
 
 constant banco: arreglo :=(
 

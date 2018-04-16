@@ -1,0 +1,2 @@
+vhdl work "Datos.vhd"
+vhdl work "Datos_tb.vhd"

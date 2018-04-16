@@ -1,0 +1,163 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Datos.twx Datos.ncd -o Datos.twr Datos.pcf
+
+Design file:              Datos.ncd
+Physical constraint file: Datos.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+---------------+------------+------------+------------+------------+------------------+--------+
+               |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source         | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+---------------+------------+------------+------------+------------+------------------+--------+
+DatosEntrada<0>|   -0.097(R)|      FAST  |    2.505(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<1>|   -0.031(R)|      FAST  |    2.458(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<2>|   -0.057(R)|      FAST  |    2.563(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<3>|   -0.114(R)|      FAST  |    2.566(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<4>|   -0.091(R)|      FAST  |    2.442(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<5>|    0.015(R)|      FAST  |    2.422(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<6>|   -0.014(R)|      FAST  |    2.515(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DatosEntrada<7>|   -0.074(R)|      FAST  |    2.568(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<0>         |    0.143(R)|      FAST  |    2.407(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<1>         |    0.346(R)|      FAST  |    2.345(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<2>         |    0.222(R)|      FAST  |    2.420(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<3>         |    0.501(R)|      FAST  |    2.476(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<4>         |    0.144(R)|      FAST  |    2.453(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<5>         |    0.310(R)|      FAST  |    2.375(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<6>         |    0.262(R)|      FAST  |    2.482(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<7>         |    0.208(R)|      FAST  |    2.459(R)|      SLOW  |CLK_BUFGP         |   0.000|
+Dir<8>         |    1.119(R)|      FAST  |    1.719(R)|      SLOW  |CLK_BUFGP         |   0.000|
+WD             |    1.141(R)|      FAST  |    1.715(R)|      SLOW  |CLK_BUFGP         |   0.000|
+---------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+DatosSalida<0>|         9.699(R)|      SLOW  |         4.055(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<1>|         9.537(R)|      SLOW  |         3.864(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<2>|         9.891(R)|      SLOW  |         4.117(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<3>|         9.697(R)|      SLOW  |         3.964(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<4>|         9.768(R)|      SLOW  |         4.085(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<5>|         9.882(R)|      SLOW  |         4.047(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<6>|         9.581(R)|      SLOW  |         3.978(R)|      FAST  |CLK_BUFGP         |   0.000|
+DatosSalida<7>|         9.768(R)|      SLOW  |         4.069(R)|      FAST  |CLK_BUFGP         |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Dir<0>         |DatosSalida<0> |    7.604|
+Dir<0>         |DatosSalida<1> |    7.446|
+Dir<0>         |DatosSalida<2> |    7.993|
+Dir<0>         |DatosSalida<3> |    7.807|
+Dir<0>         |DatosSalida<4> |    7.851|
+Dir<0>         |DatosSalida<5> |    8.018|
+Dir<0>         |DatosSalida<6> |    7.460|
+Dir<0>         |DatosSalida<7> |    7.703|
+Dir<1>         |DatosSalida<0> |    8.096|
+Dir<1>         |DatosSalida<1> |    7.686|
+Dir<1>         |DatosSalida<2> |    7.753|
+Dir<1>         |DatosSalida<3> |    7.470|
+Dir<1>         |DatosSalida<4> |    7.830|
+Dir<1>         |DatosSalida<5> |    8.132|
+Dir<1>         |DatosSalida<6> |    7.594|
+Dir<1>         |DatosSalida<7> |    7.598|
+Dir<2>         |DatosSalida<0> |    7.507|
+Dir<2>         |DatosSalida<1> |    7.129|
+Dir<2>         |DatosSalida<2> |    7.533|
+Dir<2>         |DatosSalida<3> |    7.441|
+Dir<2>         |DatosSalida<4> |    7.957|
+Dir<2>         |DatosSalida<5> |    8.113|
+Dir<2>         |DatosSalida<6> |    7.606|
+Dir<2>         |DatosSalida<7> |    7.957|
+Dir<3>         |DatosSalida<0> |    8.201|
+Dir<3>         |DatosSalida<1> |    7.966|
+Dir<3>         |DatosSalida<2> |    7.743|
+Dir<3>         |DatosSalida<3> |    7.465|
+Dir<3>         |DatosSalida<4> |    7.393|
+Dir<3>         |DatosSalida<5> |    7.429|
+Dir<3>         |DatosSalida<6> |    7.437|
+Dir<3>         |DatosSalida<7> |    7.382|
+Dir<4>         |DatosSalida<0> |    7.301|
+Dir<4>         |DatosSalida<1> |    7.008|
+Dir<4>         |DatosSalida<2> |    7.524|
+Dir<4>         |DatosSalida<3> |    7.511|
+Dir<4>         |DatosSalida<4> |    7.531|
+Dir<4>         |DatosSalida<5> |    7.802|
+Dir<4>         |DatosSalida<6> |    7.219|
+Dir<4>         |DatosSalida<7> |    7.540|
+Dir<5>         |DatosSalida<0> |    7.811|
+Dir<5>         |DatosSalida<1> |    7.461|
+Dir<5>         |DatosSalida<2> |    7.554|
+Dir<5>         |DatosSalida<3> |    7.622|
+Dir<5>         |DatosSalida<4> |    7.377|
+Dir<5>         |DatosSalida<5> |    7.244|
+Dir<5>         |DatosSalida<6> |    7.333|
+Dir<5>         |DatosSalida<7> |    7.366|
+Dir<6>         |DatosSalida<0> |    7.530|
+Dir<6>         |DatosSalida<1> |    7.156|
+Dir<6>         |DatosSalida<2> |    7.164|
+Dir<6>         |DatosSalida<3> |    7.034|
+Dir<6>         |DatosSalida<4> |    7.038|
+Dir<6>         |DatosSalida<5> |    7.391|
+Dir<6>         |DatosSalida<6> |    6.804|
+Dir<6>         |DatosSalida<7> |    6.859|
+Dir<7>         |DatosSalida<0> |    7.262|
+Dir<7>         |DatosSalida<1> |    7.217|
+Dir<7>         |DatosSalida<2> |    7.135|
+Dir<7>         |DatosSalida<3> |    6.789|
+Dir<7>         |DatosSalida<4> |    7.012|
+Dir<7>         |DatosSalida<5> |    7.146|
+Dir<7>         |DatosSalida<6> |    6.616|
+Dir<7>         |DatosSalida<7> |    7.015|
+Dir<8>         |DatosSalida<0> |    7.065|
+Dir<8>         |DatosSalida<1> |    6.894|
+Dir<8>         |DatosSalida<2> |    6.541|
+Dir<8>         |DatosSalida<3> |    6.563|
+Dir<8>         |DatosSalida<4> |    6.131|
+Dir<8>         |DatosSalida<5> |    6.337|
+Dir<8>         |DatosSalida<6> |    6.418|
+Dir<8>         |DatosSalida<7> |    6.466|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Apr 13 16:21:02 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 666 MB
+
+
+

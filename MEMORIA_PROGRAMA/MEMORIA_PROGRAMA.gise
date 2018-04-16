@@ -34,6 +34,14 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MEMORIA_PROGRAMA_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MEMORIA_PROGRAMA_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="memProg.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="memProg.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memProg.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="memProg.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="memProg.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="memProg_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="memProg_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="memProg_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -43,11 +51,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="614422536378614851" xil_pn:start_ts="1523489617">
+    <transform xil_pn:end_ts="1523852298" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1350266827435342312" xil_pn:start_ts="1523852298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-9197010545961900053" xil_pn:start_ts="1523489617">
+    <transform xil_pn:end_ts="1523852298" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7867485938882570496" xil_pn:start_ts="1523852298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -55,7 +63,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7654041503515633637" xil_pn:start_ts="1523489617">
+    <transform xil_pn:end_ts="1523852298" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-1418627431553582214" xil_pn:start_ts="1523852298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -63,22 +71,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523489617" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4668357410116586997" xil_pn:start_ts="1523489617">
+    <transform xil_pn:end_ts="1523852298" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6711753100284234698" xil_pn:start_ts="1523852298">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523490246" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2992767752651704754" xil_pn:start_ts="1523490223">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1523852490" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="859681889301561287" xil_pn:start_ts="1523852464">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.lso"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.ngc"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.ngr"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.prj"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.stx"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.syr"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA.xst"/>
-      <outfile xil_pn:name="MEMORIA_PROGRAMA_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="memProg.lso"/>
+      <outfile xil_pn:name="memProg.prj"/>
+      <outfile xil_pn:name="memProg.syr"/>
+      <outfile xil_pn:name="memProg.xst"/>
+      <outfile xil_pn:name="memProg_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>

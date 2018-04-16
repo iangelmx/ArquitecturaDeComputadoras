@@ -2,3 +2,7 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ME
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.syr" 

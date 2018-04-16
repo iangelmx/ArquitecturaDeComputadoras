@@ -1,0 +1,2 @@
+ISim log file
+Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA_isim_beh.wdb 

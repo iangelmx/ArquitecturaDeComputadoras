@@ -1,0 +1,10 @@
+Command line:
+   MEMORIA_PROGRAMA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51565
+
+Sun Apr 15 23:50:45 2018
+
+
+ Elaboration Time: 0.078125 sec

@@ -1,0 +1,49 @@
+ISim log file
+Running: C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\TB_MEMORIA_DATOS_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/TB_MEMORIA_DATOS_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 10 ns: Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 10 ns: Error: Textio read:: called on empty string or line
+at 10 ns: Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 15 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 15 ns(1): Error: Textio read:: called on empty string or line
+at 15 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 25 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 25 ns(1): Error: Textio read:: called on empty string or line
+at 25 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 35 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 35 ns(1): Error: Textio read:: called on empty string or line
+at 35 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 45 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 45 ns(1): Error: Textio read:: called on empty string or line
+at 45 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 55 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 55 ns(1): Error: Textio read:: called on empty string or line
+at 55 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 65 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 65 ns(1): Error: Textio read:: called on empty string or line
+at 65 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 75 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 75 ns(1): Error: Textio read:: called on empty string or line
+at 75 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 85 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 85 ns(1): Error: Textio read:: called on empty string or line
+at 85 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 95 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 95 ns(1): Error: Textio read:: called on empty string or line
+at 95 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 105 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 105 ns(1): Error: Textio read:: called on empty string or line
+at 105 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.
+at 115 ns(1): Error: HREAD Error: Read a ' ', expected a Hex character (0-F).
+at 115 ns(1): Error: Textio read:: called on empty string or line
+at 115 ns(1): Error: READ(STD_ULOGIC) Error: Character '?' read, expected STD_ULOGIC literal.

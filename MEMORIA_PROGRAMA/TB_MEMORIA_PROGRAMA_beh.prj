@@ -1,0 +1,2 @@
+vhdl work "MEMORIA_PROGRAMA.vhd"
+vhdl work "TB_MEMORIA_PROGRAMA.vhd"

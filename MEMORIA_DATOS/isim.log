@@ -1,5 +1,6 @@
 ISim log file
-Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS_isim_beh.wdb 
+Running: C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\TB_MEMORIA_DATOS_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/TB_MEMORIA_DATOS_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,19 +11,4 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /memoria_datos/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /memoria_datos/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
-# isim force add /memoria_datos/clk 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
-# isim force add /memoria_datos/wd 0 -radix bin
-# run 1.00us
-# isim force add /memoria_datos/dir_r 1 -radix unsigned
-# isim force add /memoria_datos/dir_w 1 -radix unsigned
-# isim force add /memoria_datos/dato_in 10 -radix unsigned
-# run 1.00us
-# run 1.00us
-# run 10ns
-# run 10ns
-# isim force add /memoria_datos/wd 1 -radix bin
-# run 10ns
-# run 10ns

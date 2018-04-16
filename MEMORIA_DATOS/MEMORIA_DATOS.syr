@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.19 secs
  
 --> Reading design: MEMORIA_DATOS.prj
 
@@ -123,10 +123,8 @@ Synthesizing Unit <MEMORIA_DATOS>.
     Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd".
         palabra = 16
         busT = 16
-        capacidad = 2048
-WARNING:Xst:647 - Input <dir_r<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <dir_w<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 2048x16-bit dual-port RAM <Mram_archivo> for signal <archivo>.
+        capacidad = 65536
+    Found 65536x16-bit dual-port RAM <Mram_archivo> for signal <archivo>.
     Summary:
 	inferred   1 RAM(s).
 Unit <MEMORIA_DATOS> synthesized.
@@ -136,7 +134,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 2048x16-bit dual-port RAM                             : 1
+ 65536x16-bit dual-port RAM                            : 1
 
 =========================================================================
 
@@ -151,14 +149,14 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_archivo> will be implemented on LUTs
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 2048-word x 16-bit                  |          |
+    |     aspect ratio   | 65536-word x 16-bit                 |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <wd>            | high     |
     |     addrA          | connected to signal <dir_w>         |          |
     |     diA            | connected to signal <dato_in>       |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
-    |     aspect ratio   | 2048-word x 16-bit                  |          |
+    |     aspect ratio   | 65536-word x 16-bit                 |          |
     |     addrB          | connected to signal <dir_r>         |          |
     |     doB            | connected to signal <dato_out>      |          |
     -----------------------------------------------------------------------
@@ -169,7 +167,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 2048x16-bit dual-port distributed RAM                 : 1
+ 65536x16-bit dual-port distributed RAM                : 1
 
 =========================================================================
 
@@ -181,7 +179,7 @@ Optimizing unit <MEMORIA_DATOS> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block MEMORIA_DATOS, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block MEMORIA_DATOS, actual ratio is 30.
 
 Final Macro Processing ...
 
@@ -210,17 +208,19 @@ Top Level Output File Name         : MEMORIA_DATOS.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 209
+# BELS                             : 6515
 #      GND                         : 1
-#      LUT6                        : 192
-#      MUXF7                       : 16
-# RAMS                             : 192
-#      RAM64M                      : 160
-#      RAM64X1D                    : 32
+#      LUT2                        : 4
+#      LUT3                        : 30
+#      LUT5                        : 1020
+#      LUT6                        : 5460
+# RAMS                             : 6144
+#      RAM64M                      : 5120
+#      RAM64X1D                    : 1024
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 55
-#      IBUF                        : 39
+# IO Buffers                       : 65
+#      IBUF                        : 49
 #      OBUF                        : 16
 
 Device utilization summary:
@@ -230,24 +230,26 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  896  out of  63400     1%  
-    Number used as Logic:               192  out of  63400     0%  
-    Number used as Memory:              704  out of  19000     3%  
-       Number used as RAM:              704
+ Number of Slice LUTs:                29042  out of  63400    45%  
+    Number used as Logic:              6514  out of  63400    10%  
+    Number used as Memory:            22528  out of  19000   118% (*) 
+       Number used as RAM:            22528
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    896
-   Number with an unused Flip Flop:     896  out of    896   100%  
-   Number with an unused LUT:             0  out of    896     0%  
-   Number of fully used LUT-FF pairs:     0  out of    896     0%  
+ Number of LUT Flip Flop pairs used:  29042
+   Number with an unused Flip Flop:   29042  out of  29042   100%  
+   Number with an unused LUT:             0  out of  29042     0%  
+   Number of fully used LUT-FF pairs:     0  out of  29042     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                          66
- Number of bonded IOBs:                  56  out of    210    26%  
+ Number of bonded IOBs:                  66  out of    210    31%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -270,7 +272,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 192   |
+clk                                | BUFGP                  | 6144  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -282,9 +284,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 1.608ns
-   Maximum output required time after clock: 3.234ns
-   Maximum combinational path delay: 2.349ns
+   Minimum input arrival time before clock: 2.435ns
+   Maximum output required time after clock: 4.915ns
+   Maximum combinational path delay: 4.118ns
 
 Timing Details:
 ---------------
@@ -292,51 +294,55 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 3008 / 2048
+  Total number of paths / destination ports: 126976 / 65536
 -------------------------------------------------------------------------
-Offset:              1.608ns (Levels of Logic = 2)
-  Source:            wd (PAD)
-  Destination:       Mram_archivo1 (RAM)
+Offset:              2.435ns (Levels of Logic = 4)
+  Source:            dir_w<15> (PAD)
+  Destination:       Mram_archivo993 (RAM)
   Destination Clock: clk rising
 
-  Data Path: wd to Mram_archivo1
+  Data Path: dir_w<15> to Mram_archivo993
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   0.001   0.800  wd_IBUF (wd_IBUF)
-     LUT6:I0->O            6   0.097   0.302  write_ctrl32 (write_ctrl)
-     RAM64M:WE                 0.408          Mram_archivo1
+     IBUF:I->O            10   0.001   0.553  dir_w_15_IBUF (dir_w_15_IBUF)
+     LUT3:I0->O          128   0.097   0.501  inst_LPM_DECODE100011 (inst_LPM_DECODE10001)
+     LUT6:I4->O            1   0.097   0.379  inst_LPM_DECODE9921 (N994)
+     LUT2:I0->O            6   0.097   0.302  write_ctrl992 (write_ctrl992)
+     RAM64M:WE                 0.408          Mram_archivo993
     ----------------------------------------
-    Total                      1.608ns (0.506ns logic, 1.102ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                      2.435ns (0.700ns logic, 1.735ns route)
+                                       (28.7% logic, 71.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 512 / 16
+  Total number of paths / destination ports: 16384 / 16
 -------------------------------------------------------------------------
-Offset:              3.234ns (Levels of Logic = 4)
-  Source:            Mram_archivo155 (RAM)
+Offset:              4.915ns (Levels of Logic = 6)
+  Source:            Mram_archivo4523 (RAM)
   Destination:       dato_out<14> (PAD)
   Source Clock:      clk rising
 
-  Data Path: Mram_archivo155 to dato_out<14>
+  Data Path: Mram_archivo4523 to dato_out<14>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAM64M:WCLK->DOC      1   1.369   0.556  Mram_archivo155 (N963)
-     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX14_81 (inst_LPM_MUX14_81)
-     LUT6:I2->O            1   0.097   0.000  inst_LPM_MUX14_3 (inst_LPM_MUX14_3)
-     MUXF7:I1->O           1   0.279   0.279  inst_LPM_MUX14_2_f7 (dato_out_14_OBUF)
+     RAM64M:WCLK->DOC      1   1.369   0.556  Mram_archivo4523 (N28163)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX14_2229 (inst_LPM_MUX14_2229)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX14_178 (inst_LPM_MUX14_178)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX14_122 (inst_LPM_MUX14_122)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX14_7 (inst_LPM_MUX14_7)
+     LUT6:I2->O            1   0.097   0.279  dir_r<15>141 (dato_out_14_OBUF)
      OBUF:I->O                 0.000          dato_out_14_OBUF (dato_out<14>)
     ----------------------------------------
-    Total                      3.234ns (1.842ns logic, 1.392ns route)
-                                       (57.0% logic, 43.0% route)
+    Total                      4.915ns (1.854ns logic, 3.061ns route)
+                                       (37.7% logic, 62.3% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 528 / 16
+  Total number of paths / destination ports: 17056 / 16
 -------------------------------------------------------------------------
-Delay:               2.349ns (Levels of Logic = 6)
+Delay:               4.118ns (Levels of Logic = 8)
   Source:            dir_r<0> (PAD)
   Destination:       dato_out<15> (PAD)
 
@@ -344,15 +350,17 @@ Delay:               2.349ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   0.001   0.386  dir_r_0_IBUF (dir_r_0_IBUF)
-     RAM64X1D:DPRA0->DPO    1   0.097   0.556  Mram_archivo187 (N1047)
-     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX15_81 (inst_LPM_MUX15_81)
-     LUT6:I2->O            1   0.097   0.000  inst_LPM_MUX15_3 (inst_LPM_MUX15_3)
-     MUXF7:I1->O           1   0.279   0.279  inst_LPM_MUX15_2_f7 (dato_out_15_OBUF)
+     IBUF:I->O          1024   0.001   0.474  dir_r_0_IBUF (dir_r_0_IBUF)
+     RAM64X1D:DPRA0->DPO    1   0.097   0.556  Mram_archivo5547 (N32599)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX15_2229 (inst_LPM_MUX15_2229)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX15_178 (inst_LPM_MUX15_178)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX15_122 (inst_LPM_MUX15_122)
+     LUT6:I2->O            1   0.097   0.556  inst_LPM_MUX15_7 (inst_LPM_MUX15_7)
+     LUT6:I2->O            1   0.097   0.279  dir_r<15>151 (dato_out_15_OBUF)
      OBUF:I->O                 0.000          dato_out_15_OBUF (dato_out<15>)
     ----------------------------------------
-    Total                      2.349ns (0.571ns logic, 1.778ns route)
-                                       (24.3% logic, 75.7% route)
+    Total                      4.118ns (0.583ns logic, 3.535ns route)
+                                       (14.2% logic, 85.8% route)
 
 =========================================================================
 
@@ -362,14 +370,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 44.00 secs
-Total CPU time to Xst completion: 43.97 secs
+Total REAL time to Xst completion: 194.00 secs
+Total CPU time to Xst completion: 193.72 secs
  
 --> 
 
-Total memory usage is 459628 kilobytes
+Total memory usage is 617316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

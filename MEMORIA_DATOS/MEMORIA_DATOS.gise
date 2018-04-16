@@ -30,15 +30,78 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MEMORIA_DATOS.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MEMORIA_DATOS.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MEMORIA_DATOS.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MEMORIA_DATOS_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MEMORIA_DATOS_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MEMORIA_DATOS_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MEMORIA_DATOS_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="MEMORIA_DATOS_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MEMORIA_DATOS_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1523856871" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856871" xil_pn:in_ck="-8562166964731493932" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MEMORIA_DATOS.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856871" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8924888556384781937" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856871" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-212295460779507185" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856871" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2614177539490568791" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856871" xil_pn:in_ck="-8562166964731493932" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MEMORIA_DATOS.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856876" xil_pn:in_ck="-8562166964731493932" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6027566041490892549" xil_pn:start_ts="1523856871">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="MEMORIA_DATOS_beh.prj"/>
+      <outfile xil_pn:name="MEMORIA_DATOS_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1523856876" xil_pn:in_ck="-883899318250334925" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7922051643251482334" xil_pn:start_ts="1523856876">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MEMORIA_DATOS_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
     <transform xil_pn:end_ts="1523856154" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1523856154">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -67,7 +130,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523856692" xil_pn:in_ck="-8562166964731493932" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4011865458894317940" xil_pn:start_ts="1523856495">
+    <transform xil_pn:end_ts="1523857696" xil_pn:in_ck="-8562166964731493932" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="4011865458894317940" xil_pn:start_ts="1523857497">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -78,6 +141,7 @@
       <outfile xil_pn:name="MEMORIA_DATOS.stx"/>
       <outfile xil_pn:name="MEMORIA_DATOS.syr"/>
       <outfile xil_pn:name="MEMORIA_DATOS.xst"/>
+      <outfile xil_pn:name="MEMORIA_DATOS_beh.prj"/>
       <outfile xil_pn:name="MEMORIA_DATOS_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

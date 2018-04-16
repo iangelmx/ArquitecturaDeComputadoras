@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS_beh.prj" "work.MEMORIA_DATOS" 

@@ -1,4 +1,3 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use iEEE.STD_LOGIC_ARITH.ALL;
@@ -31,7 +30,7 @@ signal res : std_logic_vector((palabra-1) downto 0);
 signal archivo:banco;
 begin
 
-	escritura: process(clk, wd)
+	escritura: process(clk, wd, dato_in,dir_w)
 	begin
 		if (clk'event and clk='1')	then
 			if (wd ='1') then

@@ -13,3 +13,8 @@ Simulator is doing circuit initialization process.
 at 0 ps, Instance /memoria_programa/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 at 0 ps, Instance /memoria_programa/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
+# isim force add /memoria_programa/dir 0000 -radix hex
+# isim force add /memoria_programa/dir 0000 -radix hex
+# run 1.00us
+# isim force add /memoria_programa/dir 0001 -radix hex
+# run 1.00us

@@ -11,8 +11,8 @@ entity MEMORIA_PROGRAMA is
 	);
 	port
 	(
-		dir		: in 	std_logic_vector(busT-1 downto 0);
-		data		: out	std_logic_vector(palabra-1 downto 0)
+		PC		: in 	std_logic_vector(busT-1 downto 0);
+		instruccion		: out	std_logic_vector(palabra-1 downto 0)
 	);
 end MEMORIA_PROGRAMA;
 
@@ -28,9 +28,9 @@ architecture Behavioral of MEMORIA_PROGRAMA is
   constant SWI	: std_logic_vector(4 downto 0)	:= "00011";
   constant B		: std_logic_vector(4 downto 0)	:= "10011";
 
-type arr is array (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downto 0);
+type arreglo is arregloay (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downto 0);
 
-constant banco: arr :=(
+constant banco: arreglo :=(
 
                         LI&R0&x"0005",							--"00001 0000 0000 0000 0000 0101",
                         LI&R1&x"0007",							--"00001 0001 0000 0000 0000 1011",
@@ -41,6 +41,6 @@ constant banco: arr :=(
 								others => (others => '0') );
 begin
 
-	data <= banco(conv_integer(dir));
+	instruccion <= banco(conv_integer(PC));
 
 end Behavioral;

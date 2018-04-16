@@ -1,37 +1,3 @@
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
---use IEEE.STD_LOGIC_ARITH.ALL;
---use IEEE.STD_LOGIC_UNSIGNED.ALL;
---
---entity MEMORIA_PROGRAMA is
---    Port ( PC : in  STD_LOGIC_VECTOR (15 downto 0);
---           Instruccion : out  STD_LOGIC_VECTOR (24 downto 0));
---end MEMORIA_PROGRAMA;
---
---architecture Behavioral of MEMORIA_PROGRAMA is
---
---type banco is array (0 to 4096) of std_logic_vector(24 downto 0);
---signal res : std_logic_vector(24 downto 0);
---signal archivo:banco;
---begin
---
---	process(PC)
---	begin
---		for i in 5 to 4096 loop
---			archivo(i) <= (others =>'0');
---		end loop;
---		archivo(conv_integer("0000"))<="0000100000000000000000101";
---		archivo(conv_integer("0001"))<="0000100010000000000001010";
---		archivo(conv_integer("0010"))<="00000000100010000xxxx0000";
---		archivo(conv_integer("0011"))<="0001100010000000000000101";
---		archivo(conv_integer("0100"))<="10011xxxx0000000000000010";
---	end process;
---	
---	res <= archivo(conv_integer(unsigned(PC)));
---	Instruccion <= res;
---	
---end Behavioral;
---
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use iEEE.STD_LOGIC_ARITH.ALL;

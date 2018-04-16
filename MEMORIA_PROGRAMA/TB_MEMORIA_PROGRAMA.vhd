@@ -132,6 +132,7 @@ BEGIN
 			
 
 			writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
+			wait for 20ns;
 			
 		end loop;
 		file_close(ARCH_VEC);  -- cierra el archivo

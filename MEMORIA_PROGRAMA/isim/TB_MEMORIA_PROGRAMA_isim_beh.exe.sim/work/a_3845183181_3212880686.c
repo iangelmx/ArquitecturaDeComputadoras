@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/ayhc9/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd";
+static const char *ng0 = "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd";
 extern char *IEEE_P_3620187407;
 
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
@@ -51,7 +51,7 @@ LAB3:    t1 = (t0 + 2448U);
     t2 = *((char **)t1);
     t1 = (t0 + 1032U);
     t3 = *((char **)t1);
-    t1 = (t0 + 6460U);
+    t1 = (t0 + 6740U);
     t4 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t3, t1);
     t5 = (t4 - 0);
     t6 = (t5 * 1);

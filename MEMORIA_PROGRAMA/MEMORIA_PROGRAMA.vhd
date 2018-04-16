@@ -21,7 +21,7 @@ architecture Behavioral of MEMORIA_PROGRAMA is
   constant LI		: std_logic_vector(4 downto 0)	:= "00001";
   
   constant R0		: std_logic_vector(3 downto 0)	:= x"0";
-  constant R1		: std_logic_vector(3 downto 0)	:= x"1";
+  constant R1		: std_logic_vector(3 downto 0)	:= "0001";
 
 
   constant ADD	: std_logic_vector(4 downto 0)	:= "00000";
@@ -33,7 +33,7 @@ type arreglo is array (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downt
 constant banco: arreglo :=(
 
                         LI&R0&x"0005",							--"00001 0000 0000 0000 0000 0101",
-                        LI&R1&x"0007",							--"00001 0001 0000 0000 0000 1011",
+                        LI&R1&x"000A",							--"00001 0001 0000 0000 0000 1010",
 								ADD&R1&R1&R0&"0000"&"0000",		--"00000 0001 0001 0000 0000 0000",
                         SWI&R1&x"0005",						--"00011 0001 0000 0000 0000 0101",
                         B&"0000"&x"0002",						--"1001100000000000000000010",

@@ -1,0 +1,377 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: MEMORIA_DATOS.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MEMORIA_DATOS.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MEMORIA_DATOS"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : MEMORIA_DATOS
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd" into library work
+Parsing entity <MEMORIA_DATOS>.
+Parsing architecture <Behavioral> of entity <memoria_datos>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MEMORIA_DATOS> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MEMORIA_DATOS>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd".
+        palabra = 16
+        busT = 16
+        capacidad = 65536
+    Found 65536x16-bit single-port RAM <Mram_archivo> for signal <archivo>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MEMORIA_DATOS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x16-bit single-port RAM                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MEMORIA_DATOS>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_archivo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 65536-word x 16-bit                 |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wd>            | high     |
+    |     addrA          | connected to signal <A>             |          |
+    |     diA            | connected to signal <dato_in>       |          |
+    |     doA            | connected to signal <dato_out>      |          |
+    -----------------------------------------------------------------------
+Unit <MEMORIA_DATOS> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 65536x16-bit single-port distributed RAM              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MEMORIA_DATOS> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MEMORIA_DATOS, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MEMORIA_DATOS.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2424
+#      LUT2                        : 256
+#      LUT3                        : 8
+#      LUT6                        : 1344
+#      MUXF7                       : 544
+#      MUXF8                       : 272
+# RAMS                             : 4096
+#      RAM256X1S                   : 4096
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 49
+#      IBUF                        : 33
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                17992  out of  63400    28%  
+    Number used as Logic:              1608  out of  63400     2%  
+    Number used as Memory:            16384  out of  19000    86%  
+       Number used as RAM:            16384
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  17992
+   Number with an unused Flip Flop:   17992  out of  17992   100%  
+   Number with an unused LUT:             0  out of  17992     0%  
+   Number of fully used LUT-FF pairs:     0  out of  17992     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          50
+ Number of bonded IOBs:                  50  out of    210    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4096  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.881ns
+   Maximum output required time after clock: 4.145ns
+   Maximum combinational path delay: 2.920ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 73728 / 40960
+-------------------------------------------------------------------------
+Offset:              2.881ns (Levels of Logic = 4)
+  Source:            A<11> (PAD)
+  Destination:       Mram_archivo1 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: A<11> to Mram_archivo1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           264   0.001   0.654  A_11_IBUF (A_11_IBUF)
+     LUT3:I0->O           32   0.097   0.800  inst_LPM_DECODE12011 (inst_LPM_DECODE1201)
+     LUT6:I0->O            1   0.097   0.379  inst_LPM_DECODE561 (N58)
+     LUT2:I0->O           16   0.097   0.348  write_ctrl56 (write_ctrl56)
+     RAM256X1S:WE              0.408          Mram_archivo57
+    ----------------------------------------
+    Total                      2.881ns (0.700ns logic, 2.181ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4096 / 16
+-------------------------------------------------------------------------
+Offset:              4.145ns (Levels of Logic = 7)
+  Source:            Mram_archivo3943 (RAM)
+  Destination:       dato_out<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Mram_archivo3943 to dato_out<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM256X1S:WCLK->O     1   1.565   0.556  Mram_archivo3943 (N8142)
+     LUT6:I2->O            1   0.097   0.000  inst_LPM_MUX15_1314 (inst_LPM_MUX15_1314)
+     MUXF7:I1->O           1   0.279   0.000  inst_LPM_MUX15_12_f7_4 (inst_LPM_MUX15_12_f75)
+     MUXF8:I0->O           1   0.218   0.556  inst_LPM_MUX15_10_f8_3 (inst_LPM_MUX15_10_f84)
+     LUT6:I2->O            1   0.097   0.000  inst_LPM_MUX15_51 (inst_LPM_MUX15_51)
+     MUXF7:I1->O           1   0.279   0.000  inst_LPM_MUX15_4_f7 (inst_LPM_MUX15_4_f7)
+     MUXF8:I0->O           1   0.218   0.279  inst_LPM_MUX15_2_f8 (dato_out_15_OBUF)
+     OBUF:I->O                 0.000          dato_out_15_OBUF (dato_out<15>)
+    ----------------------------------------
+    Total                      4.145ns (2.753ns logic, 1.392ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2992 / 16
+-------------------------------------------------------------------------
+Delay:               2.920ns (Levels of Logic = 8)
+  Source:            A<9> (PAD)
+  Destination:       dato_out<15> (PAD)
+
+  Data Path: A<9> to dato_out<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1280   0.001   0.896  A_9_IBUF (A_9_IBUF)
+     LUT6:I0->O            1   0.097   0.000  inst_LPM_MUX1_1314 (inst_LPM_MUX1_1314)
+     MUXF7:I1->O           1   0.279   0.000  inst_LPM_MUX1_12_f7_4 (inst_LPM_MUX1_12_f75)
+     MUXF8:I0->O           1   0.218   0.556  inst_LPM_MUX1_10_f8_3 (inst_LPM_MUX1_10_f84)
+     LUT6:I2->O            1   0.097   0.000  inst_LPM_MUX1_51 (inst_LPM_MUX1_51)
+     MUXF7:I1->O           1   0.279   0.000  inst_LPM_MUX1_4_f7 (inst_LPM_MUX1_4_f7)
+     MUXF8:I0->O           1   0.218   0.279  inst_LPM_MUX1_2_f8 (dato_out_1_OBUF)
+     OBUF:I->O                 0.000          dato_out_1_OBUF (dato_out<1>)
+    ----------------------------------------
+    Total                      2.920ns (1.189ns logic, 1.731ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 152.00 secs
+Total CPU time to Xst completion: 152.20 secs
+ 
+--> 
+
+Total memory usage is 503748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

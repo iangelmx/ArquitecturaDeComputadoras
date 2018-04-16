@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Edgar Roa/Documents/8vo sem/Arquitectura/Practica5/Lab5/Practica5/Datos/Datos_tb_isim_beh.exe" -prj "C:/Users/Edgar Roa/Documents/8vo sem/Arquitectura/Practica5/Lab5/Practica5/Datos/Datos_tb_beh.prj" "work.Datos_tb" 

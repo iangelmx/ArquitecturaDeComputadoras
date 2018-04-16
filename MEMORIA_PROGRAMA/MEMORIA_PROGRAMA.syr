@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
  
 --> Reading design: MEMORIA_PROGRAMA.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
 Parsing entity <MEMORIA_PROGRAMA>.
 Parsing architecture <Behavioral> of entity <memoria_programa>.
 
@@ -113,16 +113,17 @@ Parsing architecture <Behavioral> of entity <memoria_programa>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <MEMORIA_PROGRAMA> (architecture <Behavioral>) from library <work>.
+Elaborating entity <MEMORIA_PROGRAMA> (architecture <Behavioral>) with generics from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <MEMORIA_PROGRAMA>.
-    Related source file is "C:\Users\iAngelMx\Documents\ESCOM\ArqComp\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
-WARNING:Xst:2999 - Signal 'archivo', unconnected in block 'MEMORIA_PROGRAMA', is tied to its initial value.
-    Found 65536x25-bit single-port Read Only RAM <Mram_archivo> for signal <archivo>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
+        palabra = 25
+        busT = 16
+    Found 65536x25-bit Read Only RAM for signal <instruccion>
     Summary:
 	inferred   1 RAM(s).
 Unit <MEMORIA_PROGRAMA> synthesized.
@@ -142,7 +143,7 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <MEMORIA_PROGRAMA>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_archivo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_instruccion> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -151,7 +152,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_archivo> will be implemented on LUTs
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <PC>            |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <Instruccion>   |          |
+    |     doA            | connected to signal <instruccion>   |          |
     -----------------------------------------------------------------------
 Unit <MEMORIA_PROGRAMA> synthesized (advanced).
 
@@ -201,9 +202,14 @@ Top Level Output File Name         : MEMORIA_PROGRAMA.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
+# BELS                             : 21
 #      GND                         : 1
-# IO Buffers                       : 25
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      LUT5                        : 3
+#      LUT6                        : 14
+# IO Buffers                       : 41
+#      IBUF                        : 16
 #      OBUF                        : 25
 
 Device utilization summary:
@@ -213,17 +219,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
+ Number of Slice LUTs:                   20  out of  63400     0%  
+    Number used as Logic:                20  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
+ Number of LUT Flip Flop pairs used:     20
+   Number with an unused Flip Flop:      20  out of     20   100%  
+   Number with an unused LUT:             0  out of     20     0%  
+   Number of fully used LUT-FF pairs:     0  out of     20     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                          41
- Number of bonded IOBs:                  25  out of    210    11%  
+ Number of bonded IOBs:                  41  out of    210    19%  
 
 Specific Feature Utilization:
 
@@ -258,11 +266,32 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: No path found
+   Maximum combinational path delay: 2.387ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 155 / 8
+-------------------------------------------------------------------------
+Delay:               2.387ns (Levels of Logic = 5)
+  Source:            PC<9> (PAD)
+  Destination:       instruccion<20> (PAD)
+
+  Data Path: PC<9> to instruccion<20>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.693  PC_9_IBUF (PC_9_IBUF)
+     LUT5:I0->O            3   0.097   0.566  Mram_instruccion31111 (Mram_instruccion2611)
+     LUT5:I1->O            1   0.097   0.556  Mram_instruccion261161_SW0 (N0)
+     LUT6:I2->O            1   0.097   0.279  Mram_instruccion261161 (instruccion_20_OBUF)
+     OBUF:I->O                 0.000          instruccion_20_OBUF (instruccion<20>)
+    ----------------------------------------
+    Total                      2.387ns (0.292ns logic, 2.095ns route)
+                                       (12.2% logic, 87.8% route)
 
 =========================================================================
 
@@ -272,14 +301,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.99 secs
+Total REAL time to Xst completion: 43.00 secs
+Total CPU time to Xst completion: 43.29 secs
  
 --> 
 
-Total memory usage is 464908 kilobytes
+Total memory usage is 1636244 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

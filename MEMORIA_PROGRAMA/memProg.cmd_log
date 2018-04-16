@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/memProg.syr" 

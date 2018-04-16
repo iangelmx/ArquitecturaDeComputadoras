@@ -1,0 +1,10 @@
+Command line:
+   TB_MEMORIA_DATOS_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56381
+
+Mon Apr 16 12:38:53 2018
+
+
+ Elaboration Time: 6.625 sec

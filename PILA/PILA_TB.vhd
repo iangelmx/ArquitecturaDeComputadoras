@@ -20,6 +20,7 @@ ARCHITECTURE behavior OF PILA_TB IS
          clk : IN  std_logic;
          clr : IN  std_logic;
          up : IN  std_logic;
+			down : IN  std_logic;
 			stack : out integer range 0 to 7;
          wpc : IN  std_logic
         );
@@ -31,7 +32,9 @@ ARCHITECTURE behavior OF PILA_TB IS
    signal clk : std_logic := '0';
    signal clr : std_logic := '0';
    signal up : std_logic := '0';
+	signal down : std_logic := '0';
    signal wpc : std_logic := '0';
+	
 
  	--Outputs
    signal PCout : std_logic_vector(7 downto 0);
@@ -50,7 +53,8 @@ BEGIN
           clr => clr,
           up => up,
 			 stack => stack,
-          wpc => wpc
+          wpc => wpc,
+			 down => down
         );
 
    -- Clock process definitions
@@ -68,17 +72,39 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
 		clr<='1';
-      wait for 40 ns;
+      wait for 20 ns;
 		clr<='0';
       wait for clk_period*10;
-		-- Inicio de call
+		--Inicio de carga
+		wpc<='1';
+		up<='0';
+		down<='0';
+		datos<="10101011";
+		--Fin de carga
+		wait for 10 ns;
+		
+		--COMPORTAMIENTO NORMAL
+		wpc<='0';
+		up<='0';
+		down<='0';
+		datos<="00000000";
+		--FIN COMPORTAMIENTO NORMAL
+		wait for 10 ns;
+		
+		-- CALL
 		up<='1';
 		wpc<='1';
-		datos<="10101010";
-		wait;
-		--wait for 10 ns;
-		up<='0';
+		down<='0';
+		datos<="00000011";
+		--FIN CALL
+		wait for 10 ns;
 		
+		-- Inicio de RET
+		wpc<='0';
+		up<='0';
+		down<='1';
+		datos<="00000000";
+		wait for 10 ns;
 		-- Fin de Call
 
       -- insert stimulus here 

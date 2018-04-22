@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PILA.prj
 
@@ -130,27 +130,31 @@ Synthesizing Unit <PILA>.
     Found 8-bit register for signal <aux<6>>.
     Found 8-bit register for signal <aux<7>>.
     Found 3-bit register for signal <stack>.
-    Found 3-bit adder for signal <sp[2]_GND_5_o_add_0_OUT> created at line 38.
-    Found 8-bit adder for signal <sp[2]_GND_5_o_add_11_OUT> created at line 41.
-    Found 8-bit 8-to-1 multiplexer for signal <PCout> created at line 41.
+    Found 8-bit adder for signal <sp[2]_GND_5_o_add_1_OUT> created at line 28.
+    Found 3-bit adder for signal <sp[2]_GND_5_o_add_20_OUT> created at line 32.
+    Found 8-bit adder for signal <datos[7]_GND_5_o_add_31_OUT> created at line 36.
+    Found 3-bit subtractor for signal <GND_5_o_GND_5_o_sub_31_OUT<2:0>> created at line 35.
+    Found 8-bit 8-to-1 multiplexer for signal <PCout> created at line 28.
     Summary:
-	inferred   2 Adder/Subtractor(s).
+	inferred   4 Adder/Subtractor(s).
 	inferred  67 D-type flip-flop(s).
-	inferred   9 Multiplexer(s).
+	inferred  50 Multiplexer(s).
 Unit <PILA> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  3-bit adder                                           : 1
- 8-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
 # Registers                                            : 9
  3-bit register                                        : 1
  8-bit register                                        : 8
-# Multiplexers                                         : 9
- 8-bit 2-to-1 multiplexer                              : 8
+# Multiplexers                                         : 50
+ 3-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 48
  8-bit 8-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -160,23 +164,19 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <PILA>.
-The following registers are absorbed into counter <sp>: 1 register on signal <sp>.
-Unit <PILA> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 4
  3-bit adder                                           : 1
- 8-bit adder                                           : 1
-# Counters                                             : 1
- 3-bit up counter                                      : 1
-# Registers                                            : 64
- Flip-Flops                                            : 64
-# Multiplexers                                         : 9
- 8-bit 2-to-1 multiplexer                              : 8
+ 3-bit subtractor                                      : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+# Multiplexers                                         : 50
+ 3-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 48
  8-bit 8-to-1 multiplexer                              : 1
 
 =========================================================================
@@ -221,20 +221,20 @@ Top Level Output File Name         : PILA.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 47
+# BELS                             : 195
 #      INV                         : 1
-#      LUT2                        : 3
-#      LUT3                        : 2
-#      LUT4                        : 1
-#      LUT5                        : 10
-#      LUT6                        : 22
+#      LUT2                        : 1
+#      LUT3                        : 13
+#      LUT4                        : 9
+#      LUT5                        : 50
+#      LUT6                        : 113
 #      MUXF7                       : 8
 # FlipFlops/Latches                : 67
 #      FDCE                        : 67
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 22
-#      IBUF                        : 11
+# IO Buffers                       : 23
+#      IBUF                        : 12
 #      OBUF                        : 11
 
 Device utilization summary:
@@ -245,19 +245,19 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              67  out of  126800     0%  
- Number of Slice LUTs:                   39  out of  63400     0%  
-    Number used as Logic:                39  out of  63400     0%  
+ Number of Slice LUTs:                  187  out of  63400     0%  
+    Number used as Logic:               187  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     83
-   Number with an unused Flip Flop:      16  out of     83    19%  
-   Number with an unused LUT:            44  out of     83    53%  
-   Number of fully used LUT-FF pairs:    23  out of     83    27%  
+ Number of LUT Flip Flop pairs used:    187
+   Number with an unused Flip Flop:     120  out of    187    64%  
+   Number with an unused LUT:             0  out of    187     0%  
+   Number of fully used LUT-FF pairs:    67  out of    187    35%  
    Number of unique control sets:         9
 
 IO Utilization: 
- Number of IOs:                          23
- Number of bonded IOBs:                  23  out of    210    10%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    210    11%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -294,9 +294,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.635ns (Maximum Frequency: 379.521MHz)
-   Minimum input arrival time before clock: 1.348ns
-   Maximum output required time after clock: 1.825ns
+   Minimum period: 2.726ns (Maximum Frequency: 366.878MHz)
+   Minimum input arrival time before clock: 2.516ns
+   Maximum output required time after clock: 1.818ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -305,70 +305,72 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.635ns (frequency: 379.521MHz)
-  Total number of paths / destination ports: 3942 / 131
+  Clock period: 2.726ns (frequency: 366.878MHz)
+  Total number of paths / destination ports: 4518 / 131
 -------------------------------------------------------------------------
-Delay:               2.635ns (Levels of Logic = 4)
-  Source:            aux_4_5 (FF)
+Delay:               2.726ns (Levels of Logic = 4)
+  Source:            aux_4_4 (FF)
   Destination:       aux_0_6 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: aux_4_5 to aux_0_6
+  Data Path: aux_4_4 to aux_0_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.361   0.693  aux_4_5 (aux_4_5)
-     LUT6:I0->O            1   0.097   0.000  Mmux_PCout_35 (Mmux_PCout_35)
-     MUXF7:I1->O           3   0.279   0.703  Mmux_PCout_2_f7_4 (Madd_sp[2]_GND_5_o_add_11_OUT_lut<5>)
-     LUT6:I0->O            2   0.097   0.299  Madd_sp[2]_GND_5_o_add_11_OUT_cy<5>11 (Madd_sp[2]_GND_5_o_add_11_OUT_cy<5>)
-     LUT6:I5->O            8   0.097   0.000  aux[0][7]_aux[0][7]_mux_22_OUT<7>1 (aux[0][7]_aux[0][7]_mux_22_OUT<7>)
+     FDCE:C->Q             1   0.361   0.693  aux_4_4 (aux_4_4)
+     LUT6:I0->O            1   0.097   0.000  Mmux_PCout_34 (Mmux_PCout_34)
+     MUXF7:I1->O          11   0.279   0.730  Mmux_PCout_2_f7_3 (Madd_sp[2]_GND_5_o_add_1_OUT_lut<4>)
+     LUT6:I1->O           16   0.097   0.364  Madd_sp[2]_GND_5_o_add_1_OUT_cy<5>11 (Madd_sp[2]_GND_5_o_add_1_OUT_cy<5>)
+     LUT5:I4->O            1   0.097   0.000  Mmux_aux[0][7]_aux[0][7]_mux_57_OUT16 (aux[0][7]_aux[0][7]_mux_57_OUT<7>)
      FDCE:D                    0.008          aux_0_7
     ----------------------------------------
-    Total                      2.635ns (0.939ns logic, 1.696ns route)
-                                       (35.6% logic, 64.4% route)
+    Total                      2.726ns (0.939ns logic, 1.787ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 393 / 198
+  Total number of paths / destination ports: 1354 / 200
 -------------------------------------------------------------------------
-Offset:              1.348ns (Levels of Logic = 3)
-  Source:            up (PAD)
-  Destination:       aux_0_3 (FF)
+Offset:              2.516ns (Levels of Logic = 5)
+  Source:            datos<5> (PAD)
+  Destination:       aux_0_7 (FF)
   Destination Clock: clk rising
 
-  Data Path: up to aux_0_3
+  Data Path: datos<5> to aux_0_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            14   0.001   0.439  up_IBUF (up_IBUF)
-     LUT2:I0->O            6   0.097   0.706  up_wpc_AND_1_o1 (up_wpc_AND_1_o)
-     LUT6:I1->O            8   0.097   0.000  aux[0][7]_aux[0][7]_mux_22_OUT<3>1 (aux[0][7]_aux[0][7]_mux_22_OUT<3>)
-     FDCE:D                    0.008          aux_0_3
+     IBUF:I->O            10   0.001   0.735  datos_5_IBUF (Madd_datos[7]_GND_5_o_add_31_OUT_lut<5>)
+     LUT6:I0->O            9   0.097   0.416  Madd_datos[7]_GND_5_o_add_31_OUT_cy<5>11 (Madd_datos[7]_GND_5_o_add_31_OUT_cy<5>)
+     LUT6:I4->O            8   0.097   0.589  Mmux_aux[0][7]_aux[0][7]_mux_57_OUT1511 (Mmux_aux[0][7]_aux[0][7]_mux_57_OUT151)
+     LUT5:I1->O            1   0.097   0.379  Mmux_aux[0][7]_aux[0][7]_mux_57_OUT16_SW0 (N28)
+     LUT5:I3->O            1   0.097   0.000  Mmux_aux[0][7]_aux[0][7]_mux_57_OUT16 (aux[0][7]_aux[0][7]_mux_57_OUT<7>)
+     FDCE:D                    0.008          aux_0_7
     ----------------------------------------
-    Total                      1.348ns (0.203ns logic, 1.145ns route)
-                                       (15.1% logic, 84.9% route)
+    Total                      2.516ns (0.397ns logic, 2.119ns route)
+                                       (15.8% logic, 84.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 107 / 11
 -------------------------------------------------------------------------
-Offset:              1.825ns (Levels of Logic = 3)
-  Source:            sp_1 (FF)
-  Destination:       PCout<6> (PAD)
+Offset:              1.818ns (Levels of Logic = 3)
+  Source:            aux_4_0 (FF)
+  Destination:       PCout<0> (PAD)
   Source Clock:      clk rising
 
-  Data Path: sp_1 to PCout<6>
+  Data Path: aux_4_0 to PCout<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            27   0.361   0.799  sp_1 (sp_1)
-     LUT6:I0->O            1   0.097   0.000  Mmux_PCout_36 (Mmux_PCout_36)
-     MUXF7:I1->O           3   0.279   0.289  Mmux_PCout_2_f7_5 (Madd_sp[2]_GND_5_o_add_11_OUT_lut<6>)
-     OBUF:I->O                 0.000          PCout_6_OBUF (PCout<6>)
+     FDCE:C->Q             1   0.361   0.693  aux_4_0 (aux_4_0)
+     LUT6:I0->O            1   0.097   0.000  Mmux_PCout_3 (Mmux_PCout_3)
+     MUXF7:I1->O          43   0.279   0.388  Mmux_PCout_2_f7 (Madd_sp[2]_GND_5_o_add_1_OUT_cy<0>)
+     OBUF:I->O                 0.000          PCout_0_OBUF (PCout<0>)
     ----------------------------------------
-    Total                      1.825ns (0.737ns logic, 1.088ns route)
-                                       (40.4% logic, 59.6% route)
+    Total                      1.818ns (0.737ns logic, 1.081ns route)
+                                       (40.5% logic, 59.5% route)
 
 =========================================================================
 
@@ -380,18 +382,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.635|         |         |         |
+clk            |    2.726|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.44 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 41.92 secs
  
 --> 
 
-Total memory usage is 459908 kilobytes
+Total memory usage is 475276 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

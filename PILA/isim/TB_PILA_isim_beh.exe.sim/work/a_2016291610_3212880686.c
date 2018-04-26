@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA.vhd";
+static const char *ng0 = "C:/Users/ayhc9/arqCompVHDL/PILA/PILA.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
@@ -107,12 +107,12 @@ LAB2:    xsi_set_current_line(23, ng0);
     t1 = (t5 + 0);
     *((int *)t1) = 0;
     xsi_set_current_line(24, ng0);
-    t1 = (t0 + 8084);
+    t1 = (t0 + 7964);
     *((int *)t1) = 0;
-    t2 = (t0 + 8088);
-    *((int *)t2) = 7;
+    t2 = (t0 + 7968);
+    *((int *)t2) = 15;
     t6 = 0;
-    t7 = 7;
+    t7 = 15;
 
 LAB5:    if (t6 <= t7)
         goto LAB6;
@@ -120,39 +120,39 @@ LAB5:    if (t6 <= t7)
 LAB8:    goto LAB3;
 
 LAB6:    xsi_set_current_line(25, ng0);
-    t5 = (t0 + 8092);
-    t3 = (8U != 8U);
+    t5 = (t0 + 7972);
+    t3 = (16U != 16U);
     if (t3 == 1)
         goto LAB9;
 
-LAB10:    t9 = (t0 + 8084);
+LAB10:    t9 = (t0 + 7964);
     t10 = *((int *)t9);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
-    t13 = (8U * t12);
+    t13 = (16U * t12);
     t14 = (0U + t13);
     t15 = (t0 + 4680);
     t16 = (t15 + 56U);
     t17 = *((char **)t16);
     t18 = (t17 + 56U);
     t19 = *((char **)t18);
-    memcpy(t19, t5, 8U);
-    xsi_driver_first_trans_delta(t15, t14, 8U, 0LL);
+    memcpy(t19, t5, 16U);
+    xsi_driver_first_trans_delta(t15, t14, 16U, 0LL);
 
-LAB7:    t1 = (t0 + 8084);
+LAB7:    t1 = (t0 + 7964);
     t6 = *((int *)t1);
-    t2 = (t0 + 8088);
+    t2 = (t0 + 7968);
     t7 = *((int *)t2);
     if (t6 == t7)
         goto LAB8;
 
 LAB11:    t10 = (t6 + 1);
     t6 = t10;
-    t5 = (t0 + 8084);
+    t5 = (t0 + 7964);
     *((int *)t5) = t6;
     goto LAB5;
 
-LAB9:    xsi_size_not_matching(8U, 8U, 0);
+LAB9:    xsi_size_not_matching(16U, 16U, 0);
     goto LAB10;
 
 LAB12:    xsi_set_current_line(28, ng0);
@@ -163,18 +163,18 @@ LAB12:    xsi_set_current_line(28, ng0);
     t6 = *((int *)t9);
     t7 = (t6 - 0);
     t12 = (t7 * 1);
-    xsi_vhdl_check_range_of_index(0, 7, 1, t6);
-    t13 = (8U * t12);
+    xsi_vhdl_check_range_of_index(0, 15, 1, t6);
+    t13 = (16U * t12);
     t14 = (0 + t13);
     t2 = (t8 + t14);
     t15 = (t23 + 0U);
     t16 = (t15 + 0U);
-    *((int *)t16) = 7;
+    *((int *)t16) = 15;
     t16 = (t15 + 4U);
     *((int *)t16) = 0;
     t16 = (t15 + 8U);
     *((int *)t16) = -1;
-    t10 = (0 - 7);
+    t10 = (0 - 15);
     t24 = (t10 * -1);
     t24 = (t24 + 1);
     t16 = (t15 + 12U);
@@ -183,7 +183,7 @@ LAB12:    xsi_set_current_line(28, ng0);
     t17 = (t22 + 12U);
     t24 = *((unsigned int *)t17);
     t25 = (1U * t24);
-    t26 = (8U != t25);
+    t26 = (16U != t25);
     if (t26 == 1)
         goto LAB17;
 
@@ -192,15 +192,15 @@ LAB18:    t18 = (t0 + 2768U);
     t11 = *((int *)t19);
     t27 = (t11 - 0);
     t28 = (t27 * 1);
-    t29 = (8U * t28);
+    t29 = (16U * t28);
     t30 = (0U + t29);
     t18 = (t0 + 4680);
     t31 = (t18 + 56U);
     t32 = *((char **)t31);
     t33 = (t32 + 56U);
     t34 = *((char **)t33);
-    memcpy(t34, t16, 8U);
-    xsi_driver_first_trans_delta(t18, t30, 8U, 0LL);
+    memcpy(t34, t16, 16U);
+    xsi_driver_first_trans_delta(t18, t30, 16U, 0LL);
     xsi_set_current_line(29, ng0);
     t1 = (t0 + 1992U);
     t2 = *((char **)t1);
@@ -263,7 +263,7 @@ LAB14:    t2 = (t0 + 1512U);
     t3 = t21;
     goto LAB16;
 
-LAB17:    xsi_size_not_matching(8U, t25, 0);
+LAB17:    xsi_size_not_matching(16U, t25, 0);
     goto LAB18;
 
 LAB19:    xsi_set_current_line(30, ng0);
@@ -274,15 +274,15 @@ LAB19:    xsi_set_current_line(30, ng0);
     t6 = *((int *)t15);
     t7 = (t6 - 0);
     t12 = (t7 * 1);
-    t13 = (8U * t12);
+    t13 = (16U * t12);
     t14 = (0U + t13);
     t1 = (t0 + 4680);
     t16 = (t1 + 56U);
     t17 = *((char **)t16);
     t18 = (t17 + 56U);
     t19 = *((char **)t18);
-    memcpy(t19, t9, 8U);
-    xsi_driver_first_trans_delta(t1, t14, 8U, 0LL);
+    memcpy(t19, t9, 16U);
+    xsi_driver_first_trans_delta(t1, t14, 16U, 0LL);
     goto LAB20;
 
 LAB22:    t1 = (t0 + 2152U);
@@ -316,15 +316,15 @@ LAB28:    xsi_set_current_line(32, ng0);
     t6 = *((int *)t5);
     t7 = (t6 - 0);
     t12 = (t7 * 1);
-    t13 = (8U * t12);
+    t13 = (16U * t12);
     t14 = (0U + t13);
     t1 = (t0 + 4680);
     t8 = (t1 + 56U);
     t9 = *((char **)t8);
     t15 = (t9 + 56U);
     t16 = *((char **)t15);
-    memcpy(t16, t2, 8U);
-    xsi_driver_first_trans_delta(t1, t14, 8U, 0LL);
+    memcpy(t16, t2, 16U);
+    xsi_driver_first_trans_delta(t1, t14, 16U, 0LL);
     goto LAB20;
 
 LAB30:    t1 = (t0 + 2152U);
@@ -353,12 +353,12 @@ LAB36:    xsi_set_current_line(35, ng0);
     xsi_set_current_line(36, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7876U);
+    t1 = (t0 + 7556U);
     t5 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t22, t2, t1, 1);
     t8 = (t22 + 12U);
     t12 = *((unsigned int *)t8);
     t13 = (1U * t12);
-    t3 = (8U != t13);
+    t3 = (16U != t13);
     if (t3 == 1)
         goto LAB44;
 
@@ -367,15 +367,15 @@ LAB45:    t9 = (t0 + 2768U);
     t6 = *((int *)t15);
     t7 = (t6 - 0);
     t14 = (t7 * 1);
-    t24 = (8U * t14);
+    t24 = (16U * t14);
     t25 = (0U + t24);
     t9 = (t0 + 4680);
     t16 = (t9 + 56U);
     t17 = *((char **)t16);
     t18 = (t17 + 56U);
     t19 = *((char **)t18);
-    memcpy(t19, t5, 8U);
-    xsi_driver_first_trans_delta(t9, t25, 8U, 0LL);
+    memcpy(t19, t5, 16U);
+    xsi_driver_first_trans_delta(t9, t25, 16U, 0LL);
     goto LAB20;
 
 LAB38:    t1 = (t0 + 2152U);
@@ -392,7 +392,7 @@ LAB41:    t1 = (t0 + 1832U);
     t4 = t35;
     goto LAB43;
 
-LAB44:    xsi_size_not_matching(8U, t13, 0);
+LAB44:    xsi_size_not_matching(16U, t13, 0);
     goto LAB45;
 
 }
@@ -455,8 +455,8 @@ LAB3:    t1 = (t0 + 2312U);
     t4 = *((int *)t3);
     t5 = (t4 - 0);
     t6 = (t5 * 1);
-    xsi_vhdl_check_range_of_index(0, 7, 1, t4);
-    t7 = (8U * t6);
+    xsi_vhdl_check_range_of_index(0, 15, 1, t4);
+    t7 = (16U * t6);
     t8 = (0 + t7);
     t1 = (t2 + t8);
     t9 = (t0 + 4872);
@@ -464,7 +464,7 @@ LAB3:    t1 = (t0 + 2312U);
     t11 = *((char **)t10);
     t12 = (t11 + 56U);
     t13 = *((char **)t12);
-    memcpy(t13, t1, 8U);
+    memcpy(t13, t1, 16U);
     xsi_driver_first_trans_fast_port(t9);
 
 LAB2:    t14 = (t0 + 4600);
@@ -479,6 +479,6 @@ LAB4:    goto LAB2;
 extern void work_a_2016291610_3212880686_init()
 {
 	static char *pe[] = {(void *)work_a_2016291610_3212880686_p_0,(void *)work_a_2016291610_3212880686_p_1,(void *)work_a_2016291610_3212880686_p_2};
-	xsi_register_didat("work_a_2016291610_3212880686", "isim/PILA_TB_isim_beh.exe.sim/work/a_2016291610_3212880686.didat");
+	xsi_register_didat("work_a_2016291610_3212880686", "isim/TB_PILA_isim_beh.exe.sim/work/a_2016291610_3212880686.didat");
 	xsi_register_executes(pe);
 }

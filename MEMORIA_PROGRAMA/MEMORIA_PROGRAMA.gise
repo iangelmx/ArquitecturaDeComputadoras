@@ -88,6 +88,7 @@
     <transform xil_pn:end_ts="1523917029" xil_pn:in_ck="1023033982755592217" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3412892999242370666" xil_pn:start_ts="1523917022">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_MEMORIA_PROGRAMA_beh.prj"/>
@@ -100,6 +101,8 @@
     <transform xil_pn:end_ts="1523917029" xil_pn:in_ck="8382572155881543223" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7747602302126766647" xil_pn:start_ts="1523917029">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_MEMORIA_PROGRAMA_isim_beh.wdb"/>
@@ -134,11 +137,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1523914905" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2992767752651704754" xil_pn:start_ts="1523914858">
+    <transform xil_pn:end_ts="1523923345" xil_pn:in_ck="-6270763287886379822" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2992767752651704754" xil_pn:start_ts="1523923216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.lso"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.ngc"/>
       <outfile xil_pn:name="MEMORIA_PROGRAMA.ngr"/>

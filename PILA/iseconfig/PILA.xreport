@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-25T23:46:46</DateModified>
+  <DateModified>2018-04-26T18:27:50</DateModified>
   <ModuleName>PILA</ModuleName>
-  <SummaryTimeStamp>2018-04-19T19:30:56</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ayhc9/arqCompVHDL/PILA/iseconfig/PILA.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ayhc9/arqCompVHDL/PILA\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-04-26T18:26:02</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/iseconfig/PILA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-19T19:20:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

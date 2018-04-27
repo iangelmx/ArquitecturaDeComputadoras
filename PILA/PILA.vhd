@@ -33,7 +33,7 @@ begin
 				aux(sp)<=datos;
 			elsif( wpc = '0' and up='0' and down='1' )then
 				sp:= sp-1;
-				aux(sp)<=datos+1;				
+				aux(sp)<=aux(sp);				
 			end if;
 		end if;
 		spaux<=sp;

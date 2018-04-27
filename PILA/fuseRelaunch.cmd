@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ayhc9/arqCompVHDL/PILA/TB_PILA_isim_beh.exe" -prj "C:/Users/ayhc9/arqCompVHDL/PILA/TB_PILA_beh.prj" "work.TB_PILA" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB_beh.prj" "work.PILA_TB" 

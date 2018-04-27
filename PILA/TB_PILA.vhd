@@ -132,7 +132,7 @@ BEGIN
 		writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
 
 		WAIT FOR 10 NS;
-		FOR I IN 0 TO 22 LOOP
+		FOR I IN 0 TO 30 LOOP
 			readline(ARCH_VEC,LINEA_VEC); -- lee una linea completa
 
 			read(LINEA_VEC, var_clr);

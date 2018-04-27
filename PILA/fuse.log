@@ -1,7 +1,7 @@
 Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB_beh.prj work.PILA_TB 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB.vhd" into library work
@@ -14,8 +14,8 @@ Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity PILA [pila_default]
 Compiling architecture behavior of entity pila_tb
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
 Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA_TB_isim_beh.exe
-Fuse Memory Usage: 33364 KB
+Fuse Memory Usage: 34108 KB
 Fuse CPU Usage: 656 ms

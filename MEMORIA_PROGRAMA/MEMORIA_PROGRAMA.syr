@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.38 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.41 secs
  
 --> Reading design: MEMORIA_PROGRAMA.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
 Parsing entity <MEMORIA_PROGRAMA>.
 Parsing architecture <Behavioral> of entity <memoria_programa>.
 
@@ -120,7 +120,7 @@ Elaborating entity <MEMORIA_PROGRAMA> (architecture <Behavioral>) with generics 
 =========================================================================
 
 Synthesizing Unit <MEMORIA_PROGRAMA>.
-    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
         palabra = 25
         busT = 16
     Found 65536x25-bit Read Only RAM for signal <instruccion>
@@ -205,9 +205,9 @@ Primitive and Black Box Usage:
 # BELS                             : 21
 #      GND                         : 1
 #      LUT3                        : 1
-#      LUT4                        : 2
+#      LUT4                        : 3
 #      LUT5                        : 3
-#      LUT6                        : 14
+#      LUT6                        : 13
 # IO Buffers                       : 41
 #      IBUF                        : 16
 #      OBUF                        : 25
@@ -266,7 +266,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 2.387ns
+   Maximum combinational path delay: 2.391ns
 
 Timing Details:
 ---------------
@@ -274,9 +274,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 155 / 8
+  Total number of paths / destination ports: 168 / 9
 -------------------------------------------------------------------------
-Delay:               2.387ns (Levels of Logic = 5)
+Delay:               2.391ns (Levels of Logic = 5)
   Source:            PC<9> (PAD)
   Destination:       instruccion<20> (PAD)
 
@@ -285,12 +285,12 @@ Delay:               2.387ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   0.001   0.693  PC_9_IBUF (PC_9_IBUF)
-     LUT5:I0->O            3   0.097   0.566  Mram_instruccion31111 (Mram_instruccion2611)
-     LUT5:I1->O            1   0.097   0.556  Mram_instruccion261161_SW0 (N0)
-     LUT6:I2->O            1   0.097   0.279  Mram_instruccion261161 (instruccion_20_OBUF)
+     LUT5:I0->O            4   0.097   0.570  Mram_instruccion1211 (Mram_instruccion121)
+     LUT5:I1->O            1   0.097   0.556  Mram_instruccion271161_SW0 (N2)
+     LUT6:I2->O            1   0.097   0.279  Mram_instruccion271161 (instruccion_20_OBUF)
      OBUF:I->O                 0.000          instruccion_20_OBUF (instruccion<20>)
     ----------------------------------------
-    Total                      2.387ns (0.292ns logic, 2.095ns route)
+    Total                      2.391ns (0.292ns logic, 2.099ns route)
                                        (12.2% logic, 87.8% route)
 
 =========================================================================
@@ -301,12 +301,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 43.00 secs
-Total CPU time to Xst completion: 43.29 secs
+Total REAL time to Xst completion: 120.00 secs
+Total CPU time to Xst completion: 119.91 secs
  
 --> 
 
-Total memory usage is 1636244 kilobytes
+Total memory usage is 1605136 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

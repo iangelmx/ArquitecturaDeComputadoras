@@ -1,0 +1,29 @@
+Command line:
+   DECODER_P08_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54922
+
+Tue May 01 21:08:10 2018
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 876.921 Meg
+
+ Total Signals          : 2
+ Total Nets             : 11
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 371
+Total Line Count : 12
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 719.634 Meg
+
+Tue May 01 21:11:19 2018
+

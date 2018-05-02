@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/CONTADOR_P08/CONTADOR_P08.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/CONTADOR_P08/CONTADOR_P08.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/CONTADOR_P08/CONTADOR_P08.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/CONTADOR_P08/CONTADOR_P08.syr" 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd" Line 15: &lt;<arg fmt="%s" index="1">registro_p08</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd" Line 40: Assignment to <arg fmt="%s" index="1">a0_aux</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd" Line 22: &lt;<arg fmt="%s" index="1">contador_p08</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd" Line 28: &lt;<arg fmt="%s" index="1">decoder_p08</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd" Line 33: Net &lt;<arg fmt="%s" index="1">eC_aux</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">inicioFlag</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.vhd</arg>&quot; line <arg fmt="%s" index="2">39</arg>: Output port &lt;<arg fmt="%s" index="3">A</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">registro</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">eC_aux</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">eLcont_aux</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">eLreg_aux</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">eS_aux</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">sel_aux</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+</messages>
+

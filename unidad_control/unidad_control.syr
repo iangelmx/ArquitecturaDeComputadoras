@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: unidad_control.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\unidad_control\unidad_control.vhd" into library work
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\unidad_control\unidad_control.vhd" into library work
 Parsing entity <unidad_control>.
 Parsing architecture <Behavioral> of entity <unidad_control>.
 
@@ -120,7 +120,7 @@ Elaborating entity <unidad_control> (architecture <Behavioral>) from library <wo
 =========================================================================
 
 Synthesizing Unit <unidad_control>.
-    Related source file is "C:\Users\ayhc9\arqCompVHDL\unidad_control\unidad_control.vhd".
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\unidad_control\unidad_control.vhd".
     Found 2-bit register for signal <estado_pres>.
     Found finite state machine <FSM_0> for signal <estado_pres>.
     -----------------------------------------------------------------------
@@ -391,12 +391,12 @@ clk            |    0.868|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 67.00 secs
-Total CPU time to Xst completion: 66.86 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.86 secs
  
 --> 
 
-Total memory usage is 490292 kilobytes
+Total memory usage is 458808 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

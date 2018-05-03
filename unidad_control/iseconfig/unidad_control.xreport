@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-03T11:34:46</DateModified>
+  <DateModified>2018-05-03T18:24:40</DateModified>
   <ModuleName>unidad_control</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ayhc9/arqCompVHDL/unidad_control/iseconfig/unidad_control.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ayhc9/arqCompVHDL/unidad_control\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/unidad_control/iseconfig/unidad_control.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/unidad_control\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-02T18:52:56</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

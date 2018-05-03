@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/ESCUELA/ESCOM/5o Semestre/DSD/DSD/DECODER_MULTIPLY/DECODER_MULTIPLY_isim_beh.exe" -prj "E:/ESCUELA/ESCOM/5o Semestre/DSD/DSD/DECODER_MULTIPLY/DECODER_MULTIPLY_beh.prj" "work.DECODER_MULTIPLY" 

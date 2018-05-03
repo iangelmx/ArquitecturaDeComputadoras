@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B_isim_beh.exe" -prj "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B_beh.prj" "work.MAQ_ESTADOS_B" 

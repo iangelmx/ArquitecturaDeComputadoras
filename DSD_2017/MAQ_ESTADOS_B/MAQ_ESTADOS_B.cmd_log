@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B.xst" -ofn "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B.syr" 
+xst -intstyle ise -ifn "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B.xst" -ofn "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/MAQ_ESTADOS_B/MAQ_ESTADOS_B.syr" 

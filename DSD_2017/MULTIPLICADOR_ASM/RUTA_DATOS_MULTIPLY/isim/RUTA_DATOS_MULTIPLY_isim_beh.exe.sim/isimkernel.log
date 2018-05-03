@@ -1,0 +1,10 @@
+Command line:
+   RUTA_DATOS_MULTIPLY_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61314
+
+Thu Dec 07 15:58:10 2017
+
+
+ Elaboration Time: 0.03125 sec

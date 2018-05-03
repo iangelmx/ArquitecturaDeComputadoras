@@ -1,0 +1,29 @@
+Command line:
+   MUX_MULTIPLY_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50060
+
+Sun Dec 10 18:12:29 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 684.917 Meg
+
+ Total Signals          : 5
+ Total Nets             : 18
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 378
+Total Line Count : 4
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 684.917 Meg
+
+Sun Dec 10 18:14:01 2017
+

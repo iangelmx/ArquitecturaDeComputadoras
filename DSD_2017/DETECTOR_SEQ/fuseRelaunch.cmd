@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/DETECTOR_SEQ/DETECTOR_SEQ_isim_beh.exe" -prj "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/DETECTOR_SEQ/DETECTOR_SEQ_beh.prj" "work.DETECTOR_SEQ" 

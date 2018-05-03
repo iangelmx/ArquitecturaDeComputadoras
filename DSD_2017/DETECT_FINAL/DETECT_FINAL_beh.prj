@@ -1,0 +1,4 @@
+vhdl work "../E_REBOTES_PULSO/E_REBOTES_PULSO.vhd"
+vhdl work "../DETECTOR_SEQ/DETECTOR_SEQ.vhd"
+vhdl work "../CLK_DIV_P03/CLK_DIV_P03.vhd"
+vhdl work "DETECT_FINAL.vhd"

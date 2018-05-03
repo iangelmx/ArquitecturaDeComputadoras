@@ -1,0 +1,4 @@
+vhdl work "../PROD_PARC_MULTIPLY/PROD_PARC_MULTIPLY.vhd"
+vhdl work "../MUDO_IZQ/MUDO_IZQ.vhd"
+vhdl work "../MDOR_DER/MDOR_DER.vhd"
+vhdl work "RUTA_DATOS_MULTIPLY.vhd"

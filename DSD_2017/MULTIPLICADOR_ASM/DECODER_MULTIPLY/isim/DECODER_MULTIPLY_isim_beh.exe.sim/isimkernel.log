@@ -1,0 +1,29 @@
+Command line:
+   DECODER_MULTIPLY_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50031
+
+Sun Dec 10 18:05:36 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 684.913 Meg
+
+ Total Signals          : 2
+ Total Nets             : 6
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 366
+Total Line Count : 5
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 999.485 Meg
+
+Sun Dec 10 18:06:10 2017
+

@@ -1,0 +1,29 @@
+Command line:
+   MAQ_ESTADOS_B_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50265
+
+Thu Nov 09 17:54:24 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 842.125 Meg
+
+ Total Signals          : 6
+ Total Nets             : 7
+ Total Signal Drivers   : 3
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 367
+Total Line Count : 24
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 527.553 Meg
+
+Fri Nov 10 15:12:08 2017
+

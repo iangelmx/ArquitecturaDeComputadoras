@@ -1,0 +1,29 @@
+Command line:
+   UNID_D_CONTROL_MULTIPLY_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61320
+
+Thu Dec 07 16:18:11 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 841.568 Meg
+
+ Total Signals          : 11
+ Total Nets             : 17
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 377
+Total Line Count : 26
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 684.282 Meg
+
+Thu Dec 07 16:21:49 2017
+

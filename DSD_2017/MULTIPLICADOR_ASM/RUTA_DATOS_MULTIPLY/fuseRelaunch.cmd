@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/RUTA_DATOS_MULTIPLY/RUTA_DATOS_MULTIPLY_isim_beh.exe" -prj "C:/Users/Dell-E6410/Documents/ESCOM APUNTES/5o SEMESTRE/DSD/RUTA_DATOS_MULTIPLY/RUTA_DATOS_MULTIPLY_beh.prj" "work.RUTA_DATOS_MULTIPLY" 

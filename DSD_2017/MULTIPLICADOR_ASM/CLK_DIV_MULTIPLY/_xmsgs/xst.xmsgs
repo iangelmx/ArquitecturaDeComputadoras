@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="136" delta="new" >"C:\Users\Dell-E6410\Documents\ESCOM APUNTES\5o SEMESTRE\DSD\CLK_DIV_MULTIPLY\CLK_DIV_MULTIPLY.vhd" Line 53: OTHERS choice cannot be used in unconstrained array aggregate.
+</msg>
+
+</messages>
+

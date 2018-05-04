@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_beh.prj work.PRACTICA08_cartasAsm 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/../unidad_control/unidad_control.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/../REGISTRO_P08/REGISTRO_P08.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/../DECODER_P08/DECODER_P08.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/../CONTADOR_P08/CONTADOR_P08.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity REGISTRO_P08 [registro_p08_default]
+Compiling architecture behavioral of entity CONTADOR_P08 [contador_p08_default]
+Compiling architecture behavioral of entity DECODER_P08 [decoder_p08_default]
+Compiling architecture behavioral of entity unidad_control [unidad_control_default]
+Compiling architecture behavioral of entity practica08_cartasasm
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_isim_beh.exe
+Fuse Memory Usage: 34128 KB
+Fuse CPU Usage: 687 ms

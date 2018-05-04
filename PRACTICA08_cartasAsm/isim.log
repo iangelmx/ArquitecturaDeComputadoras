@@ -1,0 +1,40 @@
+ISim log file
+Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /practica08_cartasasm/clk 0 -radix bin -value 1 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /practica08_cartasasm/inicioflag 1 -radix bin
+# isim force add /practica08_cartasasm/clr 1 -radix bin
+# isim force add /practica08_cartasasm/datos 111111101 -radix bin
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# isim force add /practica08_cartasasm/clr 0 -radix bin
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# isim force add /practica08_cartasasm/datos 000000001 -radix bin
+# run 10ns
+# run 10ns
+# run 10ns
+# isim force add /practica08_cartasasm/inicioflag 0 -radix bin
+# run 10ns
+# run 10ns
+# run 10ns
+# isim force add /practica08_cartasasm/inicioflag 1 -radix bin
+# run 10ns
+# run 10ns
+# run 10ns

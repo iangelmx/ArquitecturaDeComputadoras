@@ -30,17 +30,74 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PRACTICA08_cartasAsm.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PRACTICA08_cartasAsm.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PRACTICA08_cartasAsm.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PRACTICA08_cartasAsm_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PRACTICA08_cartasAsm_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PRACTICA08_cartasAsm_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PRACTICA08_cartasAsm_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PRACTICA08_cartasAsm_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PRACTICA08_cartasAsm_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1525392794" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392794" xil_pn:in_ck="-1693907684561180265" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../CONTADOR_P08/CONTADOR_P08.vhd"/>
+      <outfile xil_pn:name="../DECODER_P08/DECODER_P08.vhd"/>
+      <outfile xil_pn:name="../REGISTRO_P08/REGISTRO_P08.vhd"/>
+      <outfile xil_pn:name="../unidad_control/unidad_control.vhd"/>
+      <outfile xil_pn:name="PRACTICA08_cartasAsm.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392794" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8726989531088366918" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392794" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4145997596732965848" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392794" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1297254179841502816" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392794" xil_pn:in_ck="-1693907684561180265" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../CONTADOR_P08/CONTADOR_P08.vhd"/>
+      <outfile xil_pn:name="../DECODER_P08/DECODER_P08.vhd"/>
+      <outfile xil_pn:name="../REGISTRO_P08/REGISTRO_P08.vhd"/>
+      <outfile xil_pn:name="../unidad_control/unidad_control.vhd"/>
+      <outfile xil_pn:name="PRACTICA08_cartasAsm.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392799" xil_pn:in_ck="-1693907684561180265" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7604631715517870867" xil_pn:start_ts="1525392794">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PRACTICA08_cartasAsm_beh.prj"/>
+      <outfile xil_pn:name="PRACTICA08_cartasAsm_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1525392799" xil_pn:in_ck="783745173385112860" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5815344152365376912" xil_pn:start_ts="1525392799">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PRACTICA08_cartasAsm_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
     <transform xil_pn:end_ts="1525228499" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1525228499">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1525228499" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4217457410801690280" xil_pn:start_ts="1525228499">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -66,9 +123,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1525228598" xil_pn:in_ck="8704834254956136349" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7022480191802247331" xil_pn:start_ts="1525228558">
+    <transform xil_pn:end_ts="1525392531" xil_pn:in_ck="-1693907684561180265" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-7022480191802247331" xil_pn:start_ts="1525392515">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PRACTICA08_cartasAsm.lso"/>
       <outfile xil_pn:name="PRACTICA08_cartasAsm.ngc"/>

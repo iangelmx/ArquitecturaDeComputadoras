@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-01T21:24:23</DateModified>
+  <DateModified>2018-05-03T18:45:23</DateModified>
   <ModuleName>PRACTICA08_cartasAsm</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/iseconfig/PRACTICA08_cartasAsm.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-01T21:24:23</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

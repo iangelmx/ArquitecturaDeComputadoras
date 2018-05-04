@@ -1,2 +1,4 @@
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 

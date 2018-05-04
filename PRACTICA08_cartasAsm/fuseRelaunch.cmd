@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm_beh.prj" "work.PRACTICA08_cartasAsm" 

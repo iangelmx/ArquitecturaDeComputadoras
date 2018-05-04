@@ -1,0 +1,29 @@
+Command line:
+   PRACTICA08_cartasAsm_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53118
+
+Thu May 03 19:13:21 2018
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 1034.55 Meg
+
+ Total Signals          : 47
+ Total Nets             : 66
+ Total Signal Drivers   : 20
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 444
+Total Line Count : 61
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 877.265 Meg
+
+Thu May 03 19:15:46 2018
+

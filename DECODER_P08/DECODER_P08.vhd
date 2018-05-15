@@ -14,17 +14,29 @@ begin
 	begin
 		case Binario is
 			--									 abcdefg
-			when "0000" => segmentos <="0000001";
-			when "0001" => segmentos <="1001111";
-			when "0010" => segmentos <="0010010";
-			when "0011" => segmentos <="0000110";
-			when "0100" => segmentos <="1001100";
-			when "0101" => segmentos <="0100100";
-			when "0110" => segmentos <="0100000";
-			when "0111" => segmentos <="0001111";
+											--	 gfedcba
+--			when "0000" => segmentos <="0000001";
+--			when "0001" => segmentos <="1001111";
+--			when "0010" => segmentos <="0010010";
+--			when "0011" => segmentos <="0000110";
+--			when "0100" => segmentos <="1001100";
+--			when "0101" => segmentos <="0100100";
+--			when "0110" => segmentos <="0100000";
+--			when "0111" => segmentos <="0001111";
+--			when "1000" => segmentos <="0000000";
+--			when "1001" => segmentos <="0000100";
+--			when others => segmentos <="1111110";
+			when "0000" => segmentos <="1000000";
+			when "0001" => segmentos <="1111001";
+			when "0010" => segmentos <="0100100";
+			when "0011" => segmentos <="0110000";
+			when "0100" => segmentos <="0011001";
+			when "0101" => segmentos <="0010010";
+			when "0110" => segmentos <="0000010";
+			when "0111" => segmentos <="1111000";
 			when "1000" => segmentos <="0000000";
-			when "1001" => segmentos <="0000100";
-			when others => segmentos <="1111110";
+			when "1001" => segmentos <="0010000";
+			when others => segmentos <="0111111";
 		end case;
 	end process;
 

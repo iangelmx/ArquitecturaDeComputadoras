@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PRACTICA08_cartasAsm.prj
 
@@ -303,7 +303,8 @@ Top Level Output File Name         : PRACTICA08_cartasAsm.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 26
+# BELS                             : 27
+#      GND                         : 1
 #      LUT2                        : 1
 #      LUT3                        : 4
 #      LUT4                        : 3
@@ -314,9 +315,9 @@ Primitive and Black Box Usage:
 #      FDCE                        : 12
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 18
+# IO Buffers                       : 19
 #      IBUF                        : 11
-#      OBUF                        : 7
+#      OBUF                        : 8
 
 Device utilization summary:
 ---------------------------
@@ -337,8 +338,8 @@ Slice Logic Distribution:
    Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          19
- Number of bonded IOBs:                  19  out of    210     9%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    210     9%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -433,16 +434,16 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              1.508ns (Levels of Logic = 2)
   Source:            U_de_Control/estado_pres_FSM_FFd1 (FF)
-  Destination:       display<2> (PAD)
+  Destination:       display<4> (PAD)
   Source Clock:      clk rising
 
-  Data Path: U_de_Control/estado_pres_FSM_FFd1 to display<2>
+  Data Path: U_de_Control/estado_pres_FSM_FFd1 to display<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             20   0.361   0.771  U_de_Control/estado_pres_FSM_FFd1 (U_de_Control/estado_pres_FSM_FFd1)
-     LUT5:I0->O            1   0.097   0.279  Mmux_display31 (display_2_OBUF)
-     OBUF:I->O                 0.000          display_2_OBUF (display<2>)
+     LUT5:I0->O            1   0.097   0.279  Mmux_display51 (display_4_OBUF)
+     OBUF:I->O                 0.000          display_4_OBUF (display<4>)
     ----------------------------------------
     Total                      1.508ns (0.458ns logic, 1.050ns route)
                                        (30.4% logic, 69.6% route)
@@ -464,11 +465,11 @@ clk            |    1.561|         |         |         |
 
 
 Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.23 secs
+Total CPU time to Xst completion: 13.22 secs
  
 --> 
 
-Total memory usage is 459936 kilobytes
+Total memory usage is 463720 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

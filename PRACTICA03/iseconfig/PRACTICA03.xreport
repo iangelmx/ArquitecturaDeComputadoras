@@ -1,19 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-<<<<<<< HEAD
-  <DateModified>2018-04-05T19:07:26</DateModified>
+  <DateModified>2018-05-17T16:31:09</DateModified>
   <ModuleName>PRACTICA03</ModuleName>
   <SummaryTimeStamp>2018-03-22T00:29:26</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03\</ImplementationReportsDirectory>
-=======
-  <DateModified>2018-03-22T18:27:03</DateModified>
-  <ModuleName>PRACTICA03</ModuleName>
-  <SummaryTimeStamp>2018-03-22T00:29:26</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ayhc9/arqCompVHDL/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ayhc9/arqCompVHDL/PRACTICA03\</ImplementationReportsDirectory>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
+  <SavedFilePath>C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/PRACTICA03\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-14T21:01:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

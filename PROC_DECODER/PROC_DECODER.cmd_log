@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_DECODER/PROC_DECODER.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_DECODER/PROC_DECODER.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_DECODER/PROC_DECODER.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_DECODER/PROC_DECODER.syr" 

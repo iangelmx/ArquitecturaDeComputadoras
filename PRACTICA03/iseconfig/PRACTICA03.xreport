@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-17T16:31:09</DateModified>
+  <DateModified>2018-05-22T17:17:06</DateModified>
   <ModuleName>PRACTICA03</ModuleName>
   <SummaryTimeStamp>2018-03-22T00:29:26</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/PRACTICA03\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03/iseconfig/PRACTICA03.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA03\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-14T21:01:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

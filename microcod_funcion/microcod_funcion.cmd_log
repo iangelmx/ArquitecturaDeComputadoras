@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/microcod_funcion/microcod_funcion.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/microcod_funcion/microcod_funcion.syr" 

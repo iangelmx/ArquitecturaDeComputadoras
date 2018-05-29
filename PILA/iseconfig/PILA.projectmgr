@@ -8,7 +8,9 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>PILA - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PILA/PILA.vhd)</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ea000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ea0000000100000003000000000000000100000003</ViewHeaderState>
@@ -29,7 +31,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000131000000010000000100000000000000000000000064ffffffff000000810000000000000001000001310000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
@@ -64,13 +66,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>

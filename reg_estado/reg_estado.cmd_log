@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/reg_estado/reg_estado.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/reg_estado/reg_estado.syr" 
+xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/reg_estado/reg_estado.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/reg_estado/reg_estado.syr" 

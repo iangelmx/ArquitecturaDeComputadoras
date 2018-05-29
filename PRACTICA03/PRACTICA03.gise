@@ -178,6 +178,7 @@
     <transform xil_pn:end_ts="1521766829" xil_pn:in_ck="-8485546509017089626" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-4110380427273387718" xil_pn:start_ts="1521766761">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PRACTICA03.lso"/>
@@ -202,6 +203,7 @@
     <transform xil_pn:end_ts="1521766859" xil_pn:in_ck="6809369865785951654" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5277157994585793426" xil_pn:start_ts="1521766829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="PRACTICA03.bld"/>
       <outfile xil_pn:name="PRACTICA03.ngd"/>
       <outfile xil_pn:name="PRACTICA03_ngdbuild.xrpt"/>
@@ -211,6 +213,7 @@
     <transform xil_pn:end_ts="1521766973" xil_pn:in_ck="-3086611647659035801" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1521766859">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PRACTICA03.pcf"/>
@@ -226,6 +229,7 @@
     <transform xil_pn:end_ts="1521767101" xil_pn:in_ck="2449474072178660032" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1521766973">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="PRACTICA03.ncd"/>
       <outfile xil_pn:name="PRACTICA03.pad"/>
       <outfile xil_pn:name="PRACTICA03.par"/>
@@ -240,6 +244,7 @@
     <transform xil_pn:end_ts="1521767259" xil_pn:in_ck="5488074458721077677" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1521767118">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PRACTICA03.ut"/>
@@ -254,10 +259,12 @@
     <transform xil_pn:end_ts="1521767259" xil_pn:in_ck="-4407907056015390601" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="4674625285961985627" xil_pn:start_ts="1521767259">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1521767101" xil_pn:in_ck="-6535881106298856477" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1521767051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="PRACTICA03.twr"/>
       <outfile xil_pn:name="PRACTICA03.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

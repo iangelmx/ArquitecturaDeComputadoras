@@ -27,6 +27,7 @@ begin
 	sel_aAux<=operacion(3);
 	sel_bAux<=operacion(2);
 	oper_aux<=operacion(1 downto 0);
+	
 	ALU01: ALU_1BIT port map(a=>A(0), b=>B(0), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>sel_bAux, operacion=>oper_aux, cout=>carries(0), resul=>R_aux(0));
 	ALU02: ALU_1BIT port map(a=>A(1), b=>B(1), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>carries(0), operacion=>oper_aux, cout=>carries(1), resul=>R_aux(1));
 	ALU03: ALU_1BIT port map(a=>A(2), b=>B(2), sel_a=>sel_aAux, sel_b=>sel_bAux, cin=>carries(1), operacion=>oper_aux, cout=>carries(2), resul=>R_aux(2));

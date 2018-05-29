@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.ncd
+OUTFILE=C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm\PRACTICA08_cartasAsm.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PRACTICA08_cartasAsm
+LICENSE=WebPack
+USER_INFO=211215877_0_0_574

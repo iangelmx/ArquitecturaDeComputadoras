@@ -7,6 +7,7 @@ entity PRACTICA08_cartasAsm is
            clk : in  STD_LOGIC;
            clr : in  STD_LOGIC;
            datos : in  STD_LOGIC_VECTOR (8 downto 0);
+			  displayEnable : out STD_LOGIC;
            display : out  STD_LOGIC_VECTOR (6 downto 0));
 end PRACTICA08_cartasAsm;
 
@@ -48,6 +49,8 @@ signal B_aux : STD_LOGIC_VECTOR(3 downto 0);
 signal segmentos_aux : STD_LOGIC_VECTOR(6 downto 0);
 signal A_aux : STD_LOGIC_VECTOR(8 downto 0);
 begin
+
+	displayEnable<='0';
 
 	A0_aux <= A_aux(0);
 	z_aux <= not( A_aux(8) or A_aux(7) or A_aux(6) or A_aux(5) or A_aux(4) or A_aux(3) or A_aux(2) or A_aux(1) or A_aux(0) );

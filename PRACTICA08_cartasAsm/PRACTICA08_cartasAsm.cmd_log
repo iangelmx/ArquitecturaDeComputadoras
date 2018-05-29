@@ -2,3 +2,33 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA0
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+par -w -intstyle ise -ol high -mt off PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ncd PRACTICA08_cartasAsm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PRACTICA08_cartasAsm.twx PRACTICA08_cartasAsm.ncd -o PRACTICA08_cartasAsm.twr PRACTICA08_cartasAsm.pcf -ucf PRACTICA08_cartasAsm.ucf 
+bitgen -intstyle ise -f PRACTICA08_cartasAsm.ut PRACTICA08_cartasAsm.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+par -w -intstyle ise -ol high -mt off PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ncd PRACTICA08_cartasAsm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PRACTICA08_cartasAsm.twx PRACTICA08_cartasAsm.ncd -o PRACTICA08_cartasAsm.twr PRACTICA08_cartasAsm.pcf -ucf PRACTICA08_cartasAsm.ucf 
+bitgen -intstyle ise -f PRACTICA08_cartasAsm.ut PRACTICA08_cartasAsm.ncd 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PRACTICA08_cartasAsm/PRACTICA08_cartasAsm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PRACTICA08_cartasAsm.ucf -p xc7a100t-csg324-3 PRACTICA08_cartasAsm.ngc PRACTICA08_cartasAsm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ngd PRACTICA08_cartasAsm.pcf 
+par -w -intstyle ise -ol high -mt off PRACTICA08_cartasAsm_map.ncd PRACTICA08_cartasAsm.ncd PRACTICA08_cartasAsm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PRACTICA08_cartasAsm.twx PRACTICA08_cartasAsm.ncd -o PRACTICA08_cartasAsm.twr PRACTICA08_cartasAsm.pcf -ucf PRACTICA08_cartasAsm.ucf 
+bitgen -intstyle ise -f PRACTICA08_cartasAsm.ut PRACTICA08_cartasAsm.ncd 

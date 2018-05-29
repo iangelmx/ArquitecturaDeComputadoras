@@ -8,14 +8,11 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<<<<<<< HEAD
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ALU_1BIT/ALU_1BIT.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/ALU_1BIT/ALU_1BIT.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Desktop/Rescate ARQU/arqCompVHDL-01147ec3864320c99441ed4be6113199f78eca78/PRACTICA03/PRACTICA03.vhd&quot; into library work</arg>
 </msg>
 
-=======
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
 </messages>
 

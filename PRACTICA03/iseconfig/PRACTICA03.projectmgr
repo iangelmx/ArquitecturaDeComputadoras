@@ -10,21 +10,13 @@
          <ClosedNode>/PRACTICA03 - Behavioral C:|Users|iAngelMx|Documents|ESCOM|ArqComp|arqCompVHDL|PRACTICA03|PRACTICA03.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-<<<<<<< HEAD
-         <SelectedItem>PRACTICA03 - Behavioral (C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03.vhd)</SelectedItem>
-=======
          <SelectedItem>PRACTICA03 - Behavioral (C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.vhd)</SelectedItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000140000000020000000000000000000000000200000064ffffffff000000810000000300000002000001400000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000014d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000014d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-<<<<<<< HEAD
-      <CurrentItem>PRACTICA03 - Behavioral (C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/PRACTICA03/PRACTICA03.vhd)</CurrentItem>
-=======
       <CurrentItem>PRACTICA03 - Behavioral (C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03.vhd)</CurrentItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -66,32 +58,18 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-<<<<<<< HEAD
-         <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Implement Design</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Design Summary/Reports</SelectedItem>
-=======
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >13</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-<<<<<<< HEAD
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Summary/Reports</CurrentItem>
-=======
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000a3000000010000000100000000000000000000000064ffffffff000000810000000000000001000000a30000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -99,21 +77,13 @@
          <ClosedNode>/PRACTICA03 - Behavioral C:|Users|iAngelMx|Documents|ESCOM|ArqComp|arqCompVHDL|PRACTICA03|PRACTICA03.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-<<<<<<< HEAD
-         <SelectedItem>ALU03 - ALU_1BIT - Behavioral (C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ALU_1BIT/ALU_1BIT.vhd)</SelectedItem>
-=======
          <SelectedItem>PRACTICA03_TB - behavior (C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03_TB.vhd)</SelectedItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-<<<<<<< HEAD
-      <CurrentItem>ALU03 - ALU_1BIT - Behavioral (C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ALU_1BIT/ALU_1BIT.vhd)</CurrentItem>
-=======
       <CurrentItem>PRACTICA03_TB - behavior (C:/Users/ayhc9/arqCompVHDL/PRACTICA03/PRACTICA03_TB.vhd)</CurrentItem>
->>>>>>> 01147ec3864320c99441ed4be6113199f78eca78
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -121,13 +91,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ac0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -138,7 +108,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Behavioral Check Syntax</CurrentItem>
    </ItemView>

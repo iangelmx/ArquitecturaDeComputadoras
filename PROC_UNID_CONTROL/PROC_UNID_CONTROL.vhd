@@ -7,6 +7,7 @@ entity PROC_UNID_CONTROL is
            func_code : in  STD_LOGIC_VECTOR (3 downto 0);
            microinstruccion : out  STD_LOGIC_VECTOR (19 downto 0);
            op_code : in  STD_LOGIC_VECTOR (4 downto 0);
+			  nivel_out : out STD_LOGIC;
            banderas : in  STD_LOGIC_VECTOR (3 downto 0));
 end PROC_UNID_CONTROL;
 
@@ -81,6 +82,7 @@ begin
 	salida <= microinstruccion_No_R when sm_aux = '1' else microinstruccion_R;
 	
 	microinstruccion<=salida;
+	nivel_out <= nivel_aux;
 	
 end Behavioral;
 

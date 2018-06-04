@@ -6,3 +6,4 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVE
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.syr" 

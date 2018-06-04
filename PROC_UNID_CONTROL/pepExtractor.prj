@@ -1,0 +1,8 @@
+work	"../PROC_DECODER/PROC_DECODER.vhd"
+work	"../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"
+work	"../PROC_NIVEL/PROC_NIVEL.vhd"
+work	"../condicion/condicion.vhd"
+work	"../microcod_funcion/microcod_funcion.vhd"
+work	"../reg_estado/reg_estado.vhd"
+work	"../subunidad_control/subunidad_control.vhd"
+work	"PROC_UNID_CONTROL.vhd"

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-29T17:25:15</DateModified>
+  <DateModified>2018-06-04T16:03:33</DateModified>
   <ModuleName>PROC_NIVEL</ModuleName>
   <SummaryTimeStamp>2018-05-29T17:24:46</SummaryTimeStamp>
   <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/iseconfig/PROC_NIVEL.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-29T16:56:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

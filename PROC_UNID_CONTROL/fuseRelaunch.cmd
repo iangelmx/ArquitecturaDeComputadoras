@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_beh.prj" "PROC_UNID_CONTROL" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_beh.prj" "work.TB_UnidadDeControl" 

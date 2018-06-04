@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_isim_beh.wdb 
+Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\TB_UnidadDeControl_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,6 +10,6 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /proc_unid_control/MICRO_COD_OPER/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /proc_unid_control/MICRO_COD_OPER/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /tb_unidaddecontrol/uut/MICRO_COD_OPER/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /tb_unidaddecontrol/uut/MICRO_COD_OPER/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.

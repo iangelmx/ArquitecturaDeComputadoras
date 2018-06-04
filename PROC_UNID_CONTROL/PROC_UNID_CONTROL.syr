@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PROC_UNID_CONTROL.prj
 
@@ -156,7 +156,7 @@ Elaborating entity <microcod_funcion> (architecture <Behavioral>) from library <
 
 Synthesizing Unit <PROC_UNID_CONTROL>.
     Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd".
-INFO:Xst:3210 - "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd" line 71: Output port <bleti> of the instance <DECODER_INST> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd" line 72: Output port <bleti> of the instance <DECODER_INST> is unconnected or connected to loadless signal.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <PROC_UNID_CONTROL> synthesized.
@@ -324,9 +324,9 @@ Top Level Output File Name         : PROC_UNID_CONTROL.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 45
+# BELS                             : 46
 #      INV                         : 2
-#      LUT2                        : 5
+#      LUT2                        : 6
 #      LUT4                        : 1
 #      LUT5                        : 12
 #      LUT6                        : 24
@@ -337,9 +337,9 @@ Primitive and Black Box Usage:
 #      FDCE_1                      : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 33
+# IO Buffers                       : 34
 #      IBUF                        : 13
-#      OBUF                        : 20
+#      OBUF                        : 21
 
 Device utilization summary:
 ---------------------------
@@ -349,19 +349,19 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:               2  out of  126800     0%  
- Number of Slice LUTs:                   44  out of  63400     0%  
-    Number used as Logic:                44  out of  63400     0%  
+ Number of Slice LUTs:                   45  out of  63400     0%  
+    Number used as Logic:                45  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     44
-   Number with an unused Flip Flop:      42  out of     44    95%  
-   Number with an unused LUT:             0  out of     44     0%  
-   Number of fully used LUT-FF pairs:     2  out of     44     4%  
+ Number of LUT Flip Flop pairs used:     45
+   Number with an unused Flip Flop:      43  out of     45    95%  
+   Number with an unused LUT:             0  out of     45     0%  
+   Number of fully used LUT-FF pairs:     2  out of     45     4%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          36
- Number of bonded IOBs:                  34  out of    210    16%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  35  out of    210    16%  
     IOB Flip Flops/Latches:               2
 
 Specific Feature Utilization:
@@ -399,7 +399,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.053ns (Maximum Frequency: 949.307MHz)
+   Minimum period: 1.058ns (Maximum Frequency: 945.537MHz)
    Minimum input arrival time before clock: 0.643ns
    Maximum output required time after clock: 3.961ns
    Maximum combinational path delay: 3.958ns
@@ -410,10 +410,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.053ns (frequency: 949.307MHz)
+  Clock period: 1.058ns (frequency: 945.537MHz)
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               1.053ns (Levels of Logic = 1)
+Delay:               1.058ns (Levels of Logic = 1)
   Source:            NIVEL/pclk (FF)
   Destination:       NIVEL/pclk (FF)
   Source Clock:      clk falling
@@ -423,12 +423,12 @@ Delay:               1.053ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q            3   0.364   0.289  NIVEL/pclk (NIVEL/pclk)
+     FDC_1:C->Q            4   0.364   0.293  NIVEL/pclk (NIVEL/pclk)
      INV:I->O              1   0.113   0.279  NIVEL/pclk_INV_7_o1_INV_0 (NIVEL/pclk_INV_7_o)
      FDC_1:D                   0.008          NIVEL/pclk
     ----------------------------------------
-    Total                      1.053ns (0.485ns logic, 0.568ns route)
-                                       (46.0% logic, 54.0% route)
+    Total                      1.058ns (0.485ns logic, 0.573ns route)
+                                       (45.9% logic, 54.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -451,7 +451,7 @@ Offset:              0.643ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 479 / 18
+  Total number of paths / destination ports: 481 / 19
 -------------------------------------------------------------------------
 Offset:              3.961ns (Levels of Logic = 7)
   Source:            REGISTRO_EDO/f_aux_0 (FF)
@@ -508,18 +508,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.050|         |    1.053|         |
+clk            |    1.055|         |    1.058|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.53 secs
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.67 secs
  
 --> 
 
-Total memory usage is 463752 kilobytes
+Total memory usage is 463788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    7 (   0 filtered)

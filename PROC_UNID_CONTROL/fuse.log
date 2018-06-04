@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_beh.prj PROC_UNID_CONTROL 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_beh.prj work.TB_UnidadDeControl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -11,10 +11,13 @@ Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONT
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/../microcod_funcion/microcod_funcion.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/../condicion/condicion.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package textio
+Compiling package std_logic_textio
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity reg_estado [reg_estado_default]
@@ -24,10 +27,11 @@ Compiling architecture behavioral of entity PROC_DECODER [proc_decoder_default]
 Compiling architecture behavioral of entity subunidad_control [subunidad_control_default]
 Compiling architecture behavioral of entity PROC_MEM_OPCODE [proc_mem_opcode_default]
 Compiling architecture behavioral of entity microcod_funcion [microcod_funcion_default]
-Compiling architecture behavioral of entity proc_unid_control
+Compiling architecture behavioral of entity PROC_UNID_CONTROL [proc_unid_control_default]
+Compiling architecture behavior of entity tb_unidaddecontrol
 Time Resolution for simulation is 1ps.
-Waiting for 4 sub-compilation(s) to finish...
-Compiled 19 VHDL Units
-Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL_isim_beh.exe
-Fuse Memory Usage: 34324 KB
-Fuse CPU Usage: 749 ms
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_isim_beh.exe
+Fuse Memory Usage: 35072 KB
+Fuse CPU Usage: 842 ms

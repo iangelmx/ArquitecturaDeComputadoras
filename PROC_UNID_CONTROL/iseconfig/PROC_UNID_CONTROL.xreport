@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-29T17:34:29</DateModified>
+  <DateModified>2018-06-04T15:14:46</DateModified>
   <ModuleName>PROC_UNID_CONTROL</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/iseconfig/PROC_UNID_CONTROL.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-29T17:34:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

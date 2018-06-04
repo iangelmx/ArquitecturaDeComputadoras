@@ -1,0 +1,527 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: PROC_UNID_CONTROL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PROC_UNID_CONTROL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PROC_UNID_CONTROL"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : PROC_UNID_CONTROL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\subunidad_control\subunidad_control.vhd" into library work
+Parsing entity <subunidad_control>.
+Parsing architecture <Behavioral> of entity <subunidad_control>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\reg_estado\reg_estado.vhd" into library work
+Parsing entity <reg_estado>.
+Parsing architecture <Behavioral> of entity <reg_estado>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_NIVEL\PROC_NIVEL.vhd" into library work
+Parsing entity <PROC_NIVEL>.
+Parsing architecture <Behavioral> of entity <proc_nivel>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_MEM_OPCODE\PROC_MEM_OPCODE.vhd" into library work
+Parsing entity <PROC_MEM_OPCODE>.
+Parsing architecture <Behavioral> of entity <proc_mem_opcode>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_DECODER\PROC_DECODER.vhd" into library work
+Parsing entity <PROC_DECODER>.
+Parsing architecture <Behavioral> of entity <proc_decoder>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\microcod_funcion\microcod_funcion.vhd" into library work
+Parsing entity <microcod_funcion>.
+Parsing architecture <Behavioral> of entity <microcod_funcion>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\condicion\condicion.vhd" into library work
+Parsing entity <condicion>.
+Parsing architecture <Behavioral> of entity <condicion>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd" into library work
+Parsing entity <PROC_UNID_CONTROL>.
+Parsing architecture <Behavioral> of entity <proc_unid_control>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <PROC_UNID_CONTROL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_estado> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <condicion> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PROC_NIVEL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PROC_DECODER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <subunidad_control> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PROC_MEM_OPCODE> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <microcod_funcion> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PROC_UNID_CONTROL>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd".
+INFO:Xst:3210 - "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd" line 71: Output port <bleti> of the instance <DECODER_INST> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <PROC_UNID_CONTROL> synthesized.
+
+Synthesizing Unit <reg_estado>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\reg_estado\reg_estado.vhd".
+    Found 4-bit register for signal <f_aux>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <reg_estado> synthesized.
+
+Synthesizing Unit <condicion>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\condicion\condicion.vhd".
+WARNING:Xst:647 - Input <flags<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+Unit <condicion> synthesized.
+
+Synthesizing Unit <PROC_NIVEL>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_NIVEL\PROC_NIVEL.vhd".
+    Found 1-bit register for signal <nclk>.
+    Found 1-bit register for signal <pclk>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <PROC_NIVEL> synthesized.
+
+Synthesizing Unit <PROC_DECODER>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_DECODER\PROC_DECODER.vhd".
+    Summary:
+	no macro.
+Unit <PROC_DECODER> synthesized.
+
+Synthesizing Unit <subunidad_control>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\subunidad_control\subunidad_control.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred  13 Multiplexer(s).
+Unit <subunidad_control> synthesized.
+
+Synthesizing Unit <PROC_MEM_OPCODE>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_MEM_OPCODE\PROC_MEM_OPCODE.vhd".
+    Found 32x20-bit Read Only RAM for signal <microinstruccion>
+    Summary:
+	inferred   1 RAM(s).
+Unit <PROC_MEM_OPCODE> synthesized.
+
+Synthesizing Unit <microcod_funcion>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\microcod_funcion\microcod_funcion.vhd".
+    Found 16x20-bit Read Only RAM for signal <ins>
+    Summary:
+	inferred   1 RAM(s).
+Unit <microcod_funcion> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x20-bit single-port Read Only RAM                   : 1
+ 32x20-bit single-port Read Only RAM                   : 1
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 4-bit register                                        : 1
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 13
+ 20-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <f_aux_2> of sequential type is unconnected in block <REGISTRO_EDO>.
+WARNING:Xst:2677 - Node <f_aux_3> of sequential type is unconnected in block <REGISTRO_EDO>.
+
+Synthesizing (advanced) Unit <PROC_MEM_OPCODE>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_microinstruccion> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 20-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <op_code>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <microinstruccion> |          |
+    -----------------------------------------------------------------------
+Unit <PROC_MEM_OPCODE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <microcod_funcion>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ins> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 20-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <f_code>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ins>           |          |
+    -----------------------------------------------------------------------
+Unit <microcod_funcion> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x20-bit single-port distributed Read Only RAM       : 1
+ 32x20-bit single-port distributed Read Only RAM       : 1
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 13
+ 20-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <REGISTRO_EDO/f_aux_3> of sequential type is unconnected in block <PROC_UNID_CONTROL>.
+WARNING:Xst:2677 - Node <REGISTRO_EDO/f_aux_2> of sequential type is unconnected in block <PROC_UNID_CONTROL>.
+
+Optimizing unit <PROC_UNID_CONTROL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PROC_UNID_CONTROL, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PROC_UNID_CONTROL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 45
+#      INV                         : 2
+#      LUT2                        : 5
+#      LUT4                        : 1
+#      LUT5                        : 12
+#      LUT6                        : 24
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 4
+#      FDC                         : 1
+#      FDC_1                       : 1
+#      FDCE_1                      : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 13
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               2  out of  126800     0%  
+ Number of Slice LUTs:                   44  out of  63400     0%  
+    Number used as Logic:                44  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     44
+   Number with an unused Flip Flop:      42  out of     44    95%  
+   Number with an unused LUT:             0  out of     44     0%  
+   Number of fully used LUT-FF pairs:     2  out of     44     4%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  34  out of    210    16%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.053ns (Maximum Frequency: 949.307MHz)
+   Minimum input arrival time before clock: 0.643ns
+   Maximum output required time after clock: 3.961ns
+   Maximum combinational path delay: 3.958ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.053ns (frequency: 949.307MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.053ns (Levels of Logic = 1)
+  Source:            NIVEL/pclk (FF)
+  Destination:       NIVEL/pclk (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: NIVEL/pclk to NIVEL/pclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            3   0.364   0.289  NIVEL/pclk (NIVEL/pclk)
+     INV:I->O              1   0.113   0.279  NIVEL/pclk_INV_7_o1_INV_0 (NIVEL/pclk_INV_7_o)
+     FDC_1:D                   0.008          NIVEL/pclk
+    ----------------------------------------
+    Total                      1.053ns (0.485ns logic, 0.568ns route)
+                                       (46.0% logic, 54.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.643ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       REGISTRO_EDO/f_aux_1 (FF)
+  Destination Clock: clk falling
+
+  Data Path: clr to REGISTRO_EDO/f_aux_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.293  clr_IBUF (clr_IBUF)
+     FDCE_1:CLR                0.349          REGISTRO_EDO/f_aux_0
+    ----------------------------------------
+    Total                      0.643ns (0.350ns logic, 0.293ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 479 / 18
+-------------------------------------------------------------------------
+Offset:              3.961ns (Levels of Logic = 7)
+  Source:            REGISTRO_EDO/f_aux_0 (FF)
+  Destination:       microinstruccion<5> (PAD)
+  Source Clock:      clk falling
+
+  Data Path: REGISTRO_EDO/f_aux_0 to microinstruccion<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE_1:C->Q           2   0.364   0.697  REGISTRO_EDO/f_aux_0 (REGISTRO_EDO/f_aux_0)
+     LUT6:I0->O            1   0.097   0.379  UNIDAD_DE_CONTROL/Mmux_sdopc_a15_SW0 (N6)
+     LUT6:I4->O            8   0.097   0.327  UNIDAD_DE_CONTROL/Mmux_sdopc_a15 (UNIDAD_DE_CONTROL/Mmux_sdopc_a)
+     LUT6:I5->O           14   0.097   0.439  UNIDAD_DE_CONTROL/Mmux_sdopc_a23 (sdopc_aux)
+     LUT2:I0->O           10   0.097   0.598  Mmux_mux_Opcode31 (mux_Opcode<2>)
+     LUT6:I2->O            1   0.097   0.295  Mmux_microinstruccion161 (Mmux_microinstruccion16)
+     LUT6:I5->O            1   0.097   0.279  Mmux_microinstruccion162 (microinstruccion_5_OBUF)
+     OBUF:I->O                 0.000          microinstruccion_5_OBUF (microinstruccion<5>)
+    ----------------------------------------
+    Total                      3.961ns (0.946ns logic, 3.015ns route)
+                                       (23.9% logic, 76.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1722 / 20
+-------------------------------------------------------------------------
+Delay:               3.958ns (Levels of Logic = 8)
+  Source:            op_code<0> (PAD)
+  Destination:       microinstruccion<5> (PAD)
+
+  Data Path: op_code<0> to microinstruccion<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.001   0.743  op_code_0_IBUF (op_code_0_IBUF)
+     LUT5:I0->O            1   0.097   0.693  UNIDAD_DE_CONTROL/Mmux_sdopc_a14 (UNIDAD_DE_CONTROL/Mmux_sdopc_a13)
+     LUT6:I0->O            8   0.097   0.327  UNIDAD_DE_CONTROL/Mmux_sdopc_a15 (UNIDAD_DE_CONTROL/Mmux_sdopc_a)
+     LUT6:I5->O           14   0.097   0.439  UNIDAD_DE_CONTROL/Mmux_sdopc_a23 (sdopc_aux)
+     LUT2:I0->O           10   0.097   0.598  Mmux_mux_Opcode31 (mux_Opcode<2>)
+     LUT6:I2->O            1   0.097   0.295  Mmux_microinstruccion161 (Mmux_microinstruccion16)
+     LUT6:I5->O            1   0.097   0.279  Mmux_microinstruccion162 (microinstruccion_5_OBUF)
+     OBUF:I->O                 0.000          microinstruccion_5_OBUF (microinstruccion<5>)
+    ----------------------------------------
+    Total                      3.958ns (0.583ns logic, 3.375ns route)
+                                       (14.7% logic, 85.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.050|         |    1.053|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.53 secs
+ 
+--> 
+
+Total memory usage is 463752 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

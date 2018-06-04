@@ -21,8 +21,129 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PROC_UNID_CONTROL.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PROC_UNID_CONTROL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PROC_UNID_CONTROL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PROC_UNID_CONTROL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PROC_UNID_CONTROL.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROC_UNID_CONTROL.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PROC_UNID_CONTROL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PROC_UNID_CONTROL.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PROC_UNID_CONTROL.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROC_UNID_CONTROL_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PROC_UNID_CONTROL_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PROC_UNID_CONTROL_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROC_UNID_CONTROL_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROC_UNID_CONTROL_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1527635541" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635541" xil_pn:in_ck="2081620891582374857" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
+      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
+      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
+      <outfile xil_pn:name="../condicion/condicion.vhd"/>
+      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635541" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4474714132050793882" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635541" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="238961609680159044" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635541" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8539605454912912340" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635541" xil_pn:in_ck="2081620891582374857" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
+      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
+      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
+      <outfile xil_pn:name="../condicion/condicion.vhd"/>
+      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635546" xil_pn:in_ck="2081620891582374857" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7266148884379708591" xil_pn:start_ts="1527635541">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL_beh.prj"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635546" xil_pn:in_ck="-6911680155370800718" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="5824580449816918556" xil_pn:start_ts="1527635546">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3025532910651757188" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8539605454912912340" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4474714132050793882" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635117" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6295679326647921526" xil_pn:start_ts="1527635117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527635338" xil_pn:in_ck="2081620891582374857" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-3098451666833915277" xil_pn:start_ts="1527635321">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.lso"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.ngc"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.ngr"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.prj"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.stx"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.syr"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.xst"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>

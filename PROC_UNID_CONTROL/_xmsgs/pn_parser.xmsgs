@@ -8,7 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_DECODER/PROC_DECODER.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NIVEL/PROC_NIVEL.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/PROC_UNID_CONTROL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/condicion/condicion.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/microcod_funcion/microcod_funcion.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/reg_estado/reg_estado.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/subunidad_control/subunidad_control.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

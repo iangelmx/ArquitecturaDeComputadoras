@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-11T18:25:06</DateModified>
+  <DateModified>2018-06-05T17:22:33</DateModified>
   <ModuleName>archivo_registros</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/archivo_registros/iseconfig/archivo_registros.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/archivo_registros\</ImplementationReportsDirectory>
-  <DateInitialized>2018-04-11T15:23:01</DateInitialized>
+  <SummaryTimeStamp>2018-06-05T17:22:15</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/archivo_registros/iseconfig/archivo_registros.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/archivo_registros\</ImplementationReportsDirectory>
+  <DateInitialized>2018-06-05T17:22:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

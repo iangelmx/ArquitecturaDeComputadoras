@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.37 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: archivo_registros.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\archivo_registros\archivo_registros.vhd" into library work
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\archivo_registros\archivo_registros.vhd" into library work
 Parsing entity <archivo_registros>.
 Parsing architecture <Behavioral> of entity <archivo_registros>.
 
@@ -113,52 +113,54 @@ Parsing architecture <Behavioral> of entity <archivo_registros>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <archivo_registros> (architecture <Behavioral>) from library <work>.
+Elaborating entity <archivo_registros> (architecture <Behavioral>) with generics from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <archivo_registros>.
-    Related source file is "C:\Users\ayhc9\arqCompVHDL\archivo_registros\archivo_registros.vhd".
-    Found 16-bit register for signal <archivo<1>>.
-    Found 16-bit register for signal <archivo<2>>.
-    Found 16-bit register for signal <archivo<3>>.
-    Found 16-bit register for signal <archivo<4>>.
-    Found 16-bit register for signal <archivo<5>>.
-    Found 16-bit register for signal <archivo<6>>.
-    Found 16-bit register for signal <archivo<7>>.
-    Found 16-bit register for signal <archivo<8>>.
-    Found 16-bit register for signal <archivo<9>>.
-    Found 16-bit register for signal <archivo<10>>.
-    Found 16-bit register for signal <archivo<11>>.
-    Found 16-bit register for signal <archivo<12>>.
-    Found 16-bit register for signal <archivo<13>>.
-    Found 16-bit register for signal <archivo<14>>.
-    Found 16-bit register for signal <archivo<15>>.
-    Found 16-bit register for signal <archivo<0>>.
-    Found 16-bit register for signal <res>.
-    Found 16-bit shifter logical right for signal <r_reg1[3]_shamt[3]_shift_right_1_OUT> created at line 66
-INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <archivo>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <archivo>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 16-bit 16-to-1 multiplexer for signal <r_data1> created at line 83.
-    Found 16-bit 16-to-1 multiplexer for signal <r_data2> created at line 84.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\archivo_registros\archivo_registros.vhd".
+        n = 16
+    Found 16-bit register for signal <banco<1>>.
+    Found 16-bit register for signal <banco<2>>.
+    Found 16-bit register for signal <banco<3>>.
+    Found 16-bit register for signal <banco<4>>.
+    Found 16-bit register for signal <banco<5>>.
+    Found 16-bit register for signal <banco<6>>.
+    Found 16-bit register for signal <banco<7>>.
+    Found 16-bit register for signal <banco<8>>.
+    Found 16-bit register for signal <banco<9>>.
+    Found 16-bit register for signal <banco<10>>.
+    Found 16-bit register for signal <banco<11>>.
+    Found 16-bit register for signal <banco<12>>.
+    Found 16-bit register for signal <banco<13>>.
+    Found 16-bit register for signal <banco<14>>.
+    Found 16-bit register for signal <banco<15>>.
+    Found 16-bit register for signal <banco<0>>.
+    Found 16-bit shifter logical right for signal <readRegister1[3]_SHAMT[3]_shift_right_34_OUT> created at line 110
+    Found 16-bit shifter logical left for signal <readRegister1[3]_SHAMT[3]_shift_left_69_OUT> created at line 116
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 16-bit 16-to-1 multiplexer for signal <readData1> created at line 123.
+    Found 16-bit 16-to-1 multiplexer for signal <readData2> created at line 124.
     Summary:
-	inferred 272 D-type flip-flop(s).
-	inferred  34 Multiplexer(s).
-	inferred   1 Combinational logic shifter(s).
+	inferred 256 D-type flip-flop(s).
+	inferred  98 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
 Unit <archivo_registros> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 17
- 16-bit register                                       : 17
-# Multiplexers                                         : 34
+# Registers                                            : 16
+ 16-bit register                                       : 16
+# Multiplexers                                         : 98
  16-bit 16-to-1 multiplexer                            : 2
- 16-bit 2-to-1 multiplexer                             : 32
-# Logic shifters                                       : 1
+ 16-bit 2-to-1 multiplexer                             : 96
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
 
 =========================================================================
@@ -172,12 +174,13 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 272
- Flip-Flops                                            : 272
-# Multiplexers                                         : 64
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Multiplexers                                         : 128
  1-bit 16-to-1 multiplexer                             : 32
- 16-bit 2-to-1 multiplexer                             : 32
-# Logic shifters                                       : 1
+ 16-bit 2-to-1 multiplexer                             : 96
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
 
 =========================================================================
@@ -198,8 +201,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 272
- Flip-Flops                                            : 272
+# Registers                                            : 256
+ Flip-Flops                                            : 256
 
 =========================================================================
 
@@ -222,20 +225,20 @@ Top Level Output File Name         : archivo_registros.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 557
-#      LUT3                        : 8
-#      LUT4                        : 279
-#      LUT5                        : 23
-#      LUT6                        : 148
-#      MUXF7                       : 67
+# BELS                             : 612
+#      LUT2                        : 4
+#      LUT3                        : 11
+#      LUT4                        : 23
+#      LUT5                        : 263
+#      LUT6                        : 205
+#      MUXF7                       : 74
 #      MUXF8                       : 32
-# FlipFlops/Latches                : 272
+# FlipFlops/Latches                : 256
 #      FDCE                        : 256
-#      FDE                         : 16
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 67
-#      IBUF                        : 35
+# IO Buffers                       : 68
+#      IBUF                        : 36
 #      OBUF                        : 32
 
 Device utilization summary:
@@ -245,20 +248,20 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             272  out of  126800     0%  
- Number of Slice LUTs:                  458  out of  63400     0%  
-    Number used as Logic:               458  out of  63400     0%  
+ Number of Slice Registers:             256  out of  126800     0%  
+ Number of Slice LUTs:                  506  out of  63400     0%  
+    Number used as Logic:               506  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    458
-   Number with an unused Flip Flop:     186  out of    458    40%  
-   Number with an unused LUT:             0  out of    458     0%  
-   Number of fully used LUT-FF pairs:   272  out of    458    59%  
-   Number of unique control sets:        17
+ Number of LUT Flip Flop pairs used:    506
+   Number with an unused Flip Flop:     250  out of    506    49%  
+   Number with an unused LUT:             0  out of    506     0%  
+   Number of fully used LUT-FF pairs:   256  out of    506    50%  
+   Number of unique control sets:        16
 
 IO Utilization: 
  Number of IOs:                          69
- Number of bonded IOBs:                  68  out of    210    32%  
+ Number of bonded IOBs:                  69  out of    210    32%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -284,7 +287,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 272   |
+clk                                | BUFGP                  | 256   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -295,10 +298,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.003ns (Maximum Frequency: 332.989MHz)
-   Minimum input arrival time before clock: 2.888ns
-   Maximum output required time after clock: 1.841ns
-   Maximum combinational path delay: 1.725ns
+   Minimum period: 3.734ns (Maximum Frequency: 267.831MHz)
+   Minimum input arrival time before clock: 3.618ns
+   Maximum output required time after clock: 1.845ns
+   Maximum combinational path delay: 1.730ns
 
 Timing Details:
 ---------------
@@ -306,98 +309,100 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.003ns (frequency: 332.989MHz)
-  Total number of paths / destination ports: 2432 / 272
+  Clock period: 3.734ns (frequency: 267.831MHz)
+  Total number of paths / destination ports: 69120 / 256
 -------------------------------------------------------------------------
-Delay:               3.003ns (Levels of Logic = 6)
-  Source:            archivo_6_6 (FF)
-  Destination:       res_1 (FF)
+Delay:               3.734ns (Levels of Logic = 7)
+  Source:            banco_6_7 (FF)
+  Destination:       banco_15_8 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: archivo_6_6 to res_1
+  Data Path: banco_6_7 to banco_15_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.361   0.561  archivo_6_6 (archivo_6_6)
-     LUT6:I2->O            1   0.097   0.000  mux12_51 (mux12_51)
-     MUXF7:I1->O           1   0.279   0.000  mux12_4_f7 (mux12_4_f7)
-     MUXF8:I0->O           7   0.218   0.711  mux12_2_f8 (r_data1_6_OBUF)
-     LUT6:I1->O            1   0.097   0.000  Sh17_SW0_G (N17)
-     MUXF7:I1->O           1   0.279   0.295  Sh17_SW0 (N4)
-     LUT5:I4->O            1   0.097   0.000  Sh17 (Sh17)
-     FDE:D                     0.008          res_1
+     FDCE:C->Q             2   0.361   0.561  banco_6_7 (banco_6_7)
+     LUT6:I2->O            1   0.097   0.000  mux13_51 (mux13_51)
+     MUXF7:I1->O           1   0.279   0.000  mux13_4_f7 (mux13_4_f7)
+     MUXF8:I0->O          11   0.218   0.602  mux13_2_f8 (readData1_7_OBUF)
+     LUT6:I2->O            2   0.097   0.561  Sh401 (Sh40)
+     LUT6:I2->O            1   0.097   0.295  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1512 (Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1512)
+     LUT6:I5->O           16   0.097   0.364  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1513 (Mmux_banco[0][15]_banco[0][15]_mux_87_OUT151)
+     LUT5:I4->O            1   0.097   0.000  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT152 (banco[0][15]_banco[0][15]_mux_87_OUT<8>)
+     FDCE:D                    0.008          banco_0_8
     ----------------------------------------
-    Total                      3.003ns (1.436ns logic, 1.567ns route)
-                                       (47.8% logic, 52.2% route)
+    Total                      3.734ns (1.351ns logic, 2.383ns route)
+                                       (36.2% logic, 63.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 4739 / 800
+  Total number of paths / destination ports: 56176 / 768
 -------------------------------------------------------------------------
-Offset:              2.888ns (Levels of Logic = 7)
-  Source:            r_reg1<1> (PAD)
-  Destination:       res_1 (FF)
+Offset:              3.618ns (Levels of Logic = 8)
+  Source:            readRegister1<1> (PAD)
+  Destination:       banco_15_8 (FF)
   Destination Clock: clk rising
 
-  Data Path: r_reg1<1> to res_1
+  Data Path: readRegister1<1> to banco_15_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            64   0.001   0.805  r_reg1_1_IBUF (r_reg1_1_IBUF)
-     LUT6:I0->O            1   0.097   0.000  mux12_51 (mux12_51)
-     MUXF7:I1->O           1   0.279   0.000  mux12_4_f7 (mux12_4_f7)
-     MUXF8:I0->O           7   0.218   0.711  mux12_2_f8 (r_data1_6_OBUF)
-     LUT6:I1->O            1   0.097   0.000  Sh17_SW0_G (N17)
-     MUXF7:I1->O           1   0.279   0.295  Sh17_SW0 (N4)
-     LUT5:I4->O            1   0.097   0.000  Sh17 (Sh17)
-     FDE:D                     0.008          res_1
+     IBUF:I->O            64   0.001   0.805  readRegister1_1_IBUF (readRegister1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  mux13_51 (mux13_51)
+     MUXF7:I1->O           1   0.279   0.000  mux13_4_f7 (mux13_4_f7)
+     MUXF8:I0->O          11   0.218   0.602  mux13_2_f8 (readData1_7_OBUF)
+     LUT6:I2->O            2   0.097   0.561  Sh401 (Sh40)
+     LUT6:I2->O            1   0.097   0.295  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1512 (Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1512)
+     LUT6:I5->O           16   0.097   0.364  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT1513 (Mmux_banco[0][15]_banco[0][15]_mux_87_OUT151)
+     LUT5:I4->O            1   0.097   0.000  Mmux_banco[0][15]_banco[0][15]_mux_87_OUT152 (banco[0][15]_banco[0][15]_mux_87_OUT<8>)
+     FDCE:D                    0.008          banco_0_8
     ----------------------------------------
-    Total                      2.888ns (1.076ns logic, 1.812ns route)
-                                       (37.3% logic, 62.7% route)
+    Total                      3.618ns (0.991ns logic, 2.627ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 512 / 32
 -------------------------------------------------------------------------
-Offset:              1.841ns (Levels of Logic = 4)
-  Source:            archivo_6_15 (FF)
-  Destination:       r_data1<15> (PAD)
+Offset:              1.845ns (Levels of Logic = 4)
+  Source:            banco_6_15 (FF)
+  Destination:       readData1<15> (PAD)
   Source Clock:      clk rising
 
-  Data Path: archivo_6_15 to r_data1<15>
+  Data Path: banco_6_15 to readData1<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.361   0.561  archivo_6_15 (archivo_6_15)
+     FDCE:C->Q             2   0.361   0.561  banco_6_15 (banco_6_15)
      LUT6:I2->O            1   0.097   0.000  mux6_51 (mux6_51)
      MUXF7:I1->O           1   0.279   0.000  mux6_4_f7 (mux6_4_f7)
-     MUXF8:I0->O          11   0.218   0.326  mux6_2_f8 (r_data1_15_OBUF)
-     OBUF:I->O                 0.000          r_data1_15_OBUF (r_data1<15>)
+     MUXF8:I0->O          12   0.218   0.330  mux6_2_f8 (readData1_15_OBUF)
+     OBUF:I->O                 0.000          readData1_15_OBUF (readData1<15>)
     ----------------------------------------
-    Total                      1.841ns (0.955ns logic, 0.886ns route)
-                                       (51.9% logic, 48.1% route)
+    Total                      1.845ns (0.955ns logic, 0.890ns route)
+                                       (51.8% logic, 48.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 352 / 32
 -------------------------------------------------------------------------
-Delay:               1.725ns (Levels of Logic = 5)
-  Source:            r_reg1<1> (PAD)
-  Destination:       r_data1<15> (PAD)
+Delay:               1.730ns (Levels of Logic = 5)
+  Source:            readRegister1<1> (PAD)
+  Destination:       readData1<15> (PAD)
 
-  Data Path: r_reg1<1> to r_data1<15>
+  Data Path: readRegister1<1> to readData1<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            64   0.001   0.805  r_reg1_1_IBUF (r_reg1_1_IBUF)
-     LUT6:I0->O            1   0.097   0.000  mux6_51 (mux6_51)
-     MUXF7:I1->O           1   0.279   0.000  mux6_4_f7 (mux6_4_f7)
-     MUXF8:I0->O          11   0.218   0.326  mux6_2_f8 (r_data1_15_OBUF)
-     OBUF:I->O                 0.000          r_data1_15_OBUF (r_data1<15>)
+     IBUF:I->O            64   0.001   0.805  readRegister1_1_IBUF (readRegister1_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  mux5_51 (mux5_51)
+     MUXF7:I1->O           1   0.279   0.000  mux5_4_f7 (mux5_4_f7)
+     MUXF8:I0->O          12   0.218   0.330  mux5_2_f8 (readData1_14_OBUF)
+     OBUF:I->O                 0.000          readData1_14_OBUF (readData1<14>)
     ----------------------------------------
-    Total                      1.725ns (0.595ns logic, 1.130ns route)
-                                       (34.5% logic, 65.5% route)
+    Total                      1.730ns (0.595ns logic, 1.135ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 
@@ -409,18 +414,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.003|         |         |         |
+clk            |    3.734|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 72.00 secs
-Total CPU time to Xst completion: 71.64 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.96 secs
  
 --> 
 
-Total memory usage is 491472 kilobytes
+Total memory usage is 463796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

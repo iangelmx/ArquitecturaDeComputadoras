@@ -52,10 +52,12 @@
     <transform xil_pn:end_ts="1528239160" xil_pn:in_ck="-415849206332770285" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528239160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239160" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4005909121603251354" xil_pn:start_ts="1528239160">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -68,11 +70,14 @@
     <transform xil_pn:end_ts="1528239160" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7292290764325371916" xil_pn:start_ts="1528239160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForProperties"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239160" xil_pn:in_ck="-415849206332770285" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528239160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -97,6 +102,7 @@
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -104,12 +110,16 @@
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8048307739291205700" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForProperties"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7292290764325371916" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForProperties"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -118,28 +128,36 @@
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4005909121603251354" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForProperties"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForPredecessor"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239067" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6347939130489889898" xil_pn:start_ts="1528239067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+
     </transform>
     <transform xil_pn:end_ts="1528239154" xil_pn:in_ck="-415849206332770285" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="6002654313944053907" xil_pn:start_ts="1528239136">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
+
     </transform>
   </transforms>
 

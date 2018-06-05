@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_EXT_SIGNO/PROC_EXT_SIGNO_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_EXT_SIGNO/PROC_EXT_SIGNO_beh.prj" "work.PROC_EXT_SIGNO" 

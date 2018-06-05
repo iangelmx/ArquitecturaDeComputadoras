@@ -30,7 +30,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PILA.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PILA.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PILA.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PILA_TB_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PILA_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PILA_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="PILA_TB_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PILA_TB_stx_beh.prj"/>
@@ -142,11 +142,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1524785292" xil_pn:in_ck="3506805759766" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-1641842565310559114" xil_pn:start_ts="1524785272">
+    <transform xil_pn:end_ts="1528236879" xil_pn:in_ck="3506805759766" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-1641842565310559114" xil_pn:start_ts="1528236853">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PILA.lso"/>
       <outfile xil_pn:name="PILA.ngc"/>
       <outfile xil_pn:name="PILA.ngr"/>
@@ -154,6 +152,7 @@
       <outfile xil_pn:name="PILA.stx"/>
       <outfile xil_pn:name="PILA.syr"/>
       <outfile xil_pn:name="PILA.xst"/>
+      <outfile xil_pn:name="PILA_TB_beh.prj"/>
       <outfile xil_pn:name="PILA_TB_stx_beh.prj"/>
       <outfile xil_pn:name="PILA_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>

@@ -7,21 +7,24 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity PILA is
     Port ( datos : in  STD_LOGIC_VECTOR (15 downto 0);
            PCout : out  STD_LOGIC_VECTOR (15 downto 0);
-			  stack : out integer range 0 to 15;
            clk, clr, up, wpc, down : in  STD_LOGIC);
 end PILA;
 
 architecture Behavioral of PILA is
-	type banco is array (0 to 15) of std_logic_vector(15 downto 0);
+--	type banco is array (0 to 15) of std_logic_vector(15 downto 0);
+	type banco is array (0 to 7) of std_logic_vector(15 downto 0);
 	signal aux:banco;
-	signal spaux : integer range 0 to 15;
+--	signal spaux : integer range 0 to 15;
+	signal spaux : integer range 0 to 7;
 begin
 	process (clk, clr)
-	variable sp : integer range 0 to 15;
+--	variable sp : integer range 0 to 15;
+	variable sp : integer range 0 to 7;
 	begin
 		if(clr='1')then
 			sp:=0;
-			for i in 0 to 15 loop
+--			for i in 0 to 15 loop
+			for i in 0 to 7 loop
 				aux(i) <= "0000000000000000";
 			end loop;
 		elsif( clk'event and clk='1') then
@@ -38,7 +41,6 @@ begin
 		end if;
 		spaux<=sp;
 	end process;
-	stack<=spaux;
 	PCout <= aux(spaux);
 
 

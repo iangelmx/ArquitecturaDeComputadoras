@@ -122,7 +122,7 @@ begin
 
 	readData1 <= banco(conv_integer(readRegister1));
 	readData2 <= banco(conv_integer(readRegister2));
-
+	
 end Behavioral;
 
 

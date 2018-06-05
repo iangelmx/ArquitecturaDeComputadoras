@@ -57,7 +57,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528159374" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528159374">
+    <transform xil_pn:end_ts="1528235377" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528235376">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
@@ -82,7 +82,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528159374" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528159374">
+    <transform xil_pn:end_ts="1528235382" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528235382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
@@ -95,9 +95,11 @@
       <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
       <outfile xil_pn:name="TB_UnidadDeControl.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1528159379" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2092247436593304132" xil_pn:start_ts="1528159374">
+    <transform xil_pn:end_ts="1528235390" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2092247436593304132" xil_pn:start_ts="1528235382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_UnidadDeControl_beh.prj"/>
       <outfile xil_pn:name="TB_UnidadDeControl_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -105,9 +107,11 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1528159379" xil_pn:in_ck="-6240736565801905515" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2954561065624388591" xil_pn:start_ts="1528159379">
+    <transform xil_pn:end_ts="1528235390" xil_pn:in_ck="-6240736565801905515" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2954561065624388591" xil_pn:start_ts="1528235390">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_UnidadDeControl_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

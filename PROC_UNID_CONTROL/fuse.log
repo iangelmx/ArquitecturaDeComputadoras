@@ -30,8 +30,8 @@ Compiling architecture behavioral of entity microcod_funcion [microcod_funcion_d
 Compiling architecture behavioral of entity PROC_UNID_CONTROL [proc_unid_control_default]
 Compiling architecture behavior of entity tb_unidaddecontrol
 Time Resolution for simulation is 1ps.
-Waiting for 6 sub-compilation(s) to finish...
+Waiting for 7 sub-compilation(s) to finish...
 Compiled 23 VHDL Units
 Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_UNID_CONTROL/TB_UnidadDeControl_isim_beh.exe
-Fuse Memory Usage: 35124 KB
+Fuse Memory Usage: 35112 KB
 Fuse CPU Usage: 874 ms

@@ -53,36 +53,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1528146023" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1528146023">
+    <transform xil_pn:end_ts="1528159374" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1528159374">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528147001" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528147001">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
-      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
-      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
-      <outfile xil_pn:name="../condicion/condicion.vhd"/>
-      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
-      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
-      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
-      <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
-      <outfile xil_pn:name="TB_UnidadDeControl.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1528147014" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2015421117937713814" xil_pn:start_ts="1528147014">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1528147014" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6885467343589148088" xil_pn:start_ts="1528147014">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1528146023" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8539605454912912340" xil_pn:start_ts="1528146023">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1528147001" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528147001">
+    <transform xil_pn:end_ts="1528159374" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528159374">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
@@ -95,7 +70,32 @@
       <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
       <outfile xil_pn:name="TB_UnidadDeControl.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1528147019" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2092247436593304132" xil_pn:start_ts="1528147014">
+    <transform xil_pn:end_ts="1528159374" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2015421117937713814" xil_pn:start_ts="1528159374">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528159374" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6885467343589148088" xil_pn:start_ts="1528159374">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528159374" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8539605454912912340" xil_pn:start_ts="1528159374">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528159374" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528159374">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
+      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
+      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
+      <outfile xil_pn:name="../condicion/condicion.vhd"/>
+      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
+      <outfile xil_pn:name="PROC_UNID_CONTROL.vhd"/>
+      <outfile xil_pn:name="TB_UnidadDeControl.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1528159379" xil_pn:in_ck="7725598661286364237" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2092247436593304132" xil_pn:start_ts="1528159374">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TB_UnidadDeControl_beh.prj"/>
@@ -105,7 +105,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1528147019" xil_pn:in_ck="-6240736565801905515" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2954561065624388591" xil_pn:start_ts="1528147019">
+    <transform xil_pn:end_ts="1528159379" xil_pn:in_ck="-6240736565801905515" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2954561065624388591" xil_pn:start_ts="1528159379">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="TB_UnidadDeControl_isim_beh.wdb"/>

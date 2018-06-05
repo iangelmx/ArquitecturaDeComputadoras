@@ -119,7 +119,7 @@ BEGIN
 			read(LINEA_VEC, var_lf);
 			lf <= var_lf;
 			
-			WAIT UNTIL RISING_EDGE(CLK);	--ESPERO AL FLANCO DE SUBIDA 
+			--WAIT UNTIL RISING_EDGE(CLK);	--ESPERO AL FLANCO DE SUBIDA 
 
 			var_microins := microinstruccion;
 			--Las que NO tienen var, reemplazar por las de la entidad.
@@ -136,8 +136,28 @@ BEGIN
 			write(LINEA_RES, var_lf, 	left, 16);
 			write(LINEA_RES, var_microins, 	left, 16);
 			write(LINEA_RES, var_nivel, 	right, 16);
+			
+			writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
+			
+			WAIT UNTIL FALLING_EDGE(CLK);	--ESPERO AL FLANCO DE BAJADA
+			
+			IF nivel_out = '1' THEN
+				var_nivel := "ALTO";	
+			ELSE
+				var_nivel := "BAJO";
+			END IF;
+			
+			write(LINEA_RES, var_opcode, left, 16);
+			write(LINEA_RES, var_funcode, 	left, 16);
+			write(LINEA_RES, var_flags, 	left, 16);
+			write(LINEA_RES, var_clr, 	left, 16);
+			write(LINEA_RES, var_lf, 	left, 16);
+			write(LINEA_RES, var_microins, 	left, 16);
+			write(LINEA_RES, var_nivel, 	right, 16);
 
 			writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
+			
+			WAIT UNTIL RISING_EDGE(CLK);	--ESPERO AL FLANCO DE SUBIDA 
 			
 		end loop;
 		file_close(ARCH_VEC);  -- cierra el archivo

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_EXT_DIR/PROC_EXT_DIR.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_EXT_DIR/PROC_EXT_DIR.syr" 

@@ -9,3 +9,4 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_D
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.syr" 
 xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.syr" 
 xst -intstyle ise -ifn "C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.xst" -ofn "C:/Users/ayhc9/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_DATOS/MEMORIA_DATOS.syr" 

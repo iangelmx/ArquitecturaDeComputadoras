@@ -9,7 +9,7 @@ entity MEMORIA_DATOS is
 	(
 		palabra : integer := 16;
 		busT  : integer := 16;
-		capacidad : integer := 65536
+		capacidad : integer := 2048
 	);
 	port
 	(

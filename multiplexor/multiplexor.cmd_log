@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor.xst" -ofn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor.syr" 
+xst -intstyle ise -ifn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor.xst" -ofn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor.syr" 

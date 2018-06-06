@@ -1,0 +1,555 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Reading design: PF_yayo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PF_yayo.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PF_yayo"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : PF_yayo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd" into library work
+Parsing entity <ALU_1BIT>.
+Parsing architecture <Behavioral> of entity <alu_1bit>.
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\multiplexor\multiplexor.vhd" into library work
+Parsing entity <multiplexor>.
+Parsing architecture <Behavioral> of entity <multiplexor>.
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd" into library work
+Parsing entity <MEMORIA_DATOS>.
+Parsing architecture <Behavioral> of entity <memoria_datos>.
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\archivo_registros\archivo_registros.vhd" into library work
+Parsing entity <archivo_registros>.
+Parsing architecture <Behavioral> of entity <archivo_registros>.
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\ALU_16\PRACTICA03.vhd" into library work
+Parsing entity <PRACTICA03>.
+Parsing architecture <Behavioral> of entity <practica03>.
+Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\PF_yayo\PF_yayo.vhd" into library work
+Parsing entity <PF_yayo>.
+Parsing architecture <Behavioral> of entity <pf_yayo>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <PF_yayo> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <archivo_registros> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <multiplexor> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PRACTICA03> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU_1BIT> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MEMORIA_DATOS> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PF_yayo>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\PF_yayo\PF_yayo.vhd".
+    Summary:
+	no macro.
+Unit <PF_yayo> synthesized.
+
+Synthesizing Unit <archivo_registros>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\archivo_registros\archivo_registros.vhd".
+        n = 16
+    Found 16-bit register for signal <banco<1>>.
+    Found 16-bit register for signal <banco<2>>.
+    Found 16-bit register for signal <banco<3>>.
+    Found 16-bit register for signal <banco<4>>.
+    Found 16-bit register for signal <banco<5>>.
+    Found 16-bit register for signal <banco<6>>.
+    Found 16-bit register for signal <banco<7>>.
+    Found 16-bit register for signal <banco<8>>.
+    Found 16-bit register for signal <banco<9>>.
+    Found 16-bit register for signal <banco<10>>.
+    Found 16-bit register for signal <banco<11>>.
+    Found 16-bit register for signal <banco<12>>.
+    Found 16-bit register for signal <banco<13>>.
+    Found 16-bit register for signal <banco<14>>.
+    Found 16-bit register for signal <banco<15>>.
+    Found 16-bit register for signal <banco<0>>.
+    Found 16-bit shifter logical right for signal <readRegister1[3]_SHAMT[3]_shift_right_34_OUT> created at line 110
+    Found 16-bit shifter logical left for signal <readRegister1[3]_SHAMT[3]_shift_left_69_OUT> created at line 116
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 16-bit 16-to-1 multiplexer for signal <readData1> created at line 123.
+    Found 16-bit 16-to-1 multiplexer for signal <readData2> created at line 124.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+	inferred  98 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <archivo_registros> synthesized.
+
+Synthesizing Unit <multiplexor>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\multiplexor\multiplexor.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <multiplexor> synthesized.
+
+Synthesizing Unit <PRACTICA03>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\ALU_16\PRACTICA03.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <PRACTICA03> synthesized.
+
+Synthesizing Unit <ALU_1BIT>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\ALU_1BIT\ALU_1BIT.vhd".
+    Found 1-bit 4-to-1 multiplexer for signal <resul_aux> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <ALU_1BIT> synthesized.
+
+Synthesizing Unit <MEMORIA_DATOS>.
+    Related source file is "C:\Users\ayhc9\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd".
+        palabra = 16
+        busT = 16
+        capacidad = 2048
+WARNING:Xst:647 - Input <A<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2048x16-bit single-port RAM <Mram_archivo> for signal <archivo>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MEMORIA_DATOS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x16-bit single-port RAM                           : 1
+# Registers                                            : 16
+ 16-bit register                                       : 16
+# Multiplexers                                         : 120
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 16
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 2-to-1 multiplexer                             : 100
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MEMORIA_DATOS>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_archivo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 16-bit                  |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wd>            | high     |
+    |     addrA          | connected to signal <A>             |          |
+    |     diA            | connected to signal <dato_in>       |          |
+    |     doA            | connected to signal <dato_out>      |          |
+    -----------------------------------------------------------------------
+Unit <MEMORIA_DATOS> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x16-bit single-port distributed RAM               : 1
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Multiplexers                                         : 150
+ 1-bit 16-to-1 multiplexer                             : 32
+ 1-bit 2-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 100
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Xors                                                 : 65
+ 1-bit xor2                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PF_yayo> ...
+
+Optimizing unit <archivo_registros> ...
+
+Optimizing unit <PRACTICA03> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PF_yayo, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PF_yayo.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 785
+#      LUT2                        : 2
+#      LUT3                        : 58
+#      LUT4                        : 33
+#      LUT5                        : 262
+#      LUT6                        : 311
+#      MUXF7                       : 87
+#      MUXF8                       : 32
+# FlipFlops/Latches                : 256
+#      FDCE                        : 256
+# RAMS                             : 128
+#      RAM256X1S                   : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 108
+#      IBUF                        : 88
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             256  out of  126800     0%  
+ Number of Slice LUTs:                 1178  out of  63400     1%  
+    Number used as Logic:               666  out of  63400     1%  
+    Number used as Memory:              512  out of  19000     2%  
+       Number used as RAM:              512
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1178
+   Number with an unused Flip Flop:     922  out of   1178    78%  
+   Number with an unused LUT:             0  out of   1178     0%  
+   Number of fully used LUT-FF pairs:   256  out of   1178    21%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                         115
+ Number of bonded IOBs:                 109  out of    210    51%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 384   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.834ns (Maximum Frequency: 206.847MHz)
+   Minimum input arrival time before clock: 4.719ns
+   Maximum output required time after clock: 8.077ns
+   Maximum combinational path delay: 7.962ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.834ns (frequency: 206.847MHz)
+  Total number of paths / destination ports: 338432 / 1536
+-------------------------------------------------------------------------
+Delay:               4.834ns (Levels of Logic = 9)
+  Source:            AR/banco_6_1 (FF)
+  Destination:       MD/Mram_archivo1 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: AR/banco_6_1 to MD/Mram_archivo1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.561  AR/banco_6_1 (AR/banco_6_1)
+     LUT6:I2->O            1   0.097   0.000  AR/mux23_51 (AR/mux23_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux23_4_f7 (AR/mux23_4_f7)
+     MUXF8:I0->O           9   0.218   0.332  AR/mux23_2_f8 (rdata2<1>)
+     LUT4:I3->O            2   0.097   0.384  ALU/ALU02/Mxor_b_aux_xo<0>1 (ALU/ALU02/b_aux)
+     LUT6:I4->O            3   0.097   0.305  ALU/ALU02/cout_aux1 (ALU/carries<1>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU04/cout_aux1 (ALU/carries<3>)
+     LUT6:I5->O            2   0.097   0.299  ALU/ALU06/cout_aux1 (ALU/carries<5>)
+     LUT6:I5->O           13   0.097   0.351  ALU/ALU08/cout_aux1 (ALU/carries<7>)
+     LUT6:I5->O           16   0.097   0.348  write_ctrl (write_ctrl)
+     RAM256X1S:WE              0.408          MD/Mram_archivo1
+    ----------------------------------------
+    Total                      4.834ns (1.945ns logic, 2.890ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 314352 / 2048
+-------------------------------------------------------------------------
+Offset:              4.719ns (Levels of Logic = 10)
+  Source:            rreg2<1> (PAD)
+  Destination:       MD/Mram_archivo1 (RAM)
+  Destination Clock: clk rising
+
+  Data Path: rreg2<1> to MD/Mram_archivo1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.805  rreg2_1_IBUF (rreg2_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  AR/mux23_51 (AR/mux23_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux23_4_f7 (AR/mux23_4_f7)
+     MUXF8:I0->O           9   0.218   0.332  AR/mux23_2_f8 (rdata2<1>)
+     LUT4:I3->O            2   0.097   0.384  ALU/ALU02/Mxor_b_aux_xo<0>1 (ALU/ALU02/b_aux)
+     LUT6:I4->O            3   0.097   0.305  ALU/ALU02/cout_aux1 (ALU/carries<1>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU04/cout_aux1 (ALU/carries<3>)
+     LUT6:I5->O            2   0.097   0.299  ALU/ALU06/cout_aux1 (ALU/carries<5>)
+     LUT6:I5->O           13   0.097   0.351  ALU/ALU08/cout_aux1 (ALU/carries<7>)
+     LUT6:I5->O           16   0.097   0.348  write_ctrl (write_ctrl)
+     RAM256X1S:WE              0.408          MD/Mram_archivo1
+    ----------------------------------------
+    Total                      4.719ns (1.585ns logic, 3.134ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 40576 / 20
+-------------------------------------------------------------------------
+Offset:              8.077ns (Levels of Logic = 15)
+  Source:            AR/banco_6_1 (FF)
+  Destination:       flags<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: AR/banco_6_1 to flags<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.561  AR/banco_6_1 (AR/banco_6_1)
+     LUT6:I2->O            1   0.097   0.000  AR/mux23_51 (AR/mux23_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux23_4_f7 (AR/mux23_4_f7)
+     MUXF8:I0->O           9   0.218   0.332  AR/mux23_2_f8 (rdata2<1>)
+     LUT4:I3->O            2   0.097   0.384  ALU/ALU02/Mxor_b_aux_xo<0>1 (ALU/ALU02/b_aux)
+     LUT6:I4->O            3   0.097   0.305  ALU/ALU02/cout_aux1 (ALU/carries<1>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU04/cout_aux1 (ALU/carries<3>)
+     LUT6:I5->O            2   0.097   0.299  ALU/ALU06/cout_aux1 (ALU/carries<5>)
+     LUT6:I5->O           13   0.097   0.612  ALU/ALU08/cout_aux1 (ALU/carries<7>)
+     LUT6:I2->O            2   0.097   0.688  ALU/ALU10/cout_aux1 (ALU/carries<9>)
+     LUT6:I1->O            3   0.097   0.566  ALU/ALU11/cout_aux1 (ALU/carries<10>)
+     LUT6:I2->O            3   0.097   0.693  ALU/ALU13/cout_aux1 (ALU/carries<12>)
+     LUT6:I1->O            1   0.097   0.511  ALU/ALU14/cout_aux1 (ALU/carries<13>)
+     LUT6:I3->O            2   0.097   0.515  ALU/ALU15/Mmux_resul_aux11 (alu_o<14>)
+     LUT6:I3->O            1   0.097   0.279  ALU/Z<15>3 (flags_1_OBUF)
+     OBUF:I->O                 0.000          flags_1_OBUF (flags<1>)
+    ----------------------------------------
+    Total                      8.077ns (2.022ns logic, 6.055ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 37652 / 20
+-------------------------------------------------------------------------
+Delay:               7.962ns (Levels of Logic = 16)
+  Source:            rreg2<1> (PAD)
+  Destination:       flags<1> (PAD)
+
+  Data Path: rreg2<1> to flags<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            64   0.001   0.805  rreg2_1_IBUF (rreg2_1_IBUF)
+     LUT6:I0->O            1   0.097   0.000  AR/mux23_51 (AR/mux23_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux23_4_f7 (AR/mux23_4_f7)
+     MUXF8:I0->O           9   0.218   0.332  AR/mux23_2_f8 (rdata2<1>)
+     LUT4:I3->O            2   0.097   0.384  ALU/ALU02/Mxor_b_aux_xo<0>1 (ALU/ALU02/b_aux)
+     LUT6:I4->O            3   0.097   0.305  ALU/ALU02/cout_aux1 (ALU/carries<1>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU04/cout_aux1 (ALU/carries<3>)
+     LUT6:I5->O            2   0.097   0.299  ALU/ALU06/cout_aux1 (ALU/carries<5>)
+     LUT6:I5->O           13   0.097   0.612  ALU/ALU08/cout_aux1 (ALU/carries<7>)
+     LUT6:I2->O            2   0.097   0.688  ALU/ALU10/cout_aux1 (ALU/carries<9>)
+     LUT6:I1->O            3   0.097   0.566  ALU/ALU11/cout_aux1 (ALU/carries<10>)
+     LUT6:I2->O            3   0.097   0.693  ALU/ALU13/cout_aux1 (ALU/carries<12>)
+     LUT6:I1->O            1   0.097   0.511  ALU/ALU14/cout_aux1 (ALU/carries<13>)
+     LUT6:I3->O            2   0.097   0.515  ALU/ALU15/Mmux_resul_aux11 (alu_o<14>)
+     LUT6:I3->O            1   0.097   0.279  ALU/Z<15>3 (flags_1_OBUF)
+     OBUF:I->O                 0.000          flags_1_OBUF (flags<1>)
+    ----------------------------------------
+    Total                      7.962ns (1.662ns logic, 6.300ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.834|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 77.00 secs
+Total CPU time to Xst completion: 77.01 secs
+ 
+--> 
+
+Total memory usage is 491824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

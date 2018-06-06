@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="multiplexor.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="multiplexor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="multiplexor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="multiplexor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="multiplexor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="multiplexor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="multiplexor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="multiplexor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="multiplexor.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="multiplexor_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="multiplexor_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="multiplexor_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="multiplexor_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="multiplexor_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="multiplexor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1528323265" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323265" xil_pn:in_ck="-5249411712332586411" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="multiplexor.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323265" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9109783156691887214" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323265" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-985262453168369488" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323265" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="734815998027765784" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323265" xil_pn:in_ck="-5249411712332586411" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="multiplexor.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323272" xil_pn:in_ck="-5249411712332586411" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6196072395681989341" xil_pn:start_ts="1528323265">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="multiplexor_beh.prj"/>
+      <outfile xil_pn:name="multiplexor_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323272" xil_pn:in_ck="916775152676869844" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8997819512883347872" xil_pn:start_ts="1528323272">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="multiplexor_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2944433704202569840" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="734815998027765784" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-9109783156691887214" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323056" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5541330176922055586" xil_pn:start_ts="1528323056">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528323223" xil_pn:in_ck="-5249411712332586411" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="6436830885994261909" xil_pn:start_ts="1528323160">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="multiplexor.lso"/>
+      <outfile xil_pn:name="multiplexor.ngc"/>
+      <outfile xil_pn:name="multiplexor.ngr"/>
+      <outfile xil_pn:name="multiplexor.prj"/>
+      <outfile xil_pn:name="multiplexor.stx"/>
+      <outfile xil_pn:name="multiplexor.syr"/>
+      <outfile xil_pn:name="multiplexor.xst"/>
+      <outfile xil_pn:name="multiplexor_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

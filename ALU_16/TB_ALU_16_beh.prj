@@ -1,0 +1,3 @@
+vhdl work "remote_sources/_/ALU_1BIT/ALU_1BIT.vhd"
+vhdl work "PRACTICA03.vhd"
+vhdl work "TB_ALU_16.vhd"

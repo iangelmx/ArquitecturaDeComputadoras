@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 22 19:02:45 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "A<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "Cout" LOCATE = SITE "V15" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "T18" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "U18" LEVEL 1;
+COMP "B<2>" LOCATE = SITE "R13" LEVEL 1;
+COMP "B<3>" LOCATE = SITE "T8" LEVEL 1;
+COMP "operacion<0>" LOCATE = SITE "R16" LEVEL 1;
+COMP "R<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "operacion<1>" LOCATE = SITE "T13" LEVEL 1;
+COMP "R<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "operacion<2>" LOCATE = SITE "H6" LEVEL 1;
+COMP "Ovf" LOCATE = SITE "V11" LEVEL 1;
+COMP "R<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "operacion<3>" LOCATE = SITE "U12" LEVEL 1;
+COMP "R<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "N" LOCATE = SITE "V12" LEVEL 1;
+COMP "Z" LOCATE = SITE "V14" LEVEL 1;
+SCHEMATIC END;
+

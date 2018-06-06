@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-06-04T15:10:44</DateModified>
+  <DateModified>2018-06-06T15:33:06</DateModified>
   <ModuleName>MEMORIA_PROGRAMA</ModuleName>
-  <SummaryTimeStamp>2018-04-15T23:21:30</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/iseconfig/MEMORIA_PROGRAMA.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2018-06-06T01:08:53</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/MEMORIA_PROGRAMA/iseconfig/MEMORIA_PROGRAMA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/MEMORIA_PROGRAMA\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-15T23:27:34</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

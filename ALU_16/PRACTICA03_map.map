@@ -1,0 +1,225 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'PRACTICA03'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o PRACTICA03_map.ncd PRACTICA03.ngd PRACTICA03.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Wed Jun 06 00:52:49 2018
+
+WARNING:LIT:701 - PAD symbol "A<15>" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "A<15>" is not constrained (LOC) to a specific
+   location.
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 1 mins 41 secs 
+Total CPU  time at the beginning of Placer: 1 mins 23 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:de1a54ef) REAL time: 1 mins 48 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: A<15>
+   	 Comp: A<14>
+   	 Comp: A<13>
+   	 Comp: A<12>
+   	 Comp: A<11>
+   	 Comp: A<10>
+   	 Comp: A<9>
+   	 Comp: A<8>
+   	 Comp: A<7>
+   	 Comp: A<6>
+   	 Comp: A<5>
+   	 Comp: A<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: A<0>   IOSTANDARD = LVCMOS33
+   	 Comp: A<1>   IOSTANDARD = LVCMOS33
+   	 Comp: A<2>   IOSTANDARD = LVCMOS33
+   	 Comp: A<3>   IOSTANDARD = LVCMOS33
+   	 Comp: A<4>   IOSTANDARD = LVCMOS18
+   	 Comp: A<5>   IOSTANDARD = LVCMOS18
+   	 Comp: A<6>   IOSTANDARD = LVCMOS18
+   	 Comp: A<7>   IOSTANDARD = LVCMOS18
+   	 Comp: A<8>   IOSTANDARD = LVCMOS18
+   	 Comp: A<9>   IOSTANDARD = LVCMOS18
+   	 Comp: A<10>   IOSTANDARD = LVCMOS18
+   	 Comp: A<11>   IOSTANDARD = LVCMOS18
+   	 Comp: A<12>   IOSTANDARD = LVCMOS18
+   	 Comp: A<13>   IOSTANDARD = LVCMOS18
+   	 Comp: A<14>   IOSTANDARD = LVCMOS18
+   	 Comp: A<15>   IOSTANDARD = LVCMOS18
+
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: B<15>
+   	 Comp: B<14>
+   	 Comp: B<13>
+   	 Comp: B<12>
+   	 Comp: B<11>
+   	 Comp: B<10>
+   	 Comp: B<9>
+   	 Comp: B<8>
+   	 Comp: B<7>
+   	 Comp: B<6>
+   	 Comp: B<5>
+   	 Comp: B<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: B<0>   IOSTANDARD = LVCMOS33
+   	 Comp: B<1>   IOSTANDARD = LVCMOS33
+   	 Comp: B<2>   IOSTANDARD = LVCMOS33
+   	 Comp: B<3>   IOSTANDARD = LVCMOS33
+   	 Comp: B<4>   IOSTANDARD = LVCMOS18
+   	 Comp: B<5>   IOSTANDARD = LVCMOS18
+   	 Comp: B<6>   IOSTANDARD = LVCMOS18
+   	 Comp: B<7>   IOSTANDARD = LVCMOS18
+   	 Comp: B<8>   IOSTANDARD = LVCMOS18
+   	 Comp: B<9>   IOSTANDARD = LVCMOS18
+   	 Comp: B<10>   IOSTANDARD = LVCMOS18
+   	 Comp: B<11>   IOSTANDARD = LVCMOS18
+   	 Comp: B<12>   IOSTANDARD = LVCMOS18
+   	 Comp: B<13>   IOSTANDARD = LVCMOS18
+   	 Comp: B<14>   IOSTANDARD = LVCMOS18
+   	 Comp: B<15>   IOSTANDARD = LVCMOS18
+
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: R<15>
+   	 Comp: R<14>
+   	 Comp: R<13>
+   	 Comp: R<12>
+   	 Comp: R<11>
+   	 Comp: R<10>
+   	 Comp: R<9>
+   	 Comp: R<8>
+   	 Comp: R<7>
+   	 Comp: R<6>
+   	 Comp: R<5>
+   	 Comp: R<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: R<0>   IOSTANDARD = LVCMOS33
+   	 Comp: R<1>   IOSTANDARD = LVCMOS33
+   	 Comp: R<2>   IOSTANDARD = LVCMOS33
+   	 Comp: R<3>   IOSTANDARD = LVCMOS33
+   	 Comp: R<4>   IOSTANDARD = LVCMOS18
+   	 Comp: R<5>   IOSTANDARD = LVCMOS18
+   	 Comp: R<6>   IOSTANDARD = LVCMOS18
+   	 Comp: R<7>   IOSTANDARD = LVCMOS18
+   	 Comp: R<8>   IOSTANDARD = LVCMOS18
+   	 Comp: R<9>   IOSTANDARD = LVCMOS18
+   	 Comp: R<10>   IOSTANDARD = LVCMOS18
+   	 Comp: R<11>   IOSTANDARD = LVCMOS18
+   	 Comp: R<12>   IOSTANDARD = LVCMOS18
+   	 Comp: R<13>   IOSTANDARD = LVCMOS18
+   	 Comp: R<14>   IOSTANDARD = LVCMOS18
+   	 Comp: R<15>   IOSTANDARD = LVCMOS18
+
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 56 IOs, 20 are locked
+   and 36 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+
+ERROR:Place:866 - Not enough valid sites to place the following IOBs:
+   IO Standard: Name = LVCMOS18, VREF = NR, VCCO = 1.80, TERM = NONE, DIR =
+   INPUT, DRIVE_STR = NR
+   	A<4>
+   	A<5>
+   	A<6>
+   	A<7>
+   	B<4>
+   	A<8>
+   	B<5>
+   	A<9>
+   	B<6>
+   	B<7>
+   	B<8>
+   	B<9>
+   	A<10>
+   	A<11>
+   	A<12>
+   	A<13>
+   	A<14>
+   	A<15>
+   	B<10>
+   	B<11>
+   	B<12>
+   	B<13>
+   	B<14>
+   	B<15>
+
+   This may be due to either an insufficient number of sites available on the
+   device, too many prohibited sites,
+   or incompatible I/O Standards locked or range constrained to I/O Banks with
+   valid sites.
+       This situation could possibly be resolved by one (or all) of the
+   following actions:
+   a) Grouping IOBs of similar standards into a minimum amount of I/O Banks by
+   using LOC or range constraints.
+   b) Maximizing available I/O Banks resources for special IOBs by choosing
+   lower capacity I/O Banks if possible.
+   c) If applicable, decreasing the number of user prohibited sites or using a
+   larger device.
+
+
+ERROR:Place:866 - Not enough valid sites to place the following IOBs:
+   IO Standard: Name = LVCMOS18, VREF = NR, VCCO = 1.80, TERM = NONE, DIR =
+   OUTPUT, DRIVE_STR = 12
+   	R<10>
+   	R<11>
+   	R<12>
+   	R<13>
+   	R<14>
+   	R<15>
+   	R<4>
+   	R<5>
+   	R<6>
+   	R<7>
+   	R<8>
+   	R<9>
+
+   This may be due to either an insufficient number of sites available on the
+   device, too many prohibited sites,
+   or incompatible I/O Standards locked or range constrained to I/O Banks with
+   valid sites.
+       This situation could possibly be resolved by one (or all) of the
+   following actions:
+   a) Grouping IOBs of similar standards into a minimum amount of I/O Banks by
+   using LOC or range constraints.
+   b) Maximizing available I/O Banks resources for special IOBs by choosing
+   lower capacity I/O Banks if possible.
+   c) If applicable, decreasing the number of user prohibited sites or using a
+   larger device.
+
+Phase 2.7  Design Feasibility Check (Checksum:de1a54ef) REAL time: 1 mins 49 secs 
+
+Total REAL time to Placer completion: 1 mins 49 secs 
+Total CPU  time to Placer completion: 1 mins 27 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Mapping completed.
+See MAP report file "PRACTICA03_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   8

@@ -44,14 +44,14 @@ ARCHITECTURE behavior OF TB_MEMORIA_PROGRAMA IS
  
     COMPONENT MEMORIA_PROGRAMA
 	 PORT(
-         PC : IN  std_logic_vector(15 downto 0);
+         PC : IN  std_logic_vector(9 downto 0);
          instruccion : OUT  std_logic_vector(24 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal PC : std_logic_vector(15 downto 0) := (others => '0');
+   signal PC : std_logic_vector(9 downto 0) := (others => '0');
 
  	--Outputs
    signal instruccion : std_logic_vector(24 downto 0);
@@ -117,7 +117,7 @@ BEGIN
 			readline(ARCH_VEC,LINEA_VEC); -- lee una linea completa
 
 			Hread(LINEA_VEC, var_pc);
-			PC <= var_pc;
+			PC <= var_pc(9 DOWNTO 0);
 			
 --			WAIT UNTIL RISING_EDGE(CLK);	--ESPERO AL FLANCO DE SUBIDA 
 

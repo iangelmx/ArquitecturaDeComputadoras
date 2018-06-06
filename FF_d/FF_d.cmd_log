@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/FF_d/FF_d.xst" -ofn "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/FF_d/FF_d.syr" 

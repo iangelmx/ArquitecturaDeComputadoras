@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.44 secs
  
 --> Reading design: MEMORIA_PROGRAMA.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\ayhc9\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
+Parsing VHDL file "C:\Users\ayhc9\Desktop\ESCOM\6TO SEMESTRE\ArquitecturaComp\arqCompVHDL-master\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd" into library work
 Parsing entity <MEMORIA_PROGRAMA>.
 Parsing architecture <Behavioral> of entity <memoria_programa>.
 
@@ -120,10 +120,10 @@ Elaborating entity <MEMORIA_PROGRAMA> (architecture <Behavioral>) with generics 
 =========================================================================
 
 Synthesizing Unit <MEMORIA_PROGRAMA>.
-    Related source file is "C:\Users\ayhc9\arqCompVHDL\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
+    Related source file is "C:\Users\ayhc9\Desktop\ESCOM\6TO SEMESTRE\ArquitecturaComp\arqCompVHDL-master\MEMORIA_PROGRAMA\MEMORIA_PROGRAMA.vhd".
         palabra = 25
-        busT = 16
-    Found 65536x25-bit Read Only RAM for signal <instruccion>
+        busT = 10
+    Found 1024x25-bit Read Only RAM for signal <instruccion>
     Summary:
 	inferred   1 RAM(s).
 Unit <MEMORIA_PROGRAMA> synthesized.
@@ -133,7 +133,7 @@ HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 65536x25-bit single-port Read Only RAM                : 1
+ 1024x25-bit single-port Read Only RAM                 : 1
 
 =========================================================================
 
@@ -148,7 +148,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_instruccion> will be implemented on 
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 65536-word x 25-bit                 |          |
+    |     aspect ratio   | 1024-word x 25-bit                  |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <PC>            |          |
     |     diA            | connected to signal <GND>           |          |
@@ -161,7 +161,7 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 65536x25-bit single-port distributed Read Only RAM    : 1
+ 1024x25-bit single-port distributed Read Only RAM     : 1
 
 =========================================================================
 
@@ -202,14 +202,12 @@ Top Level Output File Name         : MEMORIA_PROGRAMA.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 21
+# BELS                             : 17
 #      GND                         : 1
-#      LUT3                        : 1
-#      LUT4                        : 3
-#      LUT5                        : 3
-#      LUT6                        : 13
-# IO Buffers                       : 41
-#      IBUF                        : 16
+#      LUT5                        : 8
+#      LUT6                        : 8
+# IO Buffers                       : 35
+#      IBUF                        : 10
 #      OBUF                        : 25
 
 Device utilization summary:
@@ -219,19 +217,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   20  out of  63400     0%  
-    Number used as Logic:                20  out of  63400     0%  
+ Number of Slice LUTs:                   16  out of  63400     0%  
+    Number used as Logic:                16  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     20
-   Number with an unused Flip Flop:      20  out of     20   100%  
-   Number with an unused LUT:             0  out of     20     0%  
-   Number of fully used LUT-FF pairs:     0  out of     20     0%  
+ Number of LUT Flip Flop pairs used:     16
+   Number with an unused Flip Flop:      16  out of     16   100%  
+   Number with an unused LUT:             0  out of     16     0%  
+   Number of fully used LUT-FF pairs:     0  out of     16     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                          41
- Number of bonded IOBs:                  41  out of    210    19%  
+ Number of IOs:                          35
+ Number of bonded IOBs:                  35  out of    210    16%  
 
 Specific Feature Utilization:
 
@@ -266,7 +264,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 2.391ns
+   Maximum combinational path delay: 1.489ns
 
 Timing Details:
 ---------------
@@ -274,24 +272,23 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 168 / 9
+  Total number of paths / destination ports: 90 / 9
 -------------------------------------------------------------------------
-Delay:               2.391ns (Levels of Logic = 5)
-  Source:            PC<9> (PAD)
-  Destination:       instruccion<20> (PAD)
+Delay:               1.489ns (Levels of Logic = 4)
+  Source:            PC<4> (PAD)
+  Destination:       instruccion<2> (PAD)
 
-  Data Path: PC<9> to instruccion<20>
+  Data Path: PC<4> to instruccion<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.693  PC_9_IBUF (PC_9_IBUF)
-     LUT5:I0->O            4   0.097   0.570  Mram_instruccion1211 (Mram_instruccion121)
-     LUT5:I1->O            1   0.097   0.556  Mram_instruccion271161_SW0 (N2)
-     LUT6:I2->O            1   0.097   0.279  Mram_instruccion271161 (instruccion_20_OBUF)
-     OBUF:I->O                 0.000          instruccion_20_OBUF (instruccion<20>)
+     IBUF:I->O             8   0.001   0.715  PC_4_IBUF (PC_4_IBUF)
+     LUT5:I0->O            1   0.097   0.295  instruccion<2>_SW0 (N0)
+     LUT6:I5->O            2   0.097   0.283  instruccion<2> (instruccion_0_OBUF)
+     OBUF:I->O                 0.000          instruccion_0_OBUF (instruccion<0>)
     ----------------------------------------
-    Total                      2.391ns (0.292ns logic, 2.099ns route)
-                                       (12.2% logic, 87.8% route)
+    Total                      1.489ns (0.195ns logic, 1.294ns route)
+                                       (13.1% logic, 86.9% route)
 
 =========================================================================
 
@@ -301,12 +298,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 120.00 secs
-Total CPU time to Xst completion: 119.91 secs
+Total REAL time to Xst completion: 66.00 secs
+Total CPU time to Xst completion: 65.52 secs
  
 --> 
 
-Total memory usage is 1605136 kilobytes
+Total memory usage is 490632 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

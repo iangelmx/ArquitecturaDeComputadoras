@@ -1,0 +1,295 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'PRACTICA03'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o PRACTICA03_map.ncd PRACTICA03.ngd PRACTICA03.pcf 
+Target Device  : xc7a100t
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : artix7 -- $Revision: 1.55 $
+Mapped Date    : Wed Jun 06 00:52:49 2018
+
+Interim Summary
+---------------
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of 126,800    0%
+  Number of Slice LUTs:                         40 out of  63,400    1%
+    Number used as logic:                       40 out of  63,400    1%
+      Number using O6 output only:              29
+      Number using O5 output only:               0
+      Number using O5 and O6:                   11
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  19,000    0%
+    Number used exclusively as route-thrus:      0
+
+Slice Logic Distribution:
+  Number of LUT Flip Flop pairs used:           40
+    Number with an unused Flip Flop:            40 out of      40  100%
+    Number with an unused LUT:                   0 out of      40    0%
+    Number of fully used LUT-FF pairs:           0 out of      40    0%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 126,800    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        56 out of     210   26%
+    Number of LOCed IOBs:                       20 out of      56   35%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     270    0%
+  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     300    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     300    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     300    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      24    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      24    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      96    0%
+  Number of BUFRs:                               0 out of      24    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     240    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       6    0%
+  Number of IN_FIFOs:                            0 out of      24    0%
+  Number of MMCME2_ADVs:                         0 out of       6    0%
+  Number of OUT_FIFOs:                           0 out of      24    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       6    0%
+  Number of PHY_CONTROLs:                        0 out of       6    0%
+  Number of PLLE2_ADVs:                          0 out of       6    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+
+Design Summary
+--------------
+Number of errors   :   3
+Number of warnings :   8
+
+Section 1 - Errors
+------------------
+ERROR:Place:866 - Not enough valid sites to place the following IOBs:
+   IO Standard: Name = LVCMOS18, VREF = NR, VCCO = 1.80, TERM = NONE, DIR =
+   INPUT, DRIVE_STR = NR
+   	A<4>
+   	A<5>
+   	A<6>
+   	A<7>
+   	B<4>
+   	A<8>
+   	B<5>
+   	A<9>
+   	B<6>
+   	B<7>
+   	B<8>
+   	B<9>
+   	A<10>
+   	A<11>
+   	A<12>
+   	A<13>
+   	A<14>
+   	A<15>
+   	B<10>
+   	B<11>
+   	B<12>
+   	B<13>
+   	B<14>
+   	B<15>
+
+   This may be due to either an insufficient number of sites available on the
+   device, too many prohibited sites,
+   or incompatible I/O Standards locked or range constrained to I/O Banks with
+   valid sites.
+       This situation could possibly be resolved by one (or all) of the
+   following actions:
+   a) Grouping IOBs of similar standards into a minimum amount of I/O Banks by
+   using LOC or range constraints.
+   b) Maximizing available I/O Banks resources for special IOBs by choosing
+   lower capacity I/O Banks if possible.
+   c) If applicable, decreasing the number of user prohibited sites or using a
+   larger device.
+ERROR:Place:866 - Not enough valid sites to place the following IOBs:
+   IO Standard: Name = LVCMOS18, VREF = NR, VCCO = 1.80, TERM = NONE, DIR =
+   OUTPUT, DRIVE_STR = 12
+   	R<10>
+   	R<11>
+   	R<12>
+   	R<13>
+   	R<14>
+   	R<15>
+   	R<4>
+   	R<5>
+   	R<6>
+   	R<7>
+   	R<8>
+   	R<9>
+
+   This may be due to either an insufficient number of sites available on the
+   device, too many prohibited sites,
+   or incompatible I/O Standards locked or range constrained to I/O Banks with
+   valid sites.
+       This situation could possibly be resolved by one (or all) of the
+   following actions:
+   a) Grouping IOBs of similar standards into a minimum amount of I/O Banks by
+   using LOC or range constraints.
+   b) Maximizing available I/O Banks resources for special IOBs by choosing
+   lower capacity I/O Banks if possible.
+   c) If applicable, decreasing the number of user prohibited sites or using a
+   larger device.
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
+
+Section 2 - Warnings
+--------------------
+WARNING:LIT:701 - PAD symbol "A<15>" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "A<15>" is not constrained (LOC) to a specific
+   location.
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: A<15>
+   	 Comp: A<14>
+   	 Comp: A<13>
+   	 Comp: A<12>
+   	 Comp: A<11>
+   	 Comp: A<10>
+   	 Comp: A<9>
+   	 Comp: A<8>
+   	 Comp: A<7>
+   	 Comp: A<6>
+   	 Comp: A<5>
+   	 Comp: A<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: A<0>   IOSTANDARD = LVCMOS33
+   	 Comp: A<1>   IOSTANDARD = LVCMOS33
+   	 Comp: A<2>   IOSTANDARD = LVCMOS33
+   	 Comp: A<3>   IOSTANDARD = LVCMOS33
+   	 Comp: A<4>   IOSTANDARD = LVCMOS18
+   	 Comp: A<5>   IOSTANDARD = LVCMOS18
+   	 Comp: A<6>   IOSTANDARD = LVCMOS18
+   	 Comp: A<7>   IOSTANDARD = LVCMOS18
+   	 Comp: A<8>   IOSTANDARD = LVCMOS18
+   	 Comp: A<9>   IOSTANDARD = LVCMOS18
+   	 Comp: A<10>   IOSTANDARD = LVCMOS18
+   	 Comp: A<11>   IOSTANDARD = LVCMOS18
+   	 Comp: A<12>   IOSTANDARD = LVCMOS18
+   	 Comp: A<13>   IOSTANDARD = LVCMOS18
+   	 Comp: A<14>   IOSTANDARD = LVCMOS18
+   	 Comp: A<15>   IOSTANDARD = LVCMOS18
+
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: B<15>
+   	 Comp: B<14>
+   	 Comp: B<13>
+   	 Comp: B<12>
+   	 Comp: B<11>
+   	 Comp: B<10>
+   	 Comp: B<9>
+   	 Comp: B<8>
+   	 Comp: B<7>
+   	 Comp: B<6>
+   	 Comp: B<5>
+   	 Comp: B<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: B<0>   IOSTANDARD = LVCMOS33
+   	 Comp: B<1>   IOSTANDARD = LVCMOS33
+   	 Comp: B<2>   IOSTANDARD = LVCMOS33
+   	 Comp: B<3>   IOSTANDARD = LVCMOS33
+   	 Comp: B<4>   IOSTANDARD = LVCMOS18
+   	 Comp: B<5>   IOSTANDARD = LVCMOS18
+   	 Comp: B<6>   IOSTANDARD = LVCMOS18
+   	 Comp: B<7>   IOSTANDARD = LVCMOS18
+   	 Comp: B<8>   IOSTANDARD = LVCMOS18
+   	 Comp: B<9>   IOSTANDARD = LVCMOS18
+   	 Comp: B<10>   IOSTANDARD = LVCMOS18
+   	 Comp: B<11>   IOSTANDARD = LVCMOS18
+   	 Comp: B<12>   IOSTANDARD = LVCMOS18
+   	 Comp: B<13>   IOSTANDARD = LVCMOS18
+   	 Comp: B<14>   IOSTANDARD = LVCMOS18
+   	 Comp: B<15>   IOSTANDARD = LVCMOS18
+
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: R<15>
+   	 Comp: R<14>
+   	 Comp: R<13>
+   	 Comp: R<12>
+   	 Comp: R<11>
+   	 Comp: R<10>
+   	 Comp: R<9>
+   	 Comp: R<8>
+   	 Comp: R<7>
+   	 Comp: R<6>
+   	 Comp: R<5>
+   	 Comp: R<4>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: R<0>   IOSTANDARD = LVCMOS33
+   	 Comp: R<1>   IOSTANDARD = LVCMOS33
+   	 Comp: R<2>   IOSTANDARD = LVCMOS33
+   	 Comp: R<3>   IOSTANDARD = LVCMOS33
+   	 Comp: R<4>   IOSTANDARD = LVCMOS18
+   	 Comp: R<5>   IOSTANDARD = LVCMOS18
+   	 Comp: R<6>   IOSTANDARD = LVCMOS18
+   	 Comp: R<7>   IOSTANDARD = LVCMOS18
+   	 Comp: R<8>   IOSTANDARD = LVCMOS18
+   	 Comp: R<9>   IOSTANDARD = LVCMOS18
+   	 Comp: R<10>   IOSTANDARD = LVCMOS18
+   	 Comp: R<11>   IOSTANDARD = LVCMOS18
+   	 Comp: R<12>   IOSTANDARD = LVCMOS18
+   	 Comp: R<13>   IOSTANDARD = LVCMOS18
+   	 Comp: R<14>   IOSTANDARD = LVCMOS18
+   	 Comp: R<15>   IOSTANDARD = LVCMOS18
+
+
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 56 IOs, 20 are locked
+   and 36 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+
+Section 4 - Removed Logic Summary
+---------------------------------
+
+Section 5 - Removed Logic
+-------------------------
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/ALU_16/PRACTICA03_TB_isim_beh.exe" -prj "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/ALU_16/PRACTICA03_TB_beh.prj" "work.PRACTICA03_TB" 

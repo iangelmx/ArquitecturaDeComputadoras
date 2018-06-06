@@ -7,7 +7,7 @@ entity MEMORIA_PROGRAMA is
 	generic
 	(
 		palabra : integer := 25;
-		busT  : integer := 16
+		busT  : integer := 10
 	);
 	port
 	(
@@ -32,11 +32,11 @@ type arreglo is array (0 to ((2**busT)-1)) of std_logic_vector((palabra-1) downt
 
 constant banco: arreglo :=(
 
-                        LI&R0&x"0005",							--"00001 0000 0000 0000 0000 0101",
-                        LI&R1&x"000A",							--"00001 0001 0000 0000 0000 1010",
+                        LI&R0&x"0001",							--"00001 0000 0000 0000 0000 0001",
+                        LI&R1&x"0007",							--"00001 0001 0000 0000 0000 0111",
 								ADD&R1&R1&R0&"0000"&"0000",		--"00000 0001 0001 0000 0000 0000",
                         SWI&R1&x"0005",						--"00011 0001 0000 0000 0000 0101",
-                        B&"0000"&x"0002",						--"1001100000000000000000010",
+                        B&"0000"&x"0002",						--"10011 0000 0000 0000 0000 0010",
                         
 								others => (others => '0') );
 begin

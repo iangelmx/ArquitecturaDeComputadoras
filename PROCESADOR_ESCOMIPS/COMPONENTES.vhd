@@ -83,15 +83,6 @@ package COMPONENTES is
 	end component;
 -------------------
 
-	component PROC_UNID_CONTROL is
-		 Port ( clk, clr, lf : in  STD_LOGIC;
-				  func_code : in  STD_LOGIC_VECTOR (3 downto 0);
-				  microinstruccion : out  STD_LOGIC_VECTOR (19 downto 0);
-				  op_code : in  STD_LOGIC_VECTOR (4 downto 0);
-				  nivel_out : out STD_LOGIC;
-				  banderas : in  STD_LOGIC_VECTOR (3 downto 0));
-	end component;
-	
 --------------- ALU :
 	component PRACTICA03 is
 		 Port ( A,B : in  STD_LOGIC_VECTOR (15 downto 0);
@@ -112,6 +103,14 @@ package COMPONENTES is
 	component FF_d is
 		 Port ( clk,clr,d : in  STD_LOGIC;
 				  q,nq : out  STD_LOGIC);
+	end component;
+
+-----------
+
+	component multiplexor is
+		 Port ( opc0,opc1 : in  STD_LOGIC_VECTOR (15 downto 0);
+				  selector : in  STD_LOGIC;
+				  sal : out  STD_LOGIC_VECTOR (15 downto 0));
 	end component;
 
 end COMPONENTES;

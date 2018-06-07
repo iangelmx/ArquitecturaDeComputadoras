@@ -22,13 +22,14 @@ signal func_code_aux, banderas_aux : STD_LOGIC_VECTOR (3 downto 0);
 signal microinstruccion_aux : STD_LOGIC_VECTOR (19 downto 0);
 signal op_code_aux : STD_LOGIC_VECTOR (4 downto 0);
 signal busElevenToZero_aux : STD_LOGIC_VECTOR (11 downto 0);
-signal extension_aux, extensionDir_aux : STD_LOGIC_VECTOR (15 downto 0));
+signal extension_aux, extensionDir_aux : STD_LOGIC_VECTOR (15 downto 0);
 
 ---------- SEÑALES YAYO:
 	signal rdata1,rdata2,alu_o,memd_o : std_logic_vector(15 downto 0);
 	signal sop1_o,sop2_o,sdmd_o : std_logic_vector(15 downto 0);
+	signal alias_clr : std_logic;
 	-- SEÑALES PORT ENTIDAD YAYO:
-		SIGNAL sr_out, exten, lit, msdmd,msr : STD_LOGIC_VECTOR (15 downto 0));
+		SIGNAL sr_out, exten, lit, msdmd,msr : STD_LOGIC_VECTOR (15 downto 0);
 		SIGNAL msop1,msop2,msdmd,msr, wd : STD_LOGIC;
 		SIGNAL aluop : STD_LOGIC_VECTOR (3 downto 0);
 	-- FIN SEÑALES PORT ENTIDAD YAYO --------------------
@@ -40,11 +41,21 @@ signal extension_aux, extensionDir_aux : STD_LOGIC_VECTOR (15 downto 0));
 	signal wdata_aux, rdata1_aux, rdata2_aux : STD_LOGIC_VECTOR (15 downto 0);	
 ------ FIN SEÑALES DE ENTRADA PARA BLOQUES DE YAYO --------
 
+
+--	component FF_d is
+--		 Port ( clk,clr,d : in  STD_LOGIC;
+--				  q,nq : out  STD_LOGIC);
+--	end component;
+
 begin
 
 --	microinstruccion (  19 | 18 | 17 | 16  | 15  | 14  |  13  | 12  | 11  | 10 |  9   |  8   |  7-4  |  3   | 2  | 1  | 0 |
 -- microinstruccion (SDMP | UP | DW | WPC | SR2 | SWD | SEXT | SHE | DIR | WR | SOP1 | SOP2 | ALUOP | SDMD | WD | SR | LF)
-
+	
+	DIV_FREC : PROCESADOR_CLK_DIV port map(clk=>clk, clr=>clr, q27=>clk_aux);
+	alias_clr <= '0';
+	CLR_DOWN : FF_d port map(clk=>clk, clr=>alias_clr, q=>clr, nq=>clr_aux);
+	
 	datos_aux <= instruccion(15 downto 0) WHEN microinstruccion_aux(19) = '0' ELSE sr_out; -- MUX SDMP
 	up_aux   <= microinstruccion_aux(18);
 	down_aux <= microinstruccion_aux(17);

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cont_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_CLK_DIV</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cont_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_CLK_DIV</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cont_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_CLK_DIV</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">cont_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_CLK_DIV</arg>&gt;.
+</msg>
+
+</messages>
+

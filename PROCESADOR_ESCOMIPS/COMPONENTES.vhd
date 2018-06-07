@@ -101,6 +101,19 @@ package COMPONENTES is
 	end component;
 ---------------------------
 
+
+	component PROCESADOR_CLK_DIV is
+		 Port ( clk : in  STD_LOGIC;
+				  clr : in  STD_LOGIC;
+				  q27 : out  STD_LOGIC);
+	end component;
+------------
+
+	component FF_d is
+		 Port ( clk,clr,d : in  STD_LOGIC;
+				  q,nq : out  STD_LOGIC);
+	end component;
+
 end COMPONENTES;
 
 package body COMPONENTES is

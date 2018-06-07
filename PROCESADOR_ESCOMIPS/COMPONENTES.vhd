@@ -25,7 +25,7 @@ package COMPONENTES is
 		generic
 		(
 			palabra : integer := 25;
-			busT  : integer := 16
+			busT  : integer := 10
 		);
 		port
 		(
@@ -33,6 +33,7 @@ package COMPONENTES is
 			instruccion		: out	std_logic_vector(palabra-1 downto 0)
 		);
 	end component;
+	
 ---------------------------------------
 
 	component PROC_EXT_DIR is
@@ -80,7 +81,25 @@ package COMPONENTES is
 				  PCout : out  STD_LOGIC_VECTOR (15 downto 0);
 				  clk, clr, up, wpc, down : in  STD_LOGIC);
 	end component;
+-------------------
+
+	component PROC_UNID_CONTROL is
+		 Port ( clk, clr, lf : in  STD_LOGIC;
+				  func_code : in  STD_LOGIC_VECTOR (3 downto 0);
+				  microinstruccion : out  STD_LOGIC_VECTOR (19 downto 0);
+				  op_code : in  STD_LOGIC_VECTOR (4 downto 0);
+				  nivel_out : out STD_LOGIC;
+				  banderas : in  STD_LOGIC_VECTOR (3 downto 0));
+	end component;
 	
+--------------- ALU :
+	component PRACTICA03 is
+		 Port ( A,B : in  STD_LOGIC_VECTOR (15 downto 0);
+				  operacion : in  STD_LOGIC_VECTOR (3 downto 0);
+				  Z, Cout, Ovf, N : out  STD_LOGIC;
+				  R : out  STD_LOGIC_VECTOR (15 downto 0));
+	end component;
+---------------------------
 
 end COMPONENTES;
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-27T19:59:14</DateModified>
+  <DateModified>2018-06-06T22:33:31</DateModified>
   <ModuleName>microcod_funcion</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/ayhc9/Desktop/microcod_funcion/iseconfig/microcod_funcion.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ayhc9/Desktop/microcod_funcion\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/microcod_funcion/iseconfig/microcod_funcion.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/microcod_funcion\</ImplementationReportsDirectory>
   <DateInitialized>2018-05-27T18:50:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

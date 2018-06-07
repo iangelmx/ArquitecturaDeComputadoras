@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor_isim_beh.exe" -prj "C:/Users/ayhc9/Desktop/ESCOM/6TO SEMESTRE/ArquitecturaComp/arqCompVHDL-master/multiplexor/multiplexor_beh.prj" "work.multiplexor" 

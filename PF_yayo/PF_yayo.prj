@@ -1,0 +1,6 @@
+vhdl work "../ALU_1BIT/ALU_1BIT.vhd"
+vhdl work "../multiplexor/multiplexor.vhd"
+vhdl work "../MEMORIA_DATOS/MEMORIA_DATOS.vhd"
+vhdl work "../archivo_registros/archivo_registros.vhd"
+vhdl work "../ALU_16/PRACTICA03.vhd"
+vhdl work "PF_yayo.vhd"

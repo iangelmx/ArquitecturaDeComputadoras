@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-11T18:24:09</DateModified>
+  <DateModified>2018-06-06T16:08:05</DateModified>
   <ModuleName>ARCHIVO_REG</ModuleName>
   <SummaryTimeStamp>2018-04-10T17:10:24</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ARCHIVO_REG/iseconfig/ARCHIVO_REG.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/ESCOM/ArqComp/arqCompVHDL/ARCHIVO_REG\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/ARCHIVO_REG/iseconfig/ARCHIVO_REG.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/ARCHIVO_REG\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-05T19:14:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -33,12 +33,104 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESADOR_ESCOMIPS_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROCESADOR_ESCOMIPS_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROCESADOR_ESCOMIPS_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_PROCESADOR_A_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_PROCESADOR_B_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_PROCESADOR_B_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_PROCESADOR_B_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_PROCESADOR_B_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1528352443" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1528352443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353343" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528353343">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ALU_16/PRACTICA03.vhd"/>
+      <outfile xil_pn:name="../ALU_1BIT/ALU_1BIT.vhd"/>
+      <outfile xil_pn:name="../FF_d/FF_d.vhd"/>
+      <outfile xil_pn:name="../MEMORIA_DATOS/MEMORIA_DATOS.vhd"/>
+      <outfile xil_pn:name="../MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd"/>
+      <outfile xil_pn:name="../PILA/PILA.vhd"/>
+      <outfile xil_pn:name="../PROCESADOR_CLK_DIV/PROCESADOR_CLK_DIV.vhd"/>
+      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
+      <outfile xil_pn:name="../PROC_EXT_DIR/PROC_EXT_DIR.vhd"/>
+      <outfile xil_pn:name="../PROC_EXT_SIGNO/PROC_EXT_SIGNO.vhd"/>
+      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
+      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
+      <outfile xil_pn:name="../PROC_UNID_CONTROL/PROC_UNID_CONTROL.vhd"/>
+      <outfile xil_pn:name="../archivo_registros/archivo_registros.vhd"/>
+      <outfile xil_pn:name="../condicion/condicion.vhd"/>
+      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
+      <outfile xil_pn:name="../multiplexor/multiplexor.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
+      <outfile xil_pn:name="COMPONENTES.vhd"/>
+      <outfile xil_pn:name="PROCESADOR_ESCOMIPS.vhd"/>
+      <outfile xil_pn:name="TB_PROCESADOR_B.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353347" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2449985047153624862" xil_pn:start_ts="1528353347">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353347" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="9140063713954689532" xil_pn:start_ts="1528353347">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528352443" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6110963016045329693" xil_pn:start_ts="1528352443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353347" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528353347">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../ALU_16/PRACTICA03.vhd"/>
+      <outfile xil_pn:name="../ALU_1BIT/ALU_1BIT.vhd"/>
+      <outfile xil_pn:name="../FF_d/FF_d.vhd"/>
+      <outfile xil_pn:name="../MEMORIA_DATOS/MEMORIA_DATOS.vhd"/>
+      <outfile xil_pn:name="../MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd"/>
+      <outfile xil_pn:name="../PILA/PILA.vhd"/>
+      <outfile xil_pn:name="../PROCESADOR_CLK_DIV/PROCESADOR_CLK_DIV.vhd"/>
+      <outfile xil_pn:name="../PROC_DECODER/PROC_DECODER.vhd"/>
+      <outfile xil_pn:name="../PROC_EXT_DIR/PROC_EXT_DIR.vhd"/>
+      <outfile xil_pn:name="../PROC_EXT_SIGNO/PROC_EXT_SIGNO.vhd"/>
+      <outfile xil_pn:name="../PROC_MEM_OPCODE/PROC_MEM_OPCODE.vhd"/>
+      <outfile xil_pn:name="../PROC_NIVEL/PROC_NIVEL.vhd"/>
+      <outfile xil_pn:name="../PROC_UNID_CONTROL/PROC_UNID_CONTROL.vhd"/>
+      <outfile xil_pn:name="../archivo_registros/archivo_registros.vhd"/>
+      <outfile xil_pn:name="../condicion/condicion.vhd"/>
+      <outfile xil_pn:name="../microcod_funcion/microcod_funcion.vhd"/>
+      <outfile xil_pn:name="../multiplexor/multiplexor.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../subunidad_control/subunidad_control.vhd"/>
+      <outfile xil_pn:name="COMPONENTES.vhd"/>
+      <outfile xil_pn:name="PROCESADOR_ESCOMIPS.vhd"/>
+      <outfile xil_pn:name="TB_PROCESADOR_B.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353361" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3605519832956554284" xil_pn:start_ts="1528353347">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="TB_PROCESADOR_B_beh.prj"/>
+      <outfile xil_pn:name="TB_PROCESADOR_B_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1528353361" xil_pn:in_ck="-4681408978696146441" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6594380881242098727" xil_pn:start_ts="1528353361">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="TB_PROCESADOR_B_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
     <transform xil_pn:end_ts="1528351105" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1528351105">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -67,7 +159,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528352204" xil_pn:in_ck="7365140219661960837" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2187812679693579044" xil_pn:start_ts="1528352148">
+    <transform xil_pn:end_ts="1528353125" xil_pn:in_ck="7365140219661960837" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2187812679693579044" xil_pn:start_ts="1528353059">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

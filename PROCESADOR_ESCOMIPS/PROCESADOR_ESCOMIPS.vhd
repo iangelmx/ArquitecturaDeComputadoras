@@ -9,7 +9,10 @@ use work.COMPONENTES.all;
 entity PROCESADOR_ESCOMIPS is
 	Port(
 		clk, clr : in STD_LOGIC;
-		read_data2 : out STD_LOGIC_VECTOR (15 downto 0)
+		read_data2, read_data1 : out STD_LOGIC_VECTOR (15 downto 0);
+		PC_fin_out : out STD_LOGIC_VECTOR(15 downto 0);
+		instruccion_out : out STD_LOGIC_VECTOR(24 downto 0);
+		resAlu : out STD_LOGIC_VECTOR(15 downto 0)
 	);
 end PROCESADOR_ESCOMIPS;
 
@@ -115,6 +118,10 @@ begin
 -------------------- FIN BLOQUES YAYO--------------------------------------------------------------------
 	
 	read_data2 <= rdata2_aux;
+	read_data1 <= rdata1_aux;
+	PC_fin_out <= PCout_aux;
+	instruccion_out <= instruccion_aux;
+	resAlu <= alu_o;
 
 end Behavioral;
 

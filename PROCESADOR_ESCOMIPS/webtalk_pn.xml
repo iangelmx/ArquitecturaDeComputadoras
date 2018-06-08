@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Jun 07 20:51:30 2018">
+<application name="pn" timeStamp="Fri Jun 08 15:45:04 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="BC6BDA51284D42A9909981FDFFDEF689" type="project"/>
-<property name="ProjectIteration" value="0" type="project"/>
+<property name="ProjectIteration" value="1" type="project"/>
 <property name="ProjectFile" value="C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2018-06-06T16:01:57" type="project"/>
 </section>
@@ -25,8 +25,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2018-06-06T16:01:57" type="design"/>
 <property name="PROP_intWbtProjectID" value="BC6BDA51284D42A9909981FDFFDEF689" type="design"/>
+<property name="PROP_intWbtProjectIteration" value="1" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.PROCESADOR_ESCOMIPS" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
 <property name="PROP_DevFamily" value="Artix7" type="design"/>
@@ -36,6 +38,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
+<property name="FILE_UCF" value="1" type="source"/>
 <property name="FILE_VHDL" value="22" type="source"/>
 </section>
 </application>

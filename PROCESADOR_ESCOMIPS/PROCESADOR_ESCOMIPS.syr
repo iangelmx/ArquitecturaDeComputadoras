@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: PROCESADOR_ESCOMIPS.prj
 
@@ -621,7 +621,7 @@ WARNING:Xst:1710 - FF/Latch <AR/banco_3_3> (without init value) has a constant v
 WARNING:Xst:1710 - FF/Latch <AR/banco_3_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_3_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_3_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR/banco_2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_15_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_15_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_15_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
@@ -796,6 +796,7 @@ WARNING:Xst:1710 - FF/Latch <PILA_Comp/aux_3_13> (without init value) has a cons
 WARNING:Xst:1710 - FF/Latch <PILA_Comp/aux_3_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
@@ -808,7 +809,6 @@ WARNING:Xst:1710 - FF/Latch <AR/banco_2_11> (without init value) has a constant 
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <AR/banco_2_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR/banco_2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <PILA_Comp/sp_0> has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <PILA_Comp/sp_2> has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <PILA_Comp/aux_1_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
@@ -1023,9 +1023,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 14.107ns (Maximum Frequency: 70.886MHz)
+   Minimum period: 14.117ns (Maximum Frequency: 70.837MHz)
    Minimum input arrival time before clock: 0.736ns
-   Maximum output required time after clock: 3.285ns
+   Maximum output required time after clock: 3.290ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1034,10 +1034,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_FREC/cont_27'
-  Clock period: 14.107ns (frequency: 70.886MHz)
+  Clock period: 14.117ns (frequency: 70.837MHz)
   Total number of paths / destination ports: 4779792 / 1366
 -------------------------------------------------------------------------
-Delay:               7.054ns (Levels of Logic = 13)
+Delay:               7.059ns (Levels of Logic = 13)
   Source:            PILA_Comp/aux_0_4 (FF)
   Destination:       U_de_C/REGISTRO_EDO/f_aux_1 (FF)
   Source Clock:      DIV_FREC/cont_27 rising
@@ -1047,7 +1047,7 @@ Delay:               7.054ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             10   0.361   0.725  PILA_Comp/aux_0_4 (PILA_Comp/aux_0_4)
+     FDC:C->Q             11   0.361   0.730  PILA_Comp/aux_0_4 (PILA_Comp/aux_0_4)
      LUT5:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion3211_SW0 (N141)
      LUT6:I5->O           18   0.097   0.590  MEM_PROGR/Mram_instruccion3211 (instruccion_aux<24>)
      LUT5:I2->O           11   0.097   0.557  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
@@ -1063,7 +1063,7 @@ Delay:               7.054ns (Levels of Logic = 13)
      LUT6:I2->O            1   0.097   0.000  ALU/Z<15>3 (banderas_aux<1>)
      FDCE_1:D                  0.008          U_de_C/REGISTRO_EDO/f_aux_1
     ----------------------------------------
-    Total                      7.054ns (1.630ns logic, 5.424ns route)
+    Total                      7.059ns (1.630ns logic, 5.429ns route)
                                        (23.1% logic, 76.9% route)
 
 =========================================================================
@@ -1137,9 +1137,9 @@ Offset:              0.736ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_FREC/cont_27'
-  Total number of paths / destination ports: 1244 / 16
+  Total number of paths / destination ports: 740 / 16
 -------------------------------------------------------------------------
-Offset:              3.285ns (Levels of Logic = 5)
+Offset:              3.290ns (Levels of Logic = 5)
   Source:            PILA_Comp/aux_0_2 (FF)
   Destination:       read_data2<7> (PAD)
   Source Clock:      DIV_FREC/cont_27 rising
@@ -1148,14 +1148,14 @@ Offset:              3.285ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             10   0.361   0.725  PILA_Comp/aux_0_2 (PILA_Comp/aux_0_2)
+     FDC:C->Q             11   0.361   0.730  PILA_Comp/aux_0_2 (PILA_Comp/aux_0_2)
      LUT5:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion2111_SW0 (N8)
      LUT6:I5->O            9   0.097   0.593  MEM_PROGR/Mram_instruccion2111 (instruccion_aux<16>)
      LUT6:I2->O           21   0.097   0.602  Mmux_rreg2_aux11 (rreg2_aux<0>)
      LUT3:I0->O           10   0.097   0.321  AR/mux29_61 (AR/mux29_4_f7)
      OBUF:I->O                 0.000          read_data2_7_OBUF (read_data2<7>)
     ----------------------------------------
-    Total                      3.285ns (0.749ns logic, 2.536ns route)
+    Total                      3.290ns (0.749ns logic, 2.541ns route)
                                        (22.8% logic, 77.2% route)
 
 =========================================================================
@@ -1168,7 +1168,7 @@ Clock to Setup on destination clock DIV_FREC/cont_27
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-DIV_FREC/cont_27|    7.199|    6.592|    7.054|         |
+DIV_FREC/cont_27|    7.204|    6.592|    7.059|         |
 clk             |         |    1.102|    1.102|         |
 ----------------+---------+---------+---------+---------+
 
@@ -1183,12 +1183,12 @@ clk            |    2.082|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 33.37 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 28.68 secs
  
 --> 
 
-Total memory usage is 512576 kilobytes
+Total memory usage is 481148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  350 (   0 filtered)

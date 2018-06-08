@@ -41,6 +41,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1527036976" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1527036976">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1527036976" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7358422429029606060" xil_pn:start_ts="1527036976">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -66,7 +67,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1527037043" xil_pn:in_ck="7174311090337855195" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1700912069212454875" xil_pn:start_ts="1527037027">
+    <transform xil_pn:end_ts="1528421205" xil_pn:in_ck="7174311090337855195" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1700912069212454875" xil_pn:start_ts="1528421187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PROC_MEM_OPCODE.lso"/>

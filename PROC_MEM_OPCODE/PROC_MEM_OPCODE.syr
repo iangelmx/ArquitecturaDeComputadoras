@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PROC_MEM_OPCODE.prj
 
@@ -202,9 +202,8 @@ Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 18
 #      GND                         : 1
-#      LUT3                        : 1
-#      LUT4                        : 4
-#      LUT5                        : 12
+#      LUT4                        : 1
+#      LUT5                        : 16
 # IO Buffers                       : 25
 #      IBUF                        : 5
 #      OBUF                        : 20
@@ -263,7 +262,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 1.135ns
+   Maximum combinational path delay: 1.139ns
 
 Timing Details:
 ---------------
@@ -271,21 +270,21 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 83 / 18
+  Total number of paths / destination ports: 89 / 18
 -------------------------------------------------------------------------
-Delay:               1.135ns (Levels of Logic = 3)
+Delay:               1.139ns (Levels of Logic = 3)
   Source:            op_code<2> (PAD)
-  Destination:       microinstruccion<17> (PAD)
+  Destination:       microinstruccion<19> (PAD)
 
-  Data Path: op_code<2> to microinstruccion<17>
+  Data Path: op_code<2> to microinstruccion<19>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   0.001   0.757  op_code_2_IBUF (op_code_2_IBUF)
-     LUT5:I0->O            1   0.097   0.279  Mram_microinstruccion71 (microinstruccion_7_OBUF)
-     OBUF:I->O                 0.000          microinstruccion_7_OBUF (microinstruccion<7>)
+     IBUF:I->O            17   0.001   0.758  op_code_2_IBUF (op_code_2_IBUF)
+     LUT5:I0->O            2   0.097   0.283  microinstruccion<9>1 (microinstruccion_9_OBUF)
+     OBUF:I->O                 0.000          microinstruccion_19_OBUF (microinstruccion<19>)
     ----------------------------------------
-    Total                      1.135ns (0.098ns logic, 1.037ns route)
+    Total                      1.139ns (0.098ns logic, 1.041ns route)
                                        (8.6% logic, 91.4% route)
 
 =========================================================================
@@ -296,12 +295,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.95 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.12 secs
  
 --> 
 
-Total memory usage is 462640 kilobytes
+Total memory usage is 463828 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

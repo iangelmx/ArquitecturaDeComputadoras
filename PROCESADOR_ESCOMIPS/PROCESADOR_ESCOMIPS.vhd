@@ -50,9 +50,11 @@ begin
 --	microinstruccion (  19 | 18 | 17 | 16  | 15  | 14  s|  13  | 12  | 11  | 10 |  9   |  8   |  7-4  |  3   | 2  | 1  | 0 |
 -- microinstruccion (SDMP | UP | DW | WPC | SR2 | SWD | SEXT | SHE | DIR | WR | SOP1 | SOP2 | ALUOP | SDMD | WD | SR | LF)
 	
-	DIV_FREC : PROCESADOR_CLK_DIV port map(clk=>clk, clr=>clr, q27=>clk_aux);
-	alias_clr <= '0';
-	CLR_DOWN : FF_d port map(clk=>clk, clr=>alias_clr, d=>clr, q=>clr_aux, nq=>nq_aux);
+--	DIV_FREC : PROCESADOR_CLK_DIV port map(clk=>clk, clr=>clr, q27=>clk_aux);
+	clk_aux <= clk;
+	clr_aux <= clr;
+--	alias_clr <= '0';
+--	CLR_DOWN : FF_d port map(clk=>clk, clr=>alias_clr, d=>clr, q=>clr_aux, nq=>nq_aux);
 	
 	datos_aux <= instruccion_aux(15 downto 0) WHEN microinstruccion_aux(19) = '0' ELSE sr_out; -- MUX SDMP
 	up_aux   <= microinstruccion_aux(18);
@@ -96,24 +98,39 @@ begin
 	exten <= extension_aux WHEN microinstruccion_aux(13) = '0' ELSE extensionDir_aux; -- MUX SEXT
 	
 -------------------- BLOQUES YAYO:
-	AR : archivo_registros port map(
-				clk=>clk_aux,
-				clr=>clr_aux,
-				DIR=>dir_aux,
-				WR=>wr_aux,
-				SHE=>she_aux,
-				writeRegister=>wreg_aux,
-				writeData=>wdata_aux,
-				readRegister1=>rreg1_aux,
-				readRegister2=>rreg2_aux,
-				SHAMT=>shamt_aux,
-				readData1=>rdata1_aux,
-				readData2=>rdata2_aux);
-	SOP1 : multiplexor port map(opc0=>rdata1_aux,opc1=>PCout_aux,selector=>msop1,sal=>sop1_o);
+--	AR : archivo_registros port map(
+--				clk=>clk_aux,
+--				clr=>clr_aux,
+--				DIR=>dir_aux,
+--				WR=>wr_aux,
+--				SHE=>she_aux,
+--				writeRegister=>wreg_aux,
+--				writeData=>wdata_aux,
+--				readRegister1=>rreg1_aux,
+--				readRegister2=>rreg2_aux,
+--				SHAMT=>shamt_aux,
+--				readData1=>rdata1_aux,
+--				readData2=>rdata2_aux);
+
+	AR_R : ARCHIVO_REG port map(
+				write_reg=>wreg_aux, 
+				read_reg1=>rreg1_aux, 
+				read_reg2 => rreg2_aux, 
+				write_data => wdata_aux, 
+				read_data1 => rdata1_aux, 
+				read_data2 => rdata2_aux, 
+				wr => wr_aux, 
+				clk => clk_aux, 
+				clr => clr_aux, 
+				she => she_aux, 
+				dir => dir_aux,
+				shamt => shamt_aux);
+--	SOP1 : multiplexor port map(opc0=>rdata1_aux,opc1=>PCout_aux,selector=>msop1,sal=>sop1_o);
+	sop1_o <= rdata1_aux WHEN msop1 = '0' ELSE PCout_aux;
 	SOP2 : multiplexor port map(opc0=>rdata2_aux,opc1=>exten,selector=>msop2,sal=>sop2_o);
 	ALU : PRACTICA03 port map(A=>sop1_o,B=>sop2_o,operacion=>aluop,Ovf=>banderas_aux(3),N=>banderas_aux(2),Z=>banderas_aux(1),Cout=>banderas_aux(0),R=>alu_o);
 	SDMD : multiplexor port map(opc0=>alu_o,opc1=>lit,selector=>msdmd,sal=>sdmd_o);
-	MD : MEMORIA_DATOS port map(clk=>clk_aux,A=>sdmd_o,dato_in=>rdata2_aux,dato_out=>memd_o,wd=>wd);
+	MD : MEMORIA_DATOS port map(clk=>clk_aux,A=>sdmd_o(10 downto 0),dato_in=>rdata2_aux,dato_out=>memd_o,wd=>wd);
 	SR : multiplexor port map(opc0=>memd_o,opc1=>alu_o,selector=>msr,sal=>sr_out);
 -------------------- FIN BLOQUES YAYO--------------------------------------------------------------------
 	

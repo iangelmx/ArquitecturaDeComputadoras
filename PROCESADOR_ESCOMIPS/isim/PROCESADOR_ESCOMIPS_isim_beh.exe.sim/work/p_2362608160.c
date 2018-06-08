@@ -25,7 +25,7 @@
 
 
 
-extern void std_textio_init()
+extern void work_p_2362608160_init()
 {
-	xsi_register_didat("std_textio", "isim/precompiled.exe.sim/std/textio.didat");
+	xsi_register_didat("work_p_2362608160", "isim/PROCESADOR_ESCOMIPS_isim_beh.exe.sim/work/p_2362608160.didat");
 }

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: PROCESADOR_ESCOMIPS.prj
 
@@ -153,9 +153,9 @@ Parsing architecture <Behavioral> of entity <memoria_programa>.
 Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\MEMORIA_DATOS\MEMORIA_DATOS.vhd" into library work
 Parsing entity <MEMORIA_DATOS>.
 Parsing architecture <Behavioral> of entity <memoria_datos>.
-Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd" into library work
-Parsing entity <ARCHIVO_REG>.
-Parsing architecture <Behavioral> of entity <archivo_reg>.
+Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\archivo_registros\archivo_registros.vhd" into library work
+Parsing entity <archivo_registros>.
+Parsing architecture <Behavioral> of entity <archivo_registros>.
 Parsing VHDL file "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\ALU_16\PRACTICA03.vhd" into library work
 Parsing entity <PRACTICA03>.
 Parsing architecture <Behavioral> of entity <practica03>.
@@ -193,7 +193,7 @@ Elaborating entity <PROC_EXT_SIGNO> (architecture <Behavioral>) from library <wo
 
 Elaborating entity <PROC_EXT_DIR> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <ARCHIVO_REG> (architecture <Behavioral>) from library <work>.
+Elaborating entity <archivo_registros> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <multiplexor> (architecture <Behavioral>) from library <work>.
 
@@ -313,51 +313,36 @@ Synthesizing Unit <PROC_EXT_DIR>.
 	no macro.
 Unit <PROC_EXT_DIR> synthesized.
 
-Synthesizing Unit <ARCHIVO_REG>.
-    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\ARCHIVO_REG\ARCHIVO_REG.vhd".
-WARNING:Xst:647 - Input <read_reg2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 16-bit register for signal <archivo<1>>.
-    Found 16-bit register for signal <archivo<2>>.
-    Found 16-bit register for signal <archivo<3>>.
-    Found 16-bit register for signal <archivo<4>>.
-    Found 16-bit register for signal <archivo<5>>.
-    Found 16-bit register for signal <archivo<6>>.
-    Found 16-bit register for signal <archivo<7>>.
-    Found 16-bit register for signal <archivo<8>>.
-    Found 16-bit register for signal <archivo<9>>.
-    Found 16-bit register for signal <archivo<10>>.
-    Found 16-bit register for signal <archivo<11>>.
-    Found 16-bit register for signal <archivo<12>>.
-    Found 16-bit register for signal <archivo<13>>.
-    Found 16-bit register for signal <archivo<14>>.
-    Found 16-bit register for signal <archivo<15>>.
-    Found 16-bit register for signal <archivo<0>>.
-    Found 16-bit register for signal <res>.
-    Found 16-bit shifter logical right for signal <read_reg1[3]_shamt[3]_shift_right_20_OUT> created at line 44
-INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <archivo>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
-    Found 16-bit 16-to-1 multiplexer for signal <read_data1> created at line 57.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <read_data2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Synthesizing Unit <archivo_registros>.
+    Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\archivo_registros\archivo_registros.vhd".
+        n = 16
+    Found 16-bit register for signal <banco<1>>.
+    Found 16-bit register for signal <banco<2>>.
+    Found 16-bit register for signal <banco<3>>.
+    Found 16-bit register for signal <banco<4>>.
+    Found 16-bit register for signal <banco<5>>.
+    Found 16-bit register for signal <banco<6>>.
+    Found 16-bit register for signal <banco<7>>.
+    Found 16-bit register for signal <banco<8>>.
+    Found 16-bit register for signal <banco<9>>.
+    Found 16-bit register for signal <banco<10>>.
+    Found 16-bit register for signal <banco<11>>.
+    Found 16-bit register for signal <banco<12>>.
+    Found 16-bit register for signal <banco<13>>.
+    Found 16-bit register for signal <banco<14>>.
+    Found 16-bit register for signal <banco<15>>.
+    Found 16-bit register for signal <banco<0>>.
+    Found 16-bit shifter logical right for signal <readRegister1[3]_SHAMT[3]_shift_right_34_OUT> created at line 110
+    Found 16-bit shifter logical left for signal <readRegister1[3]_SHAMT[3]_shift_left_69_OUT> created at line 116
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <banco>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 16-bit 16-to-1 multiplexer for signal <readData1> created at line 123.
+    Found 16-bit 16-to-1 multiplexer for signal <readData2> created at line 124.
     Summary:
-	inferred 272 D-type flip-flop(s).
-	inferred  16 Latch(s).
-	inferred  33 Multiplexer(s).
-	inferred   1 Combinational logic shifter(s).
-Unit <ARCHIVO_REG> synthesized.
+	inferred 256 D-type flip-flop(s).
+	inferred  98 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <archivo_registros> synthesized.
 
 Synthesizing Unit <multiplexor>.
     Related source file is "C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\multiplexor\multiplexor.vhd".
@@ -401,24 +386,23 @@ Macro Statistics
  16-bit adder                                          : 1
  3-bit adder                                           : 1
  3-bit subtractor                                      : 1
-# Registers                                            : 29
+# Registers                                            : 28
  1-bit register                                        : 2
- 16-bit register                                       : 25
+ 16-bit register                                       : 24
  3-bit register                                        : 1
  4-bit register                                        : 1
-# Latches                                              : 16
- 1-bit latch                                           : 16
-# Multiplexers                                         : 125
+# Multiplexers                                         : 190
  1-bit 2-to-1 multiplexer                              : 15
  1-bit 4-to-1 multiplexer                              : 16
- 16-bit 16-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 87
+ 16-bit 16-to-1 multiplexer                            : 2
+ 16-bit 2-to-1 multiplexer                             : 151
  16-bit 8-to-1 multiplexer                             : 2
  20-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 1
-# Logic shifters                                       : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
 # Xors                                                 : 67
  1-bit xor2                                            : 67
@@ -502,19 +486,20 @@ Macro Statistics
  16-bit adder                                          : 1
  3-bit adder                                           : 1
  3-bit subtractor                                      : 1
-# Registers                                            : 409
- Flip-Flops                                            : 409
-# Multiplexers                                         : 155
+# Registers                                            : 393
+ Flip-Flops                                            : 393
+# Multiplexers                                         : 250
+ 1-bit 16-to-1 multiplexer                             : 32
  1-bit 2-to-1 multiplexer                              : 15
  1-bit 4-to-1 multiplexer                              : 16
  1-bit 8-to-1 multiplexer                              : 32
- 16-bit 16-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 87
+ 16-bit 2-to-1 multiplexer                             : 151
  20-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 1
  5-bit 2-to-1 multiplexer                              : 1
-# Logic shifters                                       : 1
+# Logic shifters                                       : 2
+ 16-bit shifter logical left                           : 1
  16-bit shifter logical right                          : 1
 # Xors                                                 : 67
  1-bit xor2                                            : 67
@@ -533,401 +518,352 @@ Optimizing unit <PILA> ...
 
 Optimizing unit <PROC_UNID_CONTROL> ...
 
-Optimizing unit <ARCHIVO_REG> ...
+Optimizing unit <archivo_registros> ...
 
 Optimizing unit <PRACTICA03> ...
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/read_data2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_7_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_9_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_8_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_6_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_5_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_4_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_14_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/res_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_15_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_10_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_13_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_12_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_11_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <AR_R/archivo_3_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_3_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR_R/archivo_2_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo2> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo5> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo3> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo4> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo6> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo7> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo10> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo8> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo9> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo11> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo12> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo15> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo13> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo14> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo16> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo17> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo20> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo18> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo19> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo21> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo22> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo25> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo23> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo24> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo26> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo27> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo30> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo28> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo29> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo31> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo32> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo35> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo33> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo34> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo36> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo37> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo40> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo38> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo39> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo41> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo42> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo45> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo43> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo44> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo46> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo47> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo50> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo48> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo49> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo51> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo52> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo55> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo53> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo54> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo56> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo57> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo60> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo58> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo59> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo61> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo62> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo63> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo64> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo65> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo66> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo69> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo67> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo68> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo70> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo71> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo74> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo72> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo73> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo75> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo76> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo79> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo77> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo78> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo80> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo81> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo84> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo82> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo83> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo85> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo86> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo89> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo87> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo88> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo90> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo91> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo94> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo92> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo93> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo95> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo96> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo99> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo97> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo98> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo100> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo101> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo102> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo103> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo104> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo105> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo108> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo106> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo107> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo109> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo110> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo113> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo111> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo112> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo114> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo115> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo118> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo116> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo117> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo119> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo120> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo123> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo121> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo122> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo124> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo125> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo128> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo126> are equivalent, second RAM is removed
-INFO:Xst:2399 - RAMs <MD/Mram_archivo1>, <MD/Mram_archivo127> are equivalent, second RAM is removed
-INFO:Xst:2261 - The FF/Latch <AR_R/archivo_0_9> in Unit <PROCESADOR_ESCOMIPS> is equivalent to the following 11 FFs/Latches, which will be removed : <AR_R/archivo_0_15> <AR_R/archivo_0_14> <AR_R/archivo_0_13> <AR_R/archivo_0_11> <AR_R/archivo_0_10> <AR_R/archivo_0_8> <AR_R/archivo_0_7> <AR_R/archivo_0_6> <AR_R/archivo_0_5> <AR_R/archivo_0_4> <AR_R/archivo_0_3> 
-INFO:Xst:2261 - The FF/Latch <AR_R/archivo_1_9> in Unit <PROCESADOR_ESCOMIPS> is equivalent to the following 11 FFs/Latches, which will be removed : <AR_R/archivo_1_15> <AR_R/archivo_1_14> <AR_R/archivo_1_13> <AR_R/archivo_1_11> <AR_R/archivo_1_10> <AR_R/archivo_1_8> <AR_R/archivo_1_7> <AR_R/archivo_1_6> <AR_R/archivo_1_5> <AR_R/archivo_1_4> <AR_R/archivo_1_3> 
+WARNING:Xst:1710 - FF/Latch <AR/banco_5_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_6_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_5_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_15_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_7_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_4_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_3_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_14_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/sp_1> has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_13_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_12_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_9_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_8_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_11_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_10_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PILA_Comp/aux_1_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <AR/banco_2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/sp_0> has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/sp_2> has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_1_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_7_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_3_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_5_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_6_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PILA_Comp/aux_2_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_2_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PILA_Comp/aux_4_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block PROCESADOR_ESCOMIPS, actual ratio is 0.
-FlipFlop PILA_Comp/sp_0 has been replicated 2 time(s)
-FlipFlop PILA_Comp/sp_1 has been replicated 1 time(s)
-FlipFlop PILA_Comp/sp_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -935,8 +871,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 149
- Flip-Flops                                            : 149
+# Registers                                            : 52
+ Flip-Flops                                            : 52
 
 =========================================================================
 
@@ -959,27 +895,27 @@ Top Level Output File Name         : PROCESADOR_ESCOMIPS.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 486
+# BELS                             : 363
 #      GND                         : 1
-#      INV                         : 4
+#      INV                         : 3
 #      LUT1                        : 15
 #      LUT2                        : 3
-#      LUT3                        : 13
-#      LUT4                        : 154
-#      LUT5                        : 42
-#      LUT6                        : 168
+#      LUT3                        : 32
+#      LUT4                        : 23
+#      LUT5                        : 61
+#      LUT6                        : 144
 #      MUXCY                       : 15
-#      MUXF7                       : 38
+#      MUXF7                       : 33
 #      MUXF8                       : 16
 #      VCC                         : 1
 #      XORCY                       : 16
-# FlipFlops/Latches                : 149
-#      FDC                         : 1
+# FlipFlops/Latches                : 52
+#      FDC                         : 17
 #      FDC_1                       : 1
-#      FDCE                        : 145
+#      FDCE                        : 32
 #      FDCE_1                      : 2
-# RAMS                             : 1
-#      RAM256X1S                   : 1
+# RAMS                             : 128
+#      RAM256X1S                   : 128
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 90
@@ -993,18 +929,18 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             149  out of  126800     0%  
- Number of Slice LUTs:                  403  out of  63400     0%  
-    Number used as Logic:               399  out of  63400     0%  
-    Number used as Memory:                4  out of  19000     0%  
-       Number used as RAM:                4
+ Number of Slice Registers:              52  out of  126800     0%  
+ Number of Slice LUTs:                  793  out of  63400     1%  
+    Number used as Logic:               281  out of  63400     0%  
+    Number used as Memory:              512  out of  19000     2%  
+       Number used as RAM:              512
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    471
-   Number with an unused Flip Flop:     322  out of    471    68%  
-   Number with an unused LUT:            68  out of    471    14%  
-   Number of fully used LUT-FF pairs:    81  out of    471    17%  
-   Number of unique control sets:        13
+ Number of LUT Flip Flop pairs used:    809
+   Number with an unused Flip Flop:     757  out of    809    93%  
+   Number with an unused LUT:            16  out of    809     1%  
+   Number of fully used LUT-FF pairs:    36  out of    809     4%  
+   Number of unique control sets:         4
 
 IO Utilization: 
  Number of IOs:                          91
@@ -1034,7 +970,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 150   |
+clk                                | BUFGP                  | 180   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -1045,9 +981,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 13.516ns (Maximum Frequency: 73.986MHz)
-   Minimum input arrival time before clock: 0.754ns
-   Maximum output required time after clock: 6.539ns
+   Minimum period: 14.080ns (Maximum Frequency: 71.022MHz)
+   Minimum input arrival time before clock: 0.739ns
+   Maximum output required time after clock: 7.100ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1056,85 +992,88 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.516ns (frequency: 73.986MHz)
-  Total number of paths / destination ports: 6436078 / 304
+  Clock period: 14.080ns (frequency: 71.022MHz)
+  Total number of paths / destination ports: 4775842 / 1366
 -------------------------------------------------------------------------
-Delay:               6.758ns (Levels of Logic = 11)
-  Source:            PILA_Comp/aux_4_3 (FF)
+Delay:               7.040ns (Levels of Logic = 13)
+  Source:            PILA_Comp/aux_0_4 (FF)
   Destination:       U_de_C/REGISTRO_EDO/f_aux_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk falling
 
-  Data Path: PILA_Comp/aux_4_3 to U_de_C/REGISTRO_EDO/f_aux_1
+  Data Path: PILA_Comp/aux_0_4 to U_de_C/REGISTRO_EDO/f_aux_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.361   0.693  PILA_Comp/aux_4_3 (PILA_Comp/aux_4_3)
-     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux9_3 (PILA_Comp/mux9_3)
-     MUXF7:I1->O           6   0.279   0.706  PILA_Comp/mux9_2_f7 (PC_fin_out_3_OBUF)
-     LUT5:I0->O            7   0.097   0.323  MEM_PROGR/Mram_instruccion121_SW0 (N0)
-     LUT6:I5->O           26   0.097   0.617  MEM_PROGR/Mram_instruccion3211 (instruccion_out_24_OBUF)
-     LUT3:I0->O            3   0.097   0.566  U_de_C/DECODER_INST/tipo_r<4>1_1 (U_de_C/DECODER_INST/tipo_r<4>1)
-     LUT6:I2->O            8   0.097   0.411  Mmux_sop1_o101 (sop1_o<3>)
-     LUT5:I3->O            1   0.097   0.511  ALU/ALU07/cout_aux1_SW0 (N288)
-     LUT6:I3->O            6   0.097   0.318  ALU/ALU07/cout_aux1 (ALU/carries<6>)
-     LUT6:I5->O            4   0.097   0.697  ALU/ALU08/Mmux_resul_aux11 (resAlu_7_OBUF)
-     LUT6:I1->O            1   0.097   0.295  ALU/Z<15>2 (ALU/Z<15>1)
-     LUT6:I5->O            1   0.097   0.000  ALU/Z<15>3 (banderas_aux<1>)
+     FDC:C->Q             11   0.361   0.729  PILA_Comp/aux_0_4 (PILA_Comp/aux_0_4)
+     LUT5:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion3211_SW0 (N141)
+     LUT6:I5->O           21   0.097   0.602  MEM_PROGR/Mram_instruccion3211 (instruccion_out_24_OBUF)
+     LUT6:I3->O           11   0.097   0.557  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
+     LUT6:I3->O           10   0.097   0.337  AR/mux24_61 (AR/mux24_4_f7)
+     LUT5:I4->O            2   0.097   0.516  ALU/ALU03/Mxor_b_aux_xo<0>1 (ALU/ALU03/b_aux)
+     LUT6:I3->O            3   0.097   0.305  ALU/ALU03/cout_aux1 (ALU/carries<2>)
+     LUT6:I5->O            3   0.097   0.305  ALU/ALU05/cout_aux1 (ALU/carries<4>)
+     LUT6:I5->O            6   0.097   0.318  ALU/ALU07/cout_aux1 (ALU/carries<6>)
+     LUT6:I5->O            3   0.097   0.305  ALU/ALU09/cout_aux1 (ALU/carries<8>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU11/cout_aux1 (ALU/carries<10>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU13/cout_aux1 (ALU/carries<12>)
+     LUT6:I5->O            3   0.097   0.521  ALU/ALU15/cout_aux1 (ALU/carries<14>)
+     LUT6:I3->O            1   0.097   0.000  ALU/Z<15>3 (banderas_aux<1>)
      FDCE_1:D                  0.008          U_de_C/REGISTRO_EDO/f_aux_1
     ----------------------------------------
-    Total                      6.758ns (1.618ns logic, 5.140ns route)
-                                       (23.9% logic, 76.1% route)
+    Total                      7.040ns (1.630ns logic, 5.410ns route)
+                                       (23.2% logic, 76.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 149 / 149
+  Total number of paths / destination ports: 52 / 52
 -------------------------------------------------------------------------
-Offset:              0.754ns (Levels of Logic = 1)
+Offset:              0.739ns (Levels of Logic = 1)
   Source:            clr (PAD)
-  Destination:       PILA_Comp/aux_0_15 (FF)
+  Destination:       U_de_C/NIVEL/nclk (FF)
   Destination Clock: clk rising
 
-  Data Path: clr to PILA_Comp/aux_0_15
+  Data Path: clr to U_de_C/NIVEL/nclk
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           149   0.001   0.404  clr_IBUF (clr_IBUF)
-     FDCE:CLR                  0.349          PILA_Comp/sp_0
+     IBUF:I->O            52   0.001   0.389  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.349          U_de_C/NIVEL/nclk
     ----------------------------------------
-    Total                      0.754ns (0.350ns logic, 0.404ns route)
-                                       (46.4% logic, 53.6% route)
+    Total                      0.739ns (0.350ns logic, 0.389ns route)
+                                       (47.4% logic, 52.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 568560 / 56
+  Total number of paths / destination ports: 56097 / 72
 -------------------------------------------------------------------------
-Offset:              6.539ns (Levels of Logic = 13)
-  Source:            PILA_Comp/aux_4_3 (FF)
+Offset:              7.100ns (Levels of Logic = 14)
+  Source:            PILA_Comp/aux_0_4 (FF)
   Destination:       resAlu<15> (PAD)
   Source Clock:      clk rising
 
-  Data Path: PILA_Comp/aux_4_3 to resAlu<15>
+  Data Path: PILA_Comp/aux_0_4 to resAlu<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             1   0.361   0.693  PILA_Comp/aux_4_3 (PILA_Comp/aux_4_3)
-     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux9_3 (PILA_Comp/mux9_3)
-     MUXF7:I1->O           6   0.279   0.706  PILA_Comp/mux9_2_f7 (PC_fin_out_3_OBUF)
-     LUT5:I0->O            7   0.097   0.323  MEM_PROGR/Mram_instruccion121_SW0 (N0)
-     LUT6:I5->O           19   0.097   0.379  MEM_PROGR/Mram_instruccion1611 (instruccion_out_12_OBUF)
-     LUT4:I3->O            1   0.097   0.000  AR_R/Mmux_read_data1_4_f7_131 (AR_R/Mmux_read_data1_4_f7_13)
-     MUXF7:I0->O           1   0.277   0.000  AR_R/Mmux_read_data1_4_f7_13 (AR_R/Mmux_read_data1_4_f714)
-     MUXF8:I0->O           7   0.218   0.323  AR_R/Mmux_read_data1_2_f8_13 (read_data1_8_OBUF)
-     LUT3:I2->O            5   0.097   0.702  Mmux_sop1_o151 (sop1_o<8>)
-     LUT5:I0->O            1   0.097   0.295  ALU/ALU09/cout_aux1_SW3 (N360)
-     LUT6:I5->O            5   0.097   0.314  ALU/ALU09/cout_aux1 (ALU/carries<8>)
-     LUT6:I5->O            2   0.097   0.515  ALU/ALU15/cout_aux1 (ALU/carries<14>)
-     LUT6:I3->O            1   0.097   0.279  ALU/ALU16/Mmux_resul_aux11 (banderas_aux<2>)
+     FDC:C->Q             11   0.361   0.729  PILA_Comp/aux_0_4 (PILA_Comp/aux_0_4)
+     LUT5:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion3211_SW0 (N141)
+     LUT6:I5->O           21   0.097   0.602  MEM_PROGR/Mram_instruccion3211 (instruccion_out_24_OBUF)
+     LUT6:I3->O           11   0.097   0.557  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
+     LUT6:I3->O           10   0.097   0.337  AR/mux24_61 (AR/mux24_4_f7)
+     LUT5:I4->O            2   0.097   0.516  ALU/ALU03/Mxor_b_aux_xo<0>1 (ALU/ALU03/b_aux)
+     LUT6:I3->O            3   0.097   0.305  ALU/ALU03/cout_aux1 (ALU/carries<2>)
+     LUT6:I5->O            3   0.097   0.305  ALU/ALU05/cout_aux1 (ALU/carries<4>)
+     LUT6:I5->O            6   0.097   0.318  ALU/ALU07/cout_aux1 (ALU/carries<6>)
+     LUT6:I5->O            3   0.097   0.305  ALU/ALU09/cout_aux1 (ALU/carries<8>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU11/cout_aux1 (ALU/carries<10>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU13/cout_aux1 (ALU/carries<12>)
+     LUT6:I5->O            3   0.097   0.305  ALU/ALU15/cout_aux1 (ALU/carries<14>)
+     LUT6:I5->O            2   0.097   0.283  ALU/ALU16/Mmux_resul_aux11 (banderas_aux<2>)
      OBUF:I->O                 0.000          resAlu_15_OBUF (resAlu<15>)
     ----------------------------------------
-    Total                      6.539ns (2.008ns logic, 4.531ns route)
-                                       (30.7% logic, 69.3% route)
+    Total                      7.100ns (1.622ns logic, 5.478ns route)
+                                       (22.8% logic, 77.2% route)
 
 =========================================================================
 
@@ -1146,20 +1085,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.954|    5.190|    6.758|         |
+clk            |    7.221|    6.379|    7.040|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 27.00 secs
-Total CPU time to Xst completion: 26.75 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.22 secs
  
 --> 
 
-Total memory usage is 481184 kilobytes
+Total memory usage is 479972 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  280 (   0 filtered)
-Number of infos    :  136 (   0 filtered)
+Number of warnings :  346 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 

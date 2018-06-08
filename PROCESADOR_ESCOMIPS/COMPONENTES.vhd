@@ -22,15 +22,15 @@ package COMPONENTES is
 	end component;
 --------------------------------------------------
 
-	component ARCHIVO_REG is
-		 Port ( write_reg : in  STD_LOGIC_VECTOR (3 downto 0);
-				  read_reg1, read_reg2 : in STD_LOGIC_VECTOR(3 downto 0);
-				  write_data : in  STD_LOGIC_VECTOR (15 downto 0);
-				  --dato_out : out  STD_LOGIC_VECTOR (7 downto 0);
-				  read_data1, read_data2 : out STD_LOGIC_VECTOR(15 downto 0);
-				  wr, clk, clr, she, dir : in  STD_LOGIC;
-				  shamt : in STD_LOGIC_VECTOR(3 downto 0));
-	end component;
+--	component ARCHIVO_REG is
+--		 Port ( write_reg : in  STD_LOGIC_VECTOR (3 downto 0);
+--				  read_reg1, read_reg2 : in STD_LOGIC_VECTOR(3 downto 0);
+--				  write_data : in  STD_LOGIC_VECTOR (15 downto 0);
+--				  --dato_out : out  STD_LOGIC_VECTOR (7 downto 0);
+--				  read_data1, read_data2 : out STD_LOGIC_VECTOR(15 downto 0);
+--				  wr, clk, clr, she, dir : in  STD_LOGIC;
+--				  shamt : in STD_LOGIC_VECTOR(3 downto 0));
+--	end component;
 
 -------------------------------------
 	component MEMORIA_PROGRAMA is
@@ -68,24 +68,24 @@ package COMPONENTES is
 				  banderas : in  STD_LOGIC_VECTOR (3 downto 0));
 	end component;
 -----------------------------------------
---	component archivo_registros is
---		 Generic (
---						n: integer := 16
---		 );
---		 Port ( clk : in  STD_LOGIC;
---				  clr : in  STD_LOGIC;
---				  DIR : in  STD_LOGIC;
---				  WR : in  STD_LOGIC;
---				  SHE : in  STD_LOGIC;
---				  writeRegister : in  STD_LOGIC_VECTOR (3 downto 0);
---				  writeData : in  STD_LOGIC_VECTOR (n-1 downto 0);
---				  readRegister1 : in  STD_LOGIC_VECTOR (3 downto 0);
---				  readRegister2 : in  STD_LOGIC_VECTOR (3 downto 0);
---				  SHAMT : in  STD_LOGIC_VECTOR (3 downto 0);
---				  readData1 : out  STD_LOGIC_VECTOR (n-1 downto 0);
---				  readData2 : out  STD_LOGIC_VECTOR (n-1 downto 0)
---				  );
---	end component;
+	component archivo_registros is
+		 Generic (
+						n: integer := 16
+		 );
+		 Port ( clk : in  STD_LOGIC;
+				  clr : in  STD_LOGIC;
+				  DIR : in  STD_LOGIC;
+				  WR : in  STD_LOGIC;
+				  SHE : in  STD_LOGIC;
+				  writeRegister : in  STD_LOGIC_VECTOR (3 downto 0);
+				  writeData : in  STD_LOGIC_VECTOR (n-1 downto 0);
+				  readRegister1 : in  STD_LOGIC_VECTOR (3 downto 0);
+				  readRegister2 : in  STD_LOGIC_VECTOR (3 downto 0);
+				  SHAMT : in  STD_LOGIC_VECTOR (3 downto 0);
+				  readData1 : out  STD_LOGIC_VECTOR (n-1 downto 0);
+				  readData2 : out  STD_LOGIC_VECTOR (n-1 downto 0)
+				  );
+	end component;
 ---------------------------------------------
 
 	component PILA is

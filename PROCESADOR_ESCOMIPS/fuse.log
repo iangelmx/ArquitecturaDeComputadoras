@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_beh.prj PROCESADOR_ESCOMIPS 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_beh.prj work.PROCESADOR_ESCOMIPS 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -19,7 +19,7 @@ Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESC
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../multiplexor/multiplexor.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../MEMORIA_DATOS/MEMORIA_DATOS.vhd" into library work
-Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../ARCHIVO_REG/ARCHIVO_REG.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../archivo_registros/archivo_registros.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../ALU_16/PRACTICA03.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd" into library work
 Starting static elaboration
@@ -29,6 +29,7 @@ Compiling package std_logic_1164
 Compiling package componentes
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling package numeric_std
 Compiling architecture behavioral of entity PILA [pila_default]
 Compiling architecture behavioral of entity MEMORIA_PROGRAMA [\MEMORIA_PROGRAMA(25,10)\]
 Compiling architecture behavioral of entity reg_estado [reg_estado_default]
@@ -41,15 +42,15 @@ Compiling architecture behavioral of entity microcod_funcion [microcod_funcion_d
 Compiling architecture behavioral of entity PROC_UNID_CONTROL [proc_unid_control_default]
 Compiling architecture behavioral of entity PROC_EXT_SIGNO [proc_ext_signo_default]
 Compiling architecture behavioral of entity PROC_EXT_DIR [proc_ext_dir_default]
-Compiling architecture behavioral of entity ARCHIVO_REG [archivo_reg_default]
+Compiling architecture behavioral of entity archivo_registros [\archivo_registros(16)\]
 Compiling architecture behavioral of entity multiplexor [multiplexor_default]
 Compiling architecture behavioral of entity ALU_1BIT [alu_1bit_default]
 Compiling architecture behavioral of entity PRACTICA03 [practica03_default]
 Compiling architecture behavioral of entity MEMORIA_DATOS [\MEMORIA_DATOS(16,11,2048)\]
 Compiling architecture behavioral of entity procesador_escomips
 Time Resolution for simulation is 1ps.
-Waiting for 15 sub-compilation(s) to finish...
-Compiled 40 VHDL Units
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 41 VHDL Units
 Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_isim_beh.exe
-Fuse Memory Usage: 35220 KB
-Fuse CPU Usage: 921 ms
+Fuse Memory Usage: 38612 KB
+Fuse CPU Usage: 1233 ms

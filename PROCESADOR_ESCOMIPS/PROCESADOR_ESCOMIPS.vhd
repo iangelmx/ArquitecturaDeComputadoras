@@ -98,33 +98,33 @@ begin
 	exten <= extension_aux WHEN microinstruccion_aux(13) = '0' ELSE extensionDir_aux; -- MUX SEXT
 	
 -------------------- BLOQUES YAYO:
---	AR : archivo_registros port map(
---				clk=>clk_aux,
---				clr=>clr_aux,
---				DIR=>dir_aux,
---				WR=>wr_aux,
---				SHE=>she_aux,
---				writeRegister=>wreg_aux,
---				writeData=>wdata_aux,
---				readRegister1=>rreg1_aux,
---				readRegister2=>rreg2_aux,
---				SHAMT=>shamt_aux,
---				readData1=>rdata1_aux,
---				readData2=>rdata2_aux);
+	AR : archivo_registros port map(
+				clk=>clk_aux,
+				clr=>clr_aux,
+				DIR=>dir_aux,
+				WR=>wr_aux,
+				SHE=>she_aux,
+				writeRegister=>wreg_aux,
+				writeData=>wdata_aux,
+				readRegister1=>rreg1_aux,
+				readRegister2=>rreg2_aux,
+				SHAMT=>shamt_aux,
+				readData1=>rdata1_aux,
+				readData2=>rdata2_aux);
 
-	AR_R : ARCHIVO_REG port map(
-				write_reg=>wreg_aux, 
-				read_reg1=>rreg1_aux, 
-				read_reg2 => rreg2_aux, 
-				write_data => wdata_aux, 
-				read_data1 => rdata1_aux, 
-				read_data2 => rdata2_aux, 
-				wr => wr_aux, 
-				clk => clk_aux, 
-				clr => clr_aux, 
-				she => she_aux, 
-				dir => dir_aux,
-				shamt => shamt_aux);
+--	AR_R : ARCHIVO_REG port map(
+--				write_reg=>wreg_aux, 
+--				read_reg1=>rreg1_aux, 
+--				read_reg2 => rreg2_aux, 
+--				write_data => wdata_aux, 
+--				read_data1 => rdata1_aux, 
+--				read_data2 => rdata2_aux, 
+--				wr => wr_aux, 
+--				clk => clk_aux, 
+--				clr => clr_aux, 
+--				she => she_aux, 
+--				dir => dir_aux,
+--				shamt => shamt_aux);
 --	SOP1 : multiplexor port map(opc0=>rdata1_aux,opc1=>PCout_aux,selector=>msop1,sal=>sop1_o);
 	sop1_o <= rdata1_aux WHEN msop1 = '0' ELSE PCout_aux;
 	SOP2 : multiplexor port map(opc0=>rdata2_aux,opc1=>exten,selector=>msop2,sal=>sop2_o);

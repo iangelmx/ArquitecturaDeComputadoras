@@ -15,10 +15,12 @@ Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESC
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../PROC_EXT_SIGNO/PROC_EXT_SIGNO.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../PROC_EXT_DIR/PROC_EXT_DIR.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/COMPONENTES.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../PROCESADOR_CLK_DIV/PROCESADOR_CLK_DIV.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../PILA/PILA.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../multiplexor/multiplexor.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../MEMORIA_DATOS/MEMORIA_DATOS.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../FF_d/FF_d.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../archivo_registros/archivo_registros.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/../ALU_16/PRACTICA03.vhd" into library work
 Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd" into library work
@@ -30,6 +32,8 @@ Compiling package componentes
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package numeric_std
+Compiling architecture behavioral of entity PROCESADOR_CLK_DIV [procesador_clk_div_default]
+Compiling architecture behavioral of entity FF_d [ff_d_default]
 Compiling architecture behavioral of entity PILA [pila_default]
 Compiling architecture behavioral of entity MEMORIA_PROGRAMA [\MEMORIA_PROGRAMA(25,10)\]
 Compiling architecture behavioral of entity reg_estado [reg_estado_default]
@@ -49,8 +53,8 @@ Compiling architecture behavioral of entity PRACTICA03 [practica03_default]
 Compiling architecture behavioral of entity MEMORIA_DATOS [\MEMORIA_DATOS(16,11,2048)\]
 Compiling architecture behavioral of entity procesador_escomips
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
-Compiled 41 VHDL Units
+Waiting for 17 sub-compilation(s) to finish...
+Compiled 45 VHDL Units
 Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS_isim_beh.exe
-Fuse Memory Usage: 38612 KB
-Fuse CPU Usage: 1233 ms
+Fuse Memory Usage: 38108 KB
+Fuse CPU Usage: 1187 ms

@@ -54,9 +54,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528421541" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528421541">
+    <transform xil_pn:end_ts="1528422552" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1528422552">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ALU_16/PRACTICA03.vhd"/>
       <outfile xil_pn:name="../ALU_1BIT/ALU_1BIT.vhd"/>
       <outfile xil_pn:name="../FF_d/FF_d.vhd"/>
@@ -92,9 +96,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528421541" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528421541">
+    <transform xil_pn:end_ts="1528422552" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1528422552">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../ALU_16/PRACTICA03.vhd"/>
       <outfile xil_pn:name="../ALU_1BIT/ALU_1BIT.vhd"/>
       <outfile xil_pn:name="../FF_d/FF_d.vhd"/>
@@ -118,9 +127,14 @@
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS.vhd"/>
       <outfile xil_pn:name="TB_PROCESADOR_B.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1528421548" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6675713278393271503" xil_pn:start_ts="1528421541">
+    <transform xil_pn:end_ts="1528422558" xil_pn:in_ck="-1864764591410433923" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6675713278393271503" xil_pn:start_ts="1528422552">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS_beh.prj"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -128,9 +142,12 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1528421548" xil_pn:in_ck="6924527774873749082" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6283997415060186046" xil_pn:start_ts="1528421548">
+    <transform xil_pn:end_ts="1528422559" xil_pn:in_ck="6924527774873749082" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6283997415060186046" xil_pn:start_ts="1528422558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -163,12 +180,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1528421480" xil_pn:in_ck="7365140219661960837" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2187812679693579044" xil_pn:start_ts="1528421447">
+    <transform xil_pn:end_ts="1528422726" xil_pn:in_ck="7365140219661960837" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2187812679693579044" xil_pn:start_ts="1528422690">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS.lso"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS.ngc"/>
       <outfile xil_pn:name="PROCESADOR_ESCOMIPS.ngr"/>

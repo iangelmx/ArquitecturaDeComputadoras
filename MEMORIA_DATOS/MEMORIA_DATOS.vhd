@@ -8,7 +8,7 @@ entity MEMORIA_DATOS is
 	generic
 	(
 		palabra : integer := 16;
-		busT  : integer := 16;
+		busT  : integer := 11;
 		capacidad : integer := 2048
 	);
 	port

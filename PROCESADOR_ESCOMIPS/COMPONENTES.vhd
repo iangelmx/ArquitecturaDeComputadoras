@@ -8,7 +8,7 @@ package COMPONENTES is
 		generic
 		(
 			palabra : integer := 16;
-			busT  : integer := 16;
+			busT  : integer := 11;
 			capacidad : integer := 2048
 		);
 		port
@@ -20,6 +20,18 @@ package COMPONENTES is
 		);
 
 	end component;
+--------------------------------------------------
+
+--	component ARCHIVO_REG is
+--		 Port ( write_reg : in  STD_LOGIC_VECTOR (3 downto 0);
+--				  read_reg1, read_reg2 : in STD_LOGIC_VECTOR(3 downto 0);
+--				  write_data : in  STD_LOGIC_VECTOR (15 downto 0);
+--				  --dato_out : out  STD_LOGIC_VECTOR (7 downto 0);
+--				  read_data1, read_data2 : out STD_LOGIC_VECTOR(15 downto 0);
+--				  wr, clk, clr, she, dir : in  STD_LOGIC;
+--				  shamt : in STD_LOGIC_VECTOR(3 downto 0));
+--	end component;
+
 -------------------------------------
 	component MEMORIA_PROGRAMA is
 		generic

@@ -26,3 +26,10 @@ xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADO
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.syr" 
 xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.syr" 
+xst -intstyle ise -ifn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.xst" -ofn "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PROCESADOR_ESCOMIPS.ucf -p xc7a100t-csg324-3 PROCESADOR_ESCOMIPS.ngc PROCESADOR_ESCOMIPS.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PROCESADOR_ESCOMIPS_map.ncd PROCESADOR_ESCOMIPS.ngd PROCESADOR_ESCOMIPS.pcf 
+par -w -intstyle ise -ol high -mt off PROCESADOR_ESCOMIPS_map.ncd PROCESADOR_ESCOMIPS.ncd PROCESADOR_ESCOMIPS.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PROCESADOR_ESCOMIPS.twx PROCESADOR_ESCOMIPS.ncd -o PROCESADOR_ESCOMIPS.twr PROCESADOR_ESCOMIPS.pcf -ucf PROCESADOR_ESCOMIPS.ucf 
+bitgen -intstyle ise -f PROCESADOR_ESCOMIPS.ut PROCESADOR_ESCOMIPS.ncd 

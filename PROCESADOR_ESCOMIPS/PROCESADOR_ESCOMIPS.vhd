@@ -9,7 +9,8 @@ use work.COMPONENTES.all;
 entity PROCESADOR_ESCOMIPS is
 	Port(
 		clk, clr : in STD_LOGIC;
-		read_data2 : out STD_LOGIC_VECTOR (7 downto 0);
+--		read_data2 : out STD_LOGIC_VECTOR (7 downto 0);
+		salida : out STD_LOGIC_VECTOR(15 downto 0);
 --		read_data1 : out STD_LOGIC_VECTOR (15 downto 0);
 		PC_fin_out : out STD_LOGIC_VECTOR(7 downto 0)
 --		instruccion_out : out STD_LOGIC_VECTOR(24 downto 0);
@@ -121,7 +122,8 @@ begin
 	SR : multiplexor port map(opc0=>memd_o,opc1=>alu_o,selector=>msr,sal=>sr_out);
 -------------------- FIN BLOQUES YAYO--------------------------------------------------------------------
 	
-	read_data2 <= rdata2_aux(7 downto 0);
+	--read_data2 <= rdata2_aux(7 downto 0);
+	salida <= memd_o;
 	PC_fin_out <= PCout_aux(7 downto 0);
 	
 

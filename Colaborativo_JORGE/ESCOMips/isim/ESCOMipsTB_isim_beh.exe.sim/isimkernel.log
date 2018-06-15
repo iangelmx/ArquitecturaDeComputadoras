@@ -1,0 +1,29 @@
+Command line:
+   ESCOMipsTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1177
+
+Sun Dec 10 13:50:43 2017
+
+
+ Elaboration Time: 0.110159 sec
+
+ Current Memory Usage: 335.569 Meg
+
+ Total Signals          : 189
+ Total Nets             : 33679
+ Total Signal Drivers   : 208
+ Total Blocks           : 41
+ Total Primitive Blocks : 37
+ Total Processes        : 196
+ Total Traceable Variables  : 83
+ Total Scalar Nets and Variables : 86990
+Total Line Count : 339
+
+ Total Simulation Time: 0.120173 sec
+
+ Current Memory Usage: 335.569 Meg
+
+Sun Dec 10 13:50:57 2017
+

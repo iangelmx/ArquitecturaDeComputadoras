@@ -1,0 +1,151 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.37 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.39 secs
+ 
+--> Reading design: unidadControl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "unidadControl.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "unidadControl"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : unidadControl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\unidadControlPackage.vhd" into library work
+Parsing package <unidadControlPackage>.
+Parsing package body <unidadControlPackage>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\UC.vhd" into library work
+Parsing entity <UC>.
+Parsing architecture <Behavioral> of entity <uc>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\regBanderas.vhd" into library work
+Parsing entity <regBanderas>.
+Parsing architecture <Behavioral> of entity <regbanderas>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\MUXSEL.vhd" into library work
+Parsing entity <mux2>.
+Parsing architecture <Behavioral> of entity <mux2>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\MUXOP.vhd" into library work
+Parsing entity <mux1>.
+Parsing architecture <Behavioral> of entity <mux1>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\decoInst.vhd" into library work
+Parsing entity <decoInst>.
+Parsing architecture <Behavioral> of entity <decoinst>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\condicion.vhd" into library work
+Parsing entity <condicion>.
+Parsing architecture <Behavioral> of entity <condicion>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\codOP.vhd" into library work
+Parsing entity <codOP>.
+Parsing architecture <Behavioral> of entity <codop>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\codFUN.vhd" into library work
+Parsing entity <codFUN>.
+Parsing architecture <Behavioral> of entity <codfun>.
+Parsing VHDL file "\\vboxsrv\downloads\ESCOMips\unidadControl.vhd" into library work
+Parsing entity <unidadControl>.
+Parsing architecture <Behavioral> of entity <unidadcontrol>.
+ERROR:HDLCompiler:402 - "\\vboxsrv\downloads\ESCOMips\unidadControl.vhd" Line 85: Expected an architecture identifier in index
+ERROR:HDLCompiler:432 - "\\vboxsrv\downloads\ESCOMips\unidadControl.vhd" Line 85: Formal <clk> has no actual or default value.
+INFO:HDLCompiler:1408 - "\\vboxsrv\downloads\ESCOMips\unidadControlPackage.vhd" Line 42. clk is declared here
+INFO:HDLCompiler:1408 - "\\vboxsrv\downloads\ESCOMips\unidadControlPackage.vhd" Line 43. clr is declared here
+ERROR:HDLCompiler:854 - "\\vboxsrv\downloads\ESCOMips\unidadControl.vhd" Line 20: Unit <behavioral> ignored due to previous errors.
+VHDL file \\vboxsrv\downloads\ESCOMips\unidadControl.vhd ignored due to errors
+--> 
+
+Total memory usage is 131744 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

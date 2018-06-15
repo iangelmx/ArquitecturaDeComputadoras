@@ -21,23 +21,16 @@ at 0 ps, Instance /procesador_escomips/MD/ : Warning: CONV_INTEGER: There is an 
 # isim force add /procesador_escomips/clk 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
 # isim force add /procesador_escomips/clr 1 -radix bin
 # run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
 # isim force add /procesador_escomips/clr 0 -radix bin
+# run 500ns
+# run 500ns
+# run 5600ns
+# run 5600ns
 # run 10ns
 # run 10ns
 # run 10ns
 # run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
-# run 10ns
+# run 20ns
+# run 20ns
+# run 20ns
+# run 20ns

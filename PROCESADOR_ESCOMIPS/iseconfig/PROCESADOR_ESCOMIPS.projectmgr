@@ -10,13 +10,13 @@
          <ClosedNode>/PROCESADOR_ESCOMIPS - Behavioral C:|Users|iAngelMx|Documents|GitHub|arqCompVHDL|PROCESADOR_ESCOMIPS|PROCESADOR_ESCOMIPS.vhd/ALU - PRACTICA03 - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MEM_PROGR - MEMORIA_PROGRAMA - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd)</SelectedItem>
+         <SelectedItem>PROCESADOR_ESCOMIPS - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000229000000020000000000000000000000000200000064ffffffff000000810000000300000002000002290000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MEM_PROGR - MEMORIA_PROGRAMA - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/MEMORIA_PROGRAMA/MEMORIA_PROGRAMA.vhd)</CurrentItem>
+      <CurrentItem>PROCESADOR_ESCOMIPS - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -24,13 +24,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000131000000010000000100000000000000000000000064ffffffff000000810000000000000001000001310000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -59,7 +59,7 @@
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -83,13 +83,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000131000000010000000100000000000000000000000064ffffffff000000810000000000000001000001310000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
       <ClosedNodes>
@@ -110,13 +110,13 @@
          <ClosedNode>/TB_PROCESADOR_B - behavior C:|Users|iAngelMx|Documents|GitHub|arqCompVHDL|PROCESADOR_ESCOMIPS|TB_PROCESADOR_B.vhd/uut - PROCESADOR_ESCOMIPS - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>archivo_registros - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/archivo_registros/archivo_registros.vhd)</SelectedItem>
+         <SelectedItem>uut - PROCESADOR_ESCOMIPS - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e9000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e90000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>archivo_registros - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/archivo_registros/archivo_registros.vhd)</CurrentItem>
+      <CurrentItem>uut - PROCESADOR_ESCOMIPS - Behavioral (C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/PROCESADOR_ESCOMIPS.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -124,13 +124,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000131000000010000000100000000000000000000000064ffffffff000000810000000000000001000001310000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>

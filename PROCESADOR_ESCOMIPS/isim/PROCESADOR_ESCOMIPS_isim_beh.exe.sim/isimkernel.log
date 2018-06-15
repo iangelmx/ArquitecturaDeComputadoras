@@ -2,9 +2,28 @@ Command line:
    PROCESADOR_ESCOMIPS_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52636
+     -socket  50166
 
-Thu Jun 07 20:49:21 2018
+Thu Jun 14 21:05:54 2018
 
 
- Elaboration Time: 0.171875 sec
+ Elaboration Time: 0.203125 sec
+
+ Current Memory Usage: 1083.74 Meg
+
+ Total Signals          : 469
+ Total Nets             : 33963
+ Total Signal Drivers   : 259
+ Total Blocks           : 42
+ Total Primitive Blocks : 39
+ Total Processes        : 137
+ Total Traceable Variables  : 55
+ Total Scalar Nets and Variables : 60938
+Total Line Count : 451
+
+ Total Simulation Time: 0.5 sec
+
+ Current Memory Usage: 611.885 Meg
+
+Thu Jun 14 21:27:27 2018
+

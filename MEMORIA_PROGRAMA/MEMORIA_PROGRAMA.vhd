@@ -46,7 +46,7 @@ architecture Behavioral of MEMORIA_PROGRAMA is
   constant SW		: std_logic_vector(4 downto 0)	:= "00100";		--4
   
   constant INICIALIZA	: std_logic_vector(15 downto 0)	:= "0000000000000100";
-  constant BURBUJA		: std_logic_vector(15 downto 0)	:= "0000000000110110";
+  constant BURBUJA		: std_logic_vector(15 downto 0)	:= "0000000000110100";
   constant DESPLIEGUE	: std_logic_vector(15 downto 0)	:= "0000000001000011";
   
   constant VACIO 			: std_logic_vector(24 downto 0) := "0000000000000000000000000";

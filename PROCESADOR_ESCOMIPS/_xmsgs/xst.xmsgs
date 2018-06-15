@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROCESADOR_ESCOMIPS\PROCESADOR_ESCOMIPS.vhd</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">nq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CLR_DOWN</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROCESADOR_ESCOMIPS\PROCESADOR_ESCOMIPS.vhd</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">nq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CLR_DOWN</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROCESADOR_ESCOMIPS\PROCESADOR_ESCOMIPS.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">nivel_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U_de_C</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROCESADOR_ESCOMIPS\PROCESADOR_ESCOMIPS.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">nivel_out</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U_de_C</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\PROC_UNID_CONTROL\PROC_UNID_CONTROL.vhd</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">bleti</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">DECODER_INST</arg>&gt; is unconnected or connected to loadless signal.
@@ -51,6 +51,87 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">REGISTRO_EDO/f_aux_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROC_UNID_CONTROL</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">DIV_FREC/cont_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PROCESADOR_ESCOMIPS</arg>&gt;.

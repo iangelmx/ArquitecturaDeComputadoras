@@ -546,6 +546,33 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:2677 - Node <REGISTRO_EDO/f_aux_3> of sequential type is unconnected in block <PROC_UNID_CONTROL>.
 WARNING:Xst:2677 - Node <REGISTRO_EDO/f_aux_2> of sequential type is unconnected in block <PROC_UNID_CONTROL>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_1> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_2> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_3> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_4> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_5> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_6> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_7> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_8> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_9> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_10> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_11> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_12> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_13> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_14> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_15> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_16> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_17> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_18> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_19> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_20> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_21> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_22> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_23> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_24> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_25> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_26> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
+WARNING:Xst:2677 - Node <DIV_FREC/cont_27> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
 WARNING:Xst:2677 - Node <DIV_FREC/cont_28> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
 WARNING:Xst:2677 - Node <DIV_FREC/cont_29> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
 WARNING:Xst:2677 - Node <DIV_FREC/cont_30> of sequential type is unconnected in block <PROCESADOR_ESCOMIPS>.
@@ -572,8 +599,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 424
- Flip-Flops                                            : 424
+# Registers                                            : 397
+ Flip-Flops                                            : 397
 
 =========================================================================
 
@@ -596,23 +623,23 @@ Top Level Output File Name         : PROCESADOR_ESCOMIPS.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1452
+# BELS                             : 1371
 #      GND                         : 1
 #      INV                         : 5
-#      LUT1                        : 42
-#      LUT2                        : 36
-#      LUT3                        : 101
-#      LUT4                        : 57
-#      LUT5                        : 364
+#      LUT1                        : 15
+#      LUT2                        : 38
+#      LUT3                        : 99
+#      LUT4                        : 58
+#      LUT5                        : 363
 #      LUT6                        : 605
-#      MUXCY                       : 42
+#      MUXCY                       : 15
 #      MUXF7                       : 122
 #      MUXF8                       : 32
 #      VCC                         : 1
-#      XORCY                       : 44
-# FlipFlops/Latches                : 424
+#      XORCY                       : 17
+# FlipFlops/Latches                : 397
 #      FD_1                        : 1
-#      FDC                         : 29
+#      FDC                         : 2
 #      FDC_1                       : 1
 #      FDCE                        : 391
 #      FDCE_1                      : 2
@@ -632,17 +659,17 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             424  out of  126800     0%  
- Number of Slice LUTs:                 1722  out of  63400     2%  
-    Number used as Logic:              1210  out of  63400     1%  
+ Number of Slice Registers:             397  out of  126800     0%  
+ Number of Slice LUTs:                 1695  out of  63400     2%  
+    Number used as Logic:              1183  out of  63400     1%  
     Number used as Memory:              512  out of  19000     2%  
        Number used as RAM:              512
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1771
-   Number with an unused Flip Flop:    1347  out of   1771    76%  
-   Number with an unused LUT:            49  out of   1771     2%  
-   Number of fully used LUT-FF pairs:   375  out of   1771    21%  
+ Number of LUT Flip Flop pairs used:   1745
+   Number with an unused Flip Flop:    1348  out of   1745    77%  
+   Number with an unused LUT:            50  out of   1745     2%  
+   Number of fully used LUT-FF pairs:   347  out of   1745    19%  
    Number of unique control sets:        29
 
 IO Utilization: 
@@ -673,8 +700,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 29    |
-DIV_FREC/cont_27                   | BUFG                   | 523   |
+clk                                | BUFGP                  | 2     |
+DIV_FREC/cont_0                    | BUFG                   | 523   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -685,8 +712,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 19.735ns (Maximum Frequency: 50.670MHz)
-   Minimum input arrival time before clock: 0.736ns
+   Minimum period: 19.737ns (Maximum Frequency: 50.667MHz)
+   Minimum input arrival time before clock: 0.633ns
    Maximum output required time after clock: 9.744ns
    Maximum combinational path delay: No path found
 
@@ -695,15 +722,15 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'DIV_FREC/cont_27'
-  Clock period: 19.735ns (frequency: 50.670MHz)
-  Total number of paths / destination ports: 4493738736 / 2068
+Timing constraint: Default period analysis for Clock 'DIV_FREC/cont_0'
+  Clock period: 19.737ns (frequency: 50.667MHz)
+  Total number of paths / destination ports: 4492055847 / 2068
 -------------------------------------------------------------------------
 Delay:               9.868ns (Levels of Logic = 19)
   Source:            PILA_Comp/aux_4_1 (FF)
   Destination:       U_de_C/REGISTRO_EDO/f_aux_1 (FF)
-  Source Clock:      DIV_FREC/cont_27 rising
-  Destination Clock: DIV_FREC/cont_27 falling
+  Source Clock:      DIV_FREC/cont_0 rising
+  Destination Clock: DIV_FREC/cont_0 falling
 
   Data Path: PILA_Comp/aux_4_1 to U_de_C/REGISTRO_EDO/f_aux_1
                                 Gate     Net
@@ -715,8 +742,8 @@ Delay:               9.868ns (Levels of Logic = 19)
      LUT6:I0->O            1   0.097   0.379  MEM_PROGR/Mram_instruccion62114_SW1 (N141)
      LUT6:I4->O           13   0.097   0.351  MEM_PROGR/Mram_instruccion62115 (instruccion_aux<21>)
      LUT5:I4->O            1   0.097   0.379  U_de_C/Mmux_mux_Opcode12_SW0 (N729)
-     LUT6:I4->O           12   0.097   0.430  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
-     LUT6:I4->O            8   0.097   0.411  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
+     LUT6:I4->O           11   0.097   0.425  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
+     LUT6:I4->O            9   0.097   0.416  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
      LUT6:I4->O            2   0.097   0.284  Mmux_rreg2_aux31_1 (Mmux_rreg2_aux31)
      MUXF7:S->O            1   0.335   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
      MUXF8:I0->O           9   0.218   0.332  AR/mux24_2_f8 (rdata2_aux<2>)
@@ -736,59 +763,32 @@ Delay:               9.868ns (Levels of Logic = 19)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.082ns (frequency: 480.238MHz)
-  Total number of paths / destination ports: 406 / 28
+  Clock period: 0.934ns (frequency: 1070.320MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.082ns (Levels of Logic = 29)
+Delay:               0.934ns (Levels of Logic = 2)
   Source:            DIV_FREC/cont_0 (FF)
-  Destination:       DIV_FREC/cont_27 (FF)
+  Destination:       DIV_FREC/cont_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: DIV_FREC/cont_0 to DIV_FREC/cont_27
+  Data Path: DIV_FREC/cont_0 to DIV_FREC/cont_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              1   0.361   0.279  DIV_FREC/cont_0 (DIV_FREC/cont_0)
-     INV:I->O              1   0.113   0.000  DIV_FREC/Mcount_cont_lut<0>_INV_0 (DIV_FREC/Mcount_cont_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  DIV_FREC/Mcount_cont_cy<0> (DIV_FREC/Mcount_cont_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<1> (DIV_FREC/Mcount_cont_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<2> (DIV_FREC/Mcount_cont_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<3> (DIV_FREC/Mcount_cont_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<4> (DIV_FREC/Mcount_cont_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<5> (DIV_FREC/Mcount_cont_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<6> (DIV_FREC/Mcount_cont_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<7> (DIV_FREC/Mcount_cont_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<8> (DIV_FREC/Mcount_cont_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<9> (DIV_FREC/Mcount_cont_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<10> (DIV_FREC/Mcount_cont_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<11> (DIV_FREC/Mcount_cont_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<12> (DIV_FREC/Mcount_cont_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<13> (DIV_FREC/Mcount_cont_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<14> (DIV_FREC/Mcount_cont_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<15> (DIV_FREC/Mcount_cont_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<16> (DIV_FREC/Mcount_cont_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<17> (DIV_FREC/Mcount_cont_cy<17>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<18> (DIV_FREC/Mcount_cont_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<19> (DIV_FREC/Mcount_cont_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<20> (DIV_FREC/Mcount_cont_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<21> (DIV_FREC/Mcount_cont_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<22> (DIV_FREC/Mcount_cont_cy<22>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<23> (DIV_FREC/Mcount_cont_cy<23>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<24> (DIV_FREC/Mcount_cont_cy<24>)
-     MUXCY:CI->O           1   0.023   0.000  DIV_FREC/Mcount_cont_cy<25> (DIV_FREC/Mcount_cont_cy<25>)
-     MUXCY:CI->O           0   0.023   0.000  DIV_FREC/Mcount_cont_cy<26> (DIV_FREC/Mcount_cont_cy<26>)
-     XORCY:CI->O           1   0.370   0.000  DIV_FREC/Mcount_cont_xor<27> (Result<27>)
-     FDC:D                     0.008          DIV_FREC/cont_27
+     INV:I->O              0   0.113   0.000  DIV_FREC/Mcount_cont_lut<0>_INV_0 (DIV_FREC/Mcount_cont_lut<0>)
+     XORCY:LI->O           1   0.173   0.000  DIV_FREC/Mcount_cont_xor<0> (Result<0>)
+     FDC:D                     0.008          DIV_FREC/cont_0
     ----------------------------------------
-    Total                      2.082ns (1.803ns logic, 0.279ns route)
-                                       (86.6% logic, 13.4% route)
+    Total                      0.934ns (0.655ns logic, 0.279ns route)
+                                       (70.1% logic, 29.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 29 / 29
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              0.736ns (Levels of Logic = 1)
+Offset:              0.633ns (Levels of Logic = 1)
   Source:            clr (PAD)
   Destination:       DIV_FREC/cont_0 (FF)
   Destination Clock: clk rising
@@ -797,20 +797,20 @@ Offset:              0.736ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            29   0.001   0.386  clr_IBUF (clr_IBUF)
+     IBUF:I->O             2   0.001   0.283  clr_IBUF (clr_IBUF)
      FDC:CLR                   0.349          DIV_FREC/cont_0
     ----------------------------------------
-    Total                      0.736ns (0.350ns logic, 0.386ns route)
-                                       (47.6% logic, 52.4% route)
+    Total                      0.633ns (0.350ns logic, 0.283ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_FREC/cont_27'
-  Total number of paths / destination ports: 115288600 / 24
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_FREC/cont_0'
+  Total number of paths / destination ports: 115245960 / 24
 -------------------------------------------------------------------------
 Offset:              9.744ns (Levels of Logic = 20)
   Source:            PILA_Comp/aux_4_1 (FF)
   Destination:       salida<15> (PAD)
-  Source Clock:      DIV_FREC/cont_27 rising
+  Source Clock:      DIV_FREC/cont_0 rising
 
   Data Path: PILA_Comp/aux_4_1 to salida<15>
                                 Gate     Net
@@ -822,8 +822,8 @@ Offset:              9.744ns (Levels of Logic = 20)
      LUT6:I0->O            1   0.097   0.379  MEM_PROGR/Mram_instruccion62114_SW1 (N141)
      LUT6:I4->O           13   0.097   0.351  MEM_PROGR/Mram_instruccion62115 (instruccion_aux<21>)
      LUT5:I4->O            1   0.097   0.379  U_de_C/Mmux_mux_Opcode12_SW0 (N729)
-     LUT6:I4->O           12   0.097   0.430  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
-     LUT6:I4->O            8   0.097   0.411  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
+     LUT6:I4->O           11   0.097   0.425  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
+     LUT6:I4->O            9   0.097   0.416  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
      LUT6:I4->O            2   0.097   0.284  Mmux_rreg2_aux31_1 (Mmux_rreg2_aux31)
      MUXF7:S->O            1   0.335   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
      MUXF8:I0->O           9   0.218   0.332  AR/mux24_2_f8 (rdata2_aux<2>)
@@ -846,34 +846,34 @@ Offset:              9.744ns (Levels of Logic = 20)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock DIV_FREC/cont_27
-----------------+---------+---------+---------+---------+
-                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------+---------+---------+---------+---------+
-DIV_FREC/cont_27|   10.410|    8.320|    9.868|         |
-clk             |         |    1.155|    1.155|         |
-----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock DIV_FREC/cont_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+DIV_FREC/cont_0|   10.410|    8.321|    9.868|         |
+clk            |         |    1.155|    1.155|         |
+---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.082|         |         |         |
+clk            |    0.934|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 30.58 secs
+Total REAL time to Xst completion: 29.00 secs
+Total CPU time to Xst completion: 29.55 secs
  
 --> 
 
-Total memory usage is 513848 kilobytes
+Total memory usage is 482384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
+Number of warnings :   38 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 

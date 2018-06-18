@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_isim_beh.exe" -prj "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_beh.prj" "work.ESCOMips" 

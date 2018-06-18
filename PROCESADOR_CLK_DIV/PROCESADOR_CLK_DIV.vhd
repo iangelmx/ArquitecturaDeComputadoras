@@ -22,8 +22,8 @@ begin
 		end if;
 	end process;
 
-	q27 <= cont(27);
---	q27 <= cont(0);
+--	q27 <= cont(27);
+	q27 <= cont(0);
 	
 end Behavioral;
 

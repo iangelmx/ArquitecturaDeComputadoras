@@ -1,0 +1,31 @@
+Command line:
+   ESCOMips_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50355
+
+Thu Jun 14 21:28:03 2018
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 1083.84 Meg
+
+ Total Signals          : 185
+ Total Nets             : 33687
+ Total Signal Drivers   : 206
+ Total Blocks           : 40
+ Total Primitive Blocks : 37
+ Total Processes        : 194
+ Total Traceable Variables  : 115
+ Total Scalar Nets and Variables : 87226
+Total Line Count : 331
+In process pila.vhd:34 
+ 
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 1083.84 Meg
+
+Thu Jun 14 21:33:00 2018
+

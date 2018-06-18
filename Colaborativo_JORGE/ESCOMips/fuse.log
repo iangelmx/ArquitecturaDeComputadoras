@@ -1,0 +1,58 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_isim_beh.exe -prj C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_beh.prj work.ESCOMips 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/unidadControlPackage.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/UC.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/regBanderas.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/nivelC.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/MUXSEL.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/MUXOP.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/decoInst.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/condicion.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/codOP.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/codFUN.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/unidadControl.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/registros.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/pila.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/memProg.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/memDatos.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/extSigno.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/extDireccion.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMipsPackage.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ALU16.vhd" into library work
+Parsing VHDL file "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package escomipspackage
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package unidadcontrolpackage
+Compiling package numeric_std
+Compiling architecture behavioral of entity pila [\pila(16,3)\]
+Compiling architecture behavioral of entity memProg [\memProg(25,11)\]
+Compiling architecture behavioral of entity regBanderas [regbanderas_default]
+Compiling architecture behavioral of entity condicion [condicion_default]
+Compiling architecture behavioral of entity nivelC [nivelc_default]
+Compiling architecture behavioral of entity decoInst [decoinst_default]
+Compiling architecture behavioral of entity UC [uc_default]
+Compiling architecture behavioral of entity mux1 [mux1_default]
+Compiling architecture behavioral of entity codOP [\codOP(20,5)\]
+Compiling architecture behavioral of entity codFUN [\codFUN(20,4,20)\]
+Compiling architecture behavioral of entity mux2 [mux2_default]
+Compiling architecture behavioral of entity unidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity registros [\registros(16)\]
+Compiling architecture behavioral of entity extSigno [\extSigno(12,16)\]
+Compiling architecture behavioral of entity extDireccion [\extDireccion(12,16)\]
+Compiling architecture operaciones of entity ALU16 [\ALU16(16)\]
+Compiling architecture behavioral of entity memDatos [\memDatos(16,11)\]
+Compiling architecture behavioral of entity escomips
+Time Resolution for simulation is 1ps.
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 42 VHDL Units
+Built simulation executable C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_isim_beh.exe
+Fuse Memory Usage: 38584 KB
+Fuse CPU Usage: 1311 ms

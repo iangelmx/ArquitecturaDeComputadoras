@@ -1,0 +1,41 @@
+ISim log file
+Running: C:\Users\iAngelMx\Documents\GitHub\arqCompVHDL\Colaborativo_JORGE\ESCOMips\ESCOMips_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/Colaborativo_JORGE/ESCOMips/ESCOMips_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /escomips/memoriaPrograma/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /escomips/memoriaPrograma/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /escomips/UC/operacion/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /escomips/UC/funcion/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /escomips/archivoRegistros/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /escomips/archivoRegistros/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 0 ps, Instance /escomips/memoriaDatos/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+at 0 ps, Instance /escomips/memoriaDatos/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# isim force add /escomips/rclk 1 -radix bin -value 0 -radix bin -time 5 ns -repeat 10 ns
+# isim force add /escomips/rclr 1 -radix bin
+# run 10ns
+at 1 us(9), Instance /escomips/memoriaDatos/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# isim force add /escomips/rclr 0 -radix bin
+# run 10ns
+ERROR: Index -1 out of bound 0 to 7. 
+ERROR: In process pila.vhd:34 
+ 
+INFO: Simulator is stopped.
+# run 10ns
+INFO: Simulator is stopped.
+# run 10ns
+INFO: Simulator is stopped.
+# run 10ns
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# run 10ns
+INFO: Simulator is stopped.

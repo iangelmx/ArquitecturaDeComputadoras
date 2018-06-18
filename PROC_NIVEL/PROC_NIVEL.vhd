@@ -21,7 +21,7 @@ begin
 		elsif(clk'event and clk ='1') then
 			nclk <= not nclk;
 		end if;
-		nivel_aux <= pclk xnor nclk;
+		nivel_aux <= pclk xor nclk;
 	end process;
 	
 	nivel <= nivel_aux;

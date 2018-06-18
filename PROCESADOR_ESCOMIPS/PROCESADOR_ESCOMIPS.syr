@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Reading design: PROCESADOR_ESCOMIPS.prj
 
@@ -587,11 +587,141 @@ Optimizing unit <PROC_UNID_CONTROL> ...
 Optimizing unit <archivo_registros> ...
 
 Optimizing unit <PRACTICA03> ...
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_9_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_10_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_15_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_8_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_12_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_13_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_11_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_0> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_1> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_2> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_3> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_4> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_5> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_6> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_7> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_8> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_9> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_10> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_11> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_12> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_13> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_14> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <AR/banco_14_15> (without init value) has a constant value of 0 in block <PROCESADOR_ESCOMIPS>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block PROCESADOR_ESCOMIPS, actual ratio is 2.
-FlipFlop PILA_Comp/sp_2 has been replicated 4 time(s)
+Found area constraint ratio of 100 (+ 5) on block PROCESADOR_ESCOMIPS, actual ratio is 1.
+FlipFlop PILA_Comp/sp_0 has been replicated 1 time(s)
+FlipFlop PILA_Comp/sp_1 has been replicated 1 time(s)
+FlipFlop PILA_Comp/sp_2 has been replicated 5 time(s)
 
 Final Macro Processing ...
 
@@ -599,8 +729,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 397
- Flip-Flops                                            : 397
+# Registers                                            : 272
+ Flip-Flops                                            : 272
 
 =========================================================================
 
@@ -623,25 +753,25 @@ Top Level Output File Name         : PROCESADOR_ESCOMIPS.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1371
+# BELS                             : 995
 #      GND                         : 1
 #      INV                         : 5
 #      LUT1                        : 15
-#      LUT2                        : 38
-#      LUT3                        : 99
-#      LUT4                        : 58
-#      LUT5                        : 363
-#      LUT6                        : 605
+#      LUT2                        : 42
+#      LUT3                        : 18
+#      LUT4                        : 48
+#      LUT5                        : 100
+#      LUT6                        : 615
 #      MUXCY                       : 15
-#      MUXF7                       : 122
+#      MUXF7                       : 86
 #      MUXF8                       : 32
 #      VCC                         : 1
 #      XORCY                       : 17
-# FlipFlops/Latches                : 397
+# FlipFlops/Latches                : 272
 #      FD_1                        : 1
 #      FDC                         : 2
 #      FDC_1                       : 1
-#      FDCE                        : 391
+#      FDCE                        : 266
 #      FDCE_1                      : 2
 # RAMS                             : 128
 #      RAM256X1S                   : 128
@@ -659,18 +789,18 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             397  out of  126800     0%  
- Number of Slice LUTs:                 1695  out of  63400     2%  
-    Number used as Logic:              1183  out of  63400     1%  
+ Number of Slice Registers:             272  out of  126800     0%  
+ Number of Slice LUTs:                 1355  out of  63400     2%  
+    Number used as Logic:               843  out of  63400     1%  
     Number used as Memory:              512  out of  19000     2%  
        Number used as RAM:              512
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1745
-   Number with an unused Flip Flop:    1348  out of   1745    77%  
-   Number with an unused LUT:            50  out of   1745     2%  
-   Number of fully used LUT-FF pairs:   347  out of   1745    19%  
-   Number of unique control sets:        29
+ Number of LUT Flip Flop pairs used:   1407
+   Number with an unused Flip Flop:    1135  out of   1407    80%  
+   Number with an unused LUT:            52  out of   1407     3%  
+   Number of fully used LUT-FF pairs:   220  out of   1407    15%  
+   Number of unique control sets:        21
 
 IO Utilization: 
  Number of IOs:                          26
@@ -701,7 +831,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clk                                | BUFGP                  | 2     |
-DIV_FREC/cont_0                    | BUFG                   | 523   |
+DIV_FREC/cont_0                    | BUFG                   | 398   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -712,9 +842,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 19.737ns (Maximum Frequency: 50.667MHz)
+   Minimum period: 19.739ns (Maximum Frequency: 50.661MHz)
    Minimum input arrival time before clock: 0.633ns
-   Maximum output required time after clock: 9.744ns
+   Maximum output required time after clock: 9.732ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -723,29 +853,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DIV_FREC/cont_0'
-  Clock period: 19.737ns (frequency: 50.667MHz)
-  Total number of paths / destination ports: 4492055847 / 2068
+  Clock period: 19.739ns (frequency: 50.661MHz)
+  Total number of paths / destination ports: 2106338560 / 1818
 -------------------------------------------------------------------------
-Delay:               9.868ns (Levels of Logic = 19)
-  Source:            PILA_Comp/aux_4_1 (FF)
+Delay:               9.870ns (Levels of Logic = 19)
+  Source:            PILA_Comp/aux_4_4 (FF)
   Destination:       U_de_C/REGISTRO_EDO/f_aux_1 (FF)
   Source Clock:      DIV_FREC/cont_0 rising
   Destination Clock: DIV_FREC/cont_0 falling
 
-  Data Path: PILA_Comp/aux_4_1 to U_de_C/REGISTRO_EDO/f_aux_1
+  Data Path: PILA_Comp/aux_4_4 to U_de_C/REGISTRO_EDO/f_aux_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.361   0.698  PILA_Comp/aux_4_1 (PILA_Comp/aux_4_1)
-     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux7_3 (PILA_Comp/mux7_3)
-     MUXF7:I1->O          38   0.279   0.801  PILA_Comp/mux7_2_f7 (PC_fin_out_1_OBUF)
-     LUT6:I0->O            1   0.097   0.379  MEM_PROGR/Mram_instruccion62114_SW1 (N141)
-     LUT6:I4->O           13   0.097   0.351  MEM_PROGR/Mram_instruccion62115 (instruccion_aux<21>)
-     LUT5:I4->O            1   0.097   0.379  U_de_C/Mmux_mux_Opcode12_SW0 (N729)
-     LUT6:I4->O           11   0.097   0.425  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
-     LUT6:I4->O            9   0.097   0.416  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
-     LUT6:I4->O            2   0.097   0.284  Mmux_rreg2_aux31_1 (Mmux_rreg2_aux31)
-     MUXF7:S->O            1   0.335   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
+     FDCE:C->Q             2   0.361   0.698  PILA_Comp/aux_4_4 (PILA_Comp/aux_4_4)
+     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux10_3 (PILA_Comp/mux10_3)
+     MUXF7:I1->O          22   0.279   0.607  PILA_Comp/mux10_2_f7 (PC_fin_out_4_OBUF)
+     LUT3:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion40115_SW0 (N141)
+     LUT6:I5->O            1   0.097   0.511  MEM_PROGR/Mram_instruccion40115 (MEM_PROGR/Mram_instruccion40114)
+     LUT5:I2->O           23   0.097   0.609  MEM_PROGR/Mram_instruccion40119 (instruccion_aux<21>)
+     LUT6:I3->O            2   0.097   0.688  U_de_C/Mmux_salida71_SW2 (N540)
+     LUT6:I1->O            2   0.097   0.384  Mmux_rreg2_aux11_1 (Mmux_rreg2_aux11)
+     LUT6:I4->O            1   0.097   0.000  AR/mux24_51 (AR/mux24_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
      MUXF8:I0->O           9   0.218   0.332  AR/mux24_2_f8 (rdata2_aux<2>)
      LUT4:I3->O            2   0.097   0.516  ALU/ALU03/Mxor_b_aux_xo<0>1 (ALU/ALU03/b_aux)
      LUT6:I3->O            3   0.097   0.305  ALU/ALU03/cout_aux1 (ALU/carries<2>)
@@ -758,8 +888,8 @@ Delay:               9.868ns (Levels of Logic = 19)
      LUT6:I0->O            1   0.097   0.000  ALU/Z<15>3 (banderas_aux<1>)
      FDCE_1:D                  0.008          U_de_C/REGISTRO_EDO/f_aux_1
     ----------------------------------------
-    Total                      9.868ns (2.753ns logic, 7.115ns route)
-                                       (27.9% logic, 72.1% route)
+    Total                      9.870ns (2.697ns logic, 7.173ns route)
+                                       (27.3% logic, 72.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
@@ -805,41 +935,41 @@ Offset:              0.633ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'DIV_FREC/cont_0'
-  Total number of paths / destination ports: 115245960 / 24
+  Total number of paths / destination ports: 70997640 / 24
 -------------------------------------------------------------------------
-Offset:              9.744ns (Levels of Logic = 20)
-  Source:            PILA_Comp/aux_4_1 (FF)
+Offset:              9.732ns (Levels of Logic = 20)
+  Source:            PILA_Comp/aux_4_4 (FF)
   Destination:       salida<15> (PAD)
   Source Clock:      DIV_FREC/cont_0 rising
 
-  Data Path: PILA_Comp/aux_4_1 to salida<15>
+  Data Path: PILA_Comp/aux_4_4 to salida<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.361   0.698  PILA_Comp/aux_4_1 (PILA_Comp/aux_4_1)
-     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux7_3 (PILA_Comp/mux7_3)
-     MUXF7:I1->O          38   0.279   0.801  PILA_Comp/mux7_2_f7 (PC_fin_out_1_OBUF)
-     LUT6:I0->O            1   0.097   0.379  MEM_PROGR/Mram_instruccion62114_SW1 (N141)
-     LUT6:I4->O           13   0.097   0.351  MEM_PROGR/Mram_instruccion62115 (instruccion_aux<21>)
-     LUT5:I4->O            1   0.097   0.379  U_de_C/Mmux_mux_Opcode12_SW0 (N729)
-     LUT6:I4->O           11   0.097   0.425  U_de_C/Mmux_mux_Opcode12 (U_de_C/mux_Opcode<0>)
-     LUT6:I4->O            9   0.097   0.416  U_de_C/Mmux_salida1821 (U_de_C/Mmux_salida182)
-     LUT6:I4->O            2   0.097   0.284  Mmux_rreg2_aux31_1 (Mmux_rreg2_aux31)
-     MUXF7:S->O            1   0.335   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
+     FDCE:C->Q             2   0.361   0.698  PILA_Comp/aux_4_4 (PILA_Comp/aux_4_4)
+     LUT6:I0->O            1   0.097   0.000  PILA_Comp/mux10_3 (PILA_Comp/mux10_3)
+     MUXF7:I1->O          22   0.279   0.607  PILA_Comp/mux10_2_f7 (PC_fin_out_4_OBUF)
+     LUT3:I0->O            1   0.097   0.295  MEM_PROGR/Mram_instruccion40115_SW0 (N141)
+     LUT6:I5->O            1   0.097   0.511  MEM_PROGR/Mram_instruccion40115 (MEM_PROGR/Mram_instruccion40114)
+     LUT5:I2->O           23   0.097   0.609  MEM_PROGR/Mram_instruccion40119 (instruccion_aux<21>)
+     LUT6:I3->O            2   0.097   0.688  U_de_C/Mmux_salida71_SW2 (N540)
+     LUT6:I1->O            2   0.097   0.384  Mmux_rreg2_aux11_1 (Mmux_rreg2_aux11)
+     LUT6:I4->O            1   0.097   0.000  AR/mux24_51 (AR/mux24_51)
+     MUXF7:I1->O           1   0.279   0.000  AR/mux24_4_f7 (AR/mux24_4_f7)
      MUXF8:I0->O           9   0.218   0.332  AR/mux24_2_f8 (rdata2_aux<2>)
      LUT4:I3->O            2   0.097   0.516  ALU/ALU03/Mxor_b_aux_xo<0>1 (ALU/ALU03/b_aux)
      LUT6:I3->O            3   0.097   0.305  ALU/ALU03/cout_aux1 (ALU/carries<2>)
      LUT6:I5->O            3   0.097   0.305  ALU/ALU05/cout_aux1 (ALU/carries<4>)
      LUT6:I5->O            3   0.097   0.305  ALU/ALU07/cout_aux1 (ALU/carries<6>)
      LUT6:I5->O            3   0.097   0.305  ALU/ALU09/cout_aux1 (ALU/carries<8>)
-     LUT6:I5->O            7   0.097   0.323  ALU/ALU10/Mmux_resul_aux11 (alu_o<9>)
-     LUT3:I2->O           37   0.097   0.403  SDMD/Mmux_sal_a111 (sdmd_o<9>)
+     LUT6:I5->O            4   0.097   0.309  ALU/ALU10/Mmux_resul_aux11 (alu_o<9>)
+     LUT4:I3->O           40   0.097   0.403  SDMD/Mmux_sal_a111 (sdmd_o<9>)
      LUT6:I5->O            1   0.097   0.000  inst_LPM_MUX_3 (inst_LPM_MUX_3)
      MUXF7:I1->O           3   0.279   0.289  inst_LPM_MUX_2_f7 (salida_0_OBUF)
      OBUF:I->O                 0.000          salida_0_OBUF (salida<0>)
     ----------------------------------------
-    Total                      9.744ns (2.927ns logic, 6.817ns route)
-                                       (30.0% logic, 70.0% route)
+    Total                      9.732ns (2.871ns logic, 6.861ns route)
+                                       (29.5% logic, 70.5% route)
 
 =========================================================================
 
@@ -851,8 +981,8 @@ Clock to Setup on destination clock DIV_FREC/cont_0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-DIV_FREC/cont_0|   10.410|    8.321|    9.868|         |
-clk            |         |    1.155|    1.155|         |
+DIV_FREC/cont_0|   10.361|    8.179|    9.870|         |
+clk            |         |    1.136|    1.136|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -866,14 +996,14 @@ clk            |    0.934|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 29.55 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 63.55 secs
  
 --> 
 
-Total memory usage is 482384 kilobytes
+Total memory usage is 481240 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   38 (   0 filtered)
+Number of warnings :  166 (   0 filtered)
 Number of infos    :    9 (   0 filtered)
 

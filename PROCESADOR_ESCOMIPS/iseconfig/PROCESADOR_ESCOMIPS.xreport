@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-06-14T20:59:28</DateModified>
+  <DateModified>2018-06-18T17:50:10</DateModified>
   <ModuleName>PROCESADOR_ESCOMIPS</ModuleName>
-  <SummaryTimeStamp>2018-06-14T20:56:00</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-06-14T21:05:41</SummaryTimeStamp>
   <SavedFilePath>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS/iseconfig/PROCESADOR_ESCOMIPS.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROCESADOR_ESCOMIPS\</ImplementationReportsDirectory>
   <DateInitialized>2018-06-07T00:46:29</DateInitialized>

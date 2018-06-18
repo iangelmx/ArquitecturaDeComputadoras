@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/iAngelMx/Documents/GitHub/arqCompVHDL/PROC_NI
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );
-unsigned char ieee_p_2592010699_sub_853553178_503743352(char *, unsigned char , unsigned char );
+unsigned char ieee_p_2592010699_sub_2507238156_503743352(char *, unsigned char , unsigned char );
 
 
 static void work_a_4013218979_3212880686_p_0(char *t0)
@@ -81,7 +81,7 @@ LAB3:    xsi_set_current_line(24, ng0);
     t1 = (t0 + 1672U);
     t5 = *((char **)t1);
     t4 = *((unsigned char *)t5);
-    t9 = ieee_p_2592010699_sub_853553178_503743352(IEEE_P_2592010699, t3, t4);
+    t9 = ieee_p_2592010699_sub_2507238156_503743352(IEEE_P_2592010699, t3, t4);
     t1 = (t0 + 3784);
     t6 = (t1 + 56U);
     t7 = *((char **)t6);
